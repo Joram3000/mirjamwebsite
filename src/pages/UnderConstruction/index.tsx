@@ -3,7 +3,7 @@ import "./style.css";
 const UnderConstructionPage = () => {
   return (
     <div className="container">
-      <div className="mainImage" />
+      <div className="mainImage"></div>
 
       <h1>Kroon training en advies</h1>
 

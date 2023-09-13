@@ -1,9 +1,11 @@
 body {
-  background-color: black;
-  color: white;
+  /* background-color: rgb(114, 56, 56);
+  color: white; */
 }
 
-.container {
+.layout {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
