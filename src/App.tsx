@@ -1,16 +1,15 @@
 import "./App.css";
-
-import Navbar from "./components/navbar";
-import UnderConstructionPage from "./pages/UnderConstructionPage";
-import Footer from "./components/footer/index";
+// import Navbar from "./components/navbar";
+// import Footer from "./components/footer/index";
+import UnderConstructionPage from "./pages/UnderConstruction";
 
 function App() {
   return (
-    <>
+    <div className="container">
       {/* <Navbar /> */}
       <UnderConstructionPage />
-      <Footer />
-    </>
+      {/* <Footer /> */}
+    </div>
   );
 }
 
