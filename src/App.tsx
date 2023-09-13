@@ -2,11 +2,12 @@ import "./App.css";
 
 import Navbar from "./components/navbar";
 import UnderConstructionPage from "./pages/UnderConstructionPage";
-import Footer from "./components/footer";
+import Footer from "./components/footer/index";
+
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <UnderConstructionPage />
       <Footer />
     </>
