@@ -1,5 +1,8 @@
 import { FC } from "react";
 
+//TODO
+// https://www.youtube.com/watch?v=SLfhMt5OUPI
+
 const Navbar: FC = () => {
   return (
     <nav className="nav">
