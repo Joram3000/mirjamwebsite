@@ -29,7 +29,7 @@ const UnderConstructionPage = () => {
       <a
         className="linkedInBlock"
         target="_blank"
-        href="https://www.linkedin.com/in/mirjam-kroon-hoekendijk"
+        href="https://www.linkedin.com/in/mirjam-kroon-hoekendijk-0a99104/"
       >
         <strong>Ga naar linked in</strong>
       </a>
@@ -38,7 +38,8 @@ const UnderConstructionPage = () => {
         <h2>CONTACTGEGEVENS</h2>
         <p>
           Wil je in contact komen met mij?<br></br>
-          Stuur een e-mail naar <strong>mirjam@kroontrainingadvies.com</strong>
+          Stuur een e-mail naar:
+          <strong> mirjam@kroontrainingadvies.com</strong>
           <br></br>
           Of bel: <strong>0653507815</strong>
         </p>
