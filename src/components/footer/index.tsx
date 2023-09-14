@@ -12,7 +12,7 @@ const Footer: FC = () => {
       </div>
       <div className="contactBlock">
         <p>
-          <strong>mirjam@kroontrainingadvies.com</strong>
+          e-mail: <strong>mirjam@kroontrainingadvies.com</strong>
         </p>
         <p>tel: 06-53507815</p>
         <p>Adres: Dorpsweg 71,</p>
@@ -20,7 +20,6 @@ const Footer: FC = () => {
       </div>
       <div className="contactBlock">
         <p>LinkedIn:</p>
-
         <a
           target="_blank"
           href="https://www.linkedin.com/in/mirjam-kroon-hoekendijk-0a99104/"
