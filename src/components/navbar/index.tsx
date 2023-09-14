@@ -2,9 +2,6 @@ import { FC } from "react";
 import { useState } from "react";
 import styles from "./style.module.css";
 
-//TODO
-// https://www.youtube.com/watch?v=SLfhMt5OUPI
-
 const Navbar: FC = () => {
   const [isActive, setIsActive] = useState(false);
 
@@ -20,28 +17,24 @@ const Navbar: FC = () => {
     <div className="App">
       <header className="App-header">
         <nav className={`${styles.navbar}`}>
-          <a href="#home" className={`${styles.logo}`}>
+          <a href="/" className={`${styles.logo}`}>
             DEV
           </a>
 
           <ul className={`${styles.navMenu} ${isActive ? styles.active : ""}`}>
             <li onClick={removeActive}>
-              <a href="#home" className={`${styles.navLink}`}>
+              <a href="/home" className={`${styles.navLink}`}>
                 Home
               </a>
             </li>
+
             <li onClick={removeActive}>
-              <a href="#home" className={`${styles.navLink}`}>
-                Catalog
+              <a href="/about" className={`${styles.navLink}`}>
+                About
               </a>
             </li>
             <li onClick={removeActive}>
-              <a href="#home" className={`${styles.navLink}`}>
-                All products
-              </a>
-            </li>
-            <li onClick={removeActive}>
-              <a href="#home" className={`${styles.navLink}`}>
+              <a href="/contact" className={`${styles.navLink}`}>
                 Contact
               </a>
             </li>
