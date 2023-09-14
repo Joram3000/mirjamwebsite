@@ -1,11 +1,17 @@
-body {
-  /* background-color: rgb(114, 56, 56);
-  color: white; */
-}
-
 .layout {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2 {
+  color: #4462ff;
 }
