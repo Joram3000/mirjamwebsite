@@ -6,7 +6,7 @@ const UnderConstructionPage = () => {
     <div className="container">
       <div className="title">
         <img src={mirjamfoto} className="mirjamFoto" />
-        <h1>Kroon training en advies</h1>
+        <h1>Kroon Training & Advies</h1>
       </div>
       <div className="textBlock">
         <h2>ONDER CONSTRUCTIE</h2>
@@ -21,8 +21,7 @@ const UnderConstructionPage = () => {
         </p>
         <p>
           De planning is dat mijn nieuwe site eind oktober te bezoeken is. Nu is
-          er informatie te vinden op mijn LinkedIn profiel: Mirjam
-          Kroon-Hoekendijk Wil je in contact komen met mij?
+          er informatie te vinden op mijn LinkedIn profiel:
         </p>
       </div>
 
