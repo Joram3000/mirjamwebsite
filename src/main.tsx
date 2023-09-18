@@ -8,8 +8,6 @@ import AboutPage from "./pages/About/index.tsx";
 import HomePage from "./pages/Home/index.tsx";
 import UnderConstructionPage from "./pages/UnderConstruction/index.tsx";
 
-import "./main.css";
-
 const router = createBrowserRouter([
   {
     path: "/",
