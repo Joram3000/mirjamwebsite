@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { useState } from "react";
 import styles from "./style.module.css";
+import { Link } from "react-router-dom";
 
 const Navbar: FC = () => {
   const [isActive, setIsActive] = useState(false);
@@ -17,26 +18,27 @@ const Navbar: FC = () => {
     <div className="App">
       <header className="App-header">
         <nav className={`${styles.navbar}`}>
-          <a href="/" className={`${styles.logo}`}>
-            DEV
-          </a>
+          <Link className={`${styles.logo}`} to="/">
+            Mirjam de Pirjam
+          </Link>
 
           <ul className={`${styles.navMenu} ${isActive ? styles.active : ""}`}>
             <li onClick={removeActive}>
-              <a href="/home" className={`${styles.navLink}`}>
+              <Link className={`${styles.navLink}`} to="/home">
                 Home
-              </a>
+              </Link>
             </li>
 
             <li onClick={removeActive}>
-              <a href="/about" className={`${styles.navLink}`}>
+              <Link to="/about" className={`${styles.navLink}`}>
                 About
-              </a>
+              </Link>
             </li>
+
             <li onClick={removeActive}>
-              <a href="/contact" className={`${styles.navLink}`}>
+              <Link to="/contact" className={`${styles.navLink}`}>
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
 
