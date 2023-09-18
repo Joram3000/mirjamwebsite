@@ -31,7 +31,7 @@ const UnderConstructionPage = () => {
         target="_blank"
         href="https://www.linkedin.com/in/mirjam-kroon-hoekendijk-0a99104/"
       >
-        <strong>Ga naar linked in</strong>
+        <strong>Ga naar LinkedIn</strong>
       </a>
 
       <div className="textBlock">
