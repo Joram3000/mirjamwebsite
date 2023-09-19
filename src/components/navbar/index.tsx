@@ -1,36 +1,36 @@
 import { FC } from "react";
-import styles from "./style.module.css";
+import "./style.css";
 import { Link } from "react-router-dom";
 
 const Navbar: FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <nav className={`${styles.navbar}`}>
-          <Link to="/">Kroon Training & Advies</Link>
+    <nav className="navbar">
+      <Link className="navbar-title" to="/">
+        Kroon Training & Advies
+      </Link>
 
-          <ul className={styles.navMenu}>
-            <li>
-              <Link className={`${styles.navLink}`} to="/home">
-                Home
-              </Link>
-            </li>
+      <div className="navbar-links">
+        <ul>
+          <li>
+            <Link to="/home" className="navbar-item">
+              Home
+            </Link>
+          </li>
 
-            <li>
-              <Link to="/about" className={`${styles.navLink}`}>
-                About
-              </Link>
-            </li>
+          <li>
+            <Link to="/about" className="navbar-item">
+              About
+            </Link>
+          </li>
 
-            <li>
-              <Link to="/contact" className={`${styles.navLink}`}>
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
+          <li>
+            <Link to="/contact" className="navbar-item">
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 };
 
