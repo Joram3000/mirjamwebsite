@@ -11,9 +11,15 @@ import {
 import Footer from "../../components/footer/footer.tsx";
 import Statement from "../../components/statement";
 import PeopleCard from "../../components/peopleCard";
-import Mirjam6 from "../../assets/images/mirjam6.jpg";
 
+import Mirjam6 from "../../assets/images/mirjam6.jpg";
+import Tree from "../../assets/images/Tree.jpg";
+import BesidesWork from "../../assets/images/besidesWork.jpg";
 import samenwerkingsPartner from "../../assets/images/Samenwerkingspartners.png";
+import samenwerkingsPartner1 from "../../assets/images/Samenwerkingspartners1.png";
+import samenwerkingsPartner2 from "../../assets/images/Samenwerkingspartners2.png";
+import samenwerkingsPartner3 from "../../assets/images/Samenwerkingspartners3.png";
+import samenwerkingsPartner4 from "../../assets/images/Samenwerkingspartners5.png";
 
 const MirjamKroonAbout: React.FC = () => {
   const samenwerkingsPartners = [
@@ -23,12 +29,36 @@ const MirjamKroonAbout: React.FC = () => {
       text: "Met Eline heb ik mooie trajecten begeleid als: Het moedige gesprek, leiding geven met lef, doorgroeien werkt. Eline is zeer gecommitteerd en zorgvuldig als het gaat om afstemming met de klant. Ze is een inspirerend voorbeeld in steeds een extra mijl lopen. Ze zoekt vernieuwing en verrassing. We maken elkaar beter omdat we complementair aan elkaar zijn.",
       link: "",
     },
+    {
+      img: samenwerkingsPartner1,
+      name: "Jonnet Galle",
+      text: "Met Jonnet werk ik graag samen op teamcoachtrajecten en met het Systeem Spel. We hebben eenzelfde fascinatie voor het systemisch gedachtegoed. Jonnet is heel goed in een “holding space” creëren en in staat door te pakken en een zeer ervaren teamcoach.",
+      link: "",
+    },
+    {
+      img: samenwerkingsPartner2,
+      name: "Anke Tusveld",
+      text: "Met Anke heb ik een intensief traject voor een Waterschap begeleid. Groepen die ons samen zien werken beschrijven spontaan de synergie tussen ons. Ze werkt graag met de drijfveren “Power en Love”, die vaak op gespannen voet met elkaar staan. Anke is stevig en warm tegelijk! Creatief en zorgvuldig.",
+      link: "",
+    },
+    {
+      img: samenwerkingsPartner3,
+      name: "De Baak",
+      text: "Ik ben al jarenlang betrokken bij de Baak in verschillende rollen. De Baak staat voor mij voor vernieuwing, net een beetje anders. Op zoek naar wat deze huidige tijd van ons vraagt. Ik werd in het verleden ingezet als: teamcoach, trainer in corporate programma’s en momenteel ben ik met veel plezier lid van het trainersteam van de Informele Leider.",
+      link: "",
+    },
+    {
+      img: samenwerkingsPartner4,
+      name: "Leiderschip",
+      text: "Voor Leiderschip verzorg ik trainingen “de Leider als teamcoach” en de “leider als individuele coach”en begeleid ik teams. Leiderschip ontwerpt inhoudelijk sterke programma’s waarin deelnemers methodes leren die werken.",
+      link: "",
+    },
   ];
 
   return (
     <>
       <Box bg="beige">
-        <Container p="xl">
+        <Container>
           <Group align="center" justify="flex-end" grow>
             <Stack>
               <Title>Trainer en coach van groei- en verandertrajecten</Title>
@@ -44,15 +74,15 @@ const MirjamKroonAbout: React.FC = () => {
       </Box>
 
       <Statement
-        text="Ik word ik door jij"
+        text="“Ik word ik door jij”"
         subText="Martin Büber"
-        color="blue"
+        color="darkBlue"
       />
 
       <Box bg="beige">
         <Container p="xl">
-          <Title>Waar kun je me voor vragen?</Title>
-          <Text pb="lg">
+          <Title pb="xl">Waar kun je me voor vragen?</Title>
+          <Text pb="xl">
             Waar mensen samenwerken, valt veel te winnen wanneer er goed
             gecommuniceerd wordt. Of dat nu in de financiële branche is,
             overheid of de zware maakindustrie. Afstemmen, programma’s op maat
@@ -85,11 +115,14 @@ const MirjamKroonAbout: React.FC = () => {
           </Text>
         </Container>
       </Box>
-      <Box bg="green">
-        <Container p="xl">
-          <Group grow align="flex-start">
+
+      <Box bg="darkGreen">
+        <Container>
+          <Group grow align="flex-start" h="100%">
             <Stack>
-              <Title>“Geen sprookje, maar een soap’’</Title>
+              <Title py="xl" order={2}>
+                “Geen sprookje, maar een soap’’
+              </Title>
               <Text pb="lg">
                 De realiteit van het leven, heeft meer van een soap dan van een
                 sprookje. In een sprookje zouden we het liefst geloven. Er was
@@ -125,7 +158,7 @@ const MirjamKroonAbout: React.FC = () => {
               <Button>Bekijk video over de Constructieve Roddel</Button>
             </Stack>
 
-            <Image src={Mirjam6} />
+            <Image src={Tree} />
           </Group>
         </Container>
       </Box>
@@ -152,7 +185,7 @@ const MirjamKroonAbout: React.FC = () => {
         </Container>
 
         <Container p="xl">
-          <Group grow>
+          <Group grow align="flex-start">
             <Stack>
               <Title>En naast werk?</Title>
               <Text pb="lg">
@@ -172,22 +205,17 @@ const MirjamKroonAbout: React.FC = () => {
                 Rome naar Assisi).
               </Text>
             </Stack>
-            <Image src={Mirjam6} />
+            <Image src={BesidesWork} />
           </Group>
         </Container>
       </Box>
 
-      <Box bg="green">
+      <Box bg="darkGreen">
         <Container p="xl">
-          <Title>Samenwerkingspartners</Title>
-          <Stack align="flex-start">
+          <Title pb="xl">Samenwerkingspartners</Title>
+          <Stack>
             {samenwerkingsPartners.map((samenwerkingsPartner) => (
-              <>
-                <PeopleCard samenwerkingsPartner={samenwerkingsPartner} />
-                <PeopleCard samenwerkingsPartner={samenwerkingsPartner} />
-                <PeopleCard samenwerkingsPartner={samenwerkingsPartner} />
-                <PeopleCard samenwerkingsPartner={samenwerkingsPartner} />
-              </>
+              <PeopleCard samenwerkingsPartner={samenwerkingsPartner} />
             ))}
           </Stack>
         </Container>

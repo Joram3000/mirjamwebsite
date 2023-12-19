@@ -5,6 +5,7 @@ import Layout from "./components/layout";
 import MirjamKroonHomepage from "./pages/Home";
 import MirjamKroonAbout from "./pages/About";
 import ErrorPage from "./pages/Error";
+import MirjamKroonCoaching from "./pages/Coaching";
 
 const router = createHashRouter([
   {
@@ -15,13 +16,17 @@ const router = createHashRouter([
       { path: "/", element: <MirjamKroonHomepage /> },
       { path: "/*", element: <MirjamKroonHomepage /> },
       { path: "/about", element: <MirjamKroonAbout /> },
+      { path: "/coaching", element: <MirjamKroonCoaching /> },
+      { path: "/training", element: <MirjamKroonCoaching /> },
+      { path: "/systeemspel", element: <MirjamKroonCoaching /> },
     ],
   },
 ]);
 
 const theme = createTheme({
-  fontFamily: "Open Sans, sans-serif",
-  primaryColor: "green",
+  fontFamily: "Verdana, sans-serif",
+  primaryColor: "lime",
+  defaultRadius: 0,
 });
 
 function App() {

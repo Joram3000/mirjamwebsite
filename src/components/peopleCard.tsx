@@ -1,4 +1,4 @@
-import { Box, Group, Stack, Text, Title, Image } from "@mantine/core";
+import { Group, Stack, Text, Title, Image } from "@mantine/core";
 
 type samenwerkingsPartner = {
   img?: string;
@@ -17,15 +17,13 @@ const PeopleCard: React.FC<PeopleCardProps> = ({
   size = 150,
 }) => {
   return (
-    <Box>
-      <Group>
-        <Image h={size} w={size} src={samenwerkingsPartner.img} />
-        <Stack w="70%">
-          <Title order={3}>{samenwerkingsPartner.name}</Title>
-          <Text>{samenwerkingsPartner.text}</Text>
-        </Stack>
-      </Group>
-    </Box>
+    <Group>
+      <Image h={size} w={size} src={samenwerkingsPartner.img} />
+      <Stack w="70%">
+        <Title order={3}>{samenwerkingsPartner.name}</Title>
+        <Text>{samenwerkingsPartner.text}</Text>
+      </Stack>
+    </Group>
   );
 };
 

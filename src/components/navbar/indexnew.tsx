@@ -20,7 +20,7 @@ const NavbarNew: React.FC = () => {
       <Group visibleFrom="lg" m="xl">
         <Anchor href="/#/home">Home</Anchor>
         <Anchor href="/#/about">Over Mirjam</Anchor>
-        <Text>Coaching</Text>
+        <Anchor href="/#/coaching">Coaching</Anchor>
         <Text>Training</Text>
         <Text>Systeemspel</Text>
         <Button>Contact Opnemen</Button>

@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 
 const Layout: React.FC = () => {
   return (
-    <AppShell>
+    <AppShell header={{ height: 100 }}>
       <AppShell.Header withBorder={false}>
         <NavbarNew />
       </AppShell.Header>

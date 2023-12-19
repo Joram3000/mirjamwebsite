@@ -7,10 +7,11 @@ import {
   Stack,
   Button,
   Image,
+  SimpleGrid,
 } from "@mantine/core";
 
 import Footer from "../../components/footer/footer.tsx";
-import KlantErvaring from "../../components/klantErvaring";
+
 import SmallCard from "../../components/smallCard";
 import Statement from "../../components/statement";
 
@@ -44,17 +45,13 @@ const MirjamKroonHomepage: React.FC = () => {
     <>
       <Box bg="beige">
         <Container>
-          <Group w="50%">
-            <Stack>
-              <Title>Anders kijken naar samenwerkingsvraagstukken</Title>
-              <Text>
-                Training, coaching en systemische oefeningen voor teams en
-                personen, om succesvolle werkrelaties te herstellen of te
-                bouwen.
-              </Text>
-            </Stack>
-          </Group>
-
+          <Stack w="50%">
+            <Title>Anders kijken naar samenwerkingsvraagstukken</Title>
+            <Text>
+              Training, coaching en systemische oefeningen voor teams en
+              personen, om succesvolle werkrelaties te herstellen of te bouwen.
+            </Text>
+          </Stack>
           <Image src={cirkels} />
         </Container>
       </Box>
@@ -117,22 +114,51 @@ const MirjamKroonHomepage: React.FC = () => {
               maken in taal die aansluit, is kenmerkend voor mijn werkwijze.
             </Text>
 
-            <Group w="100%" align="flex-start" grow>
+            <SimpleGrid cols={{ base: 1, sm: 3 }}>
               {cardContent.map((card) => (
                 <SmallCard card={card} />
               ))}
-            </Group>
+            </SimpleGrid>
           </Stack>
         </Container>
       </Box>
 
       <Box bg="beige">
         <Container p="xl">
-          <Title>Klant Ervaringen</Title>
-          <Group grow>
-            <KlantErvaring />
-            <KlantErvaring />
-          </Group>
+          <Title pb="xl">Klant Ervaringen</Title>
+
+          <SimpleGrid cols={{ base: 1, sm: 2 }}>
+            <Stack justify="space-between">
+              <Text>
+                "Mooie kennismaking met het team en met het leren kijken vanuit
+                systemisch perspectief. Met een inzichtgevende opstelling als
+                mooi eindresultaat. Mirjam kan een mooie introductie geven met
+                simpele oefeningen zodat iedereen, met kennis of niet, kan
+                deelnemen."
+              </Text>
+              <Stack style={{ borderLeft: "1px dotted green" }}>
+                <Text>"Deelnemer teamcoaching"</Text>
+                <Text>""</Text>
+              </Stack>
+            </Stack>
+
+            <Stack h="100%" justify="space-between">
+              <Text>
+                “Met haar 1 op 1 training heeft Mirjam mij de enorme potentiële
+                waarde laten inzien van o.a. anders (geweldloos) communiceren en
+                hoe ik dit in mijn persoonlijke én professionele omgeving op de
+                juiste manier kan inzetten. Er ging een (nieuwe) wereld van
+                mogelijkheden voor mij open. Dit was een van de beste
+                investeringen in mijn persoonlijke en professionele ontwikkeling
+                van de afgelopen periode.”
+              </Text>
+
+              <Stack style={{ borderLeft: "1px dotted green" }}>
+                <Text>"John Lankester"</Text>
+                <Text>"RWS"</Text>
+              </Stack>
+            </Stack>
+          </SimpleGrid>
         </Container>
       </Box>
 
