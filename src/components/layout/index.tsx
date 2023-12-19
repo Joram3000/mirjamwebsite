@@ -1,6 +1,7 @@
 import { AppShell } from "@mantine/core";
 import MirjamKroonHomepage from "../../pages/Home";
 import NavbarNew from "../navbar/indexnew";
+import { Outlet } from "react-router-dom";
 
 const Layout: React.FC = () => {
   return (
@@ -10,7 +11,8 @@ const Layout: React.FC = () => {
       </AppShell.Header>
 
       <AppShell.Main>
-        <MirjamKroonHomepage />
+        <Outlet />
+        {/* <MirjamKroonHomepage /> */}
       </AppShell.Main>
     </AppShell>
   );
