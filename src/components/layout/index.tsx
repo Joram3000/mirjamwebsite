@@ -4,8 +4,8 @@ import NavbarNew from "../navbar/indexnew";
 
 const Layout: React.FC = () => {
   return (
-    <AppShell header={{ height: 100 }}>
-      <AppShell.Header>
+    <AppShell>
+      <AppShell.Header withBorder={false}>
         <NavbarNew />
       </AppShell.Header>
 

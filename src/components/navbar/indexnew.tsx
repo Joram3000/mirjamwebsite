@@ -6,7 +6,7 @@ const NavbarNew: React.FC = () => {
   const [opened, { toggle }] = useDisclosure();
 
   return (
-    <Group align="center" justify="space-between" h="100%" bg="red">
+    <Group align="center" justify="space-between" bg="red">
       <Image src={logo} />
 
       <Burger opened={opened} onClick={toggle} hiddenFrom="lg" size="sm" />
