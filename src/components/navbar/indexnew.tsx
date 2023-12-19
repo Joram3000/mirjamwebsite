@@ -1,4 +1,4 @@
-import { Group, Burger, Image, Text, Button } from "@mantine/core";
+import { Group, Burger, Image, Text, Button, Anchor } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import logo from "../../assets/images/logo.png";
 
@@ -6,7 +6,7 @@ const NavbarNew: React.FC = () => {
   const [opened, { toggle }] = useDisclosure();
 
   return (
-    <Group align="center" justify="space-between" bg="beige" h={100}>
+    <Group align="center" justify="space-between" h={100}>
       <Image src={logo} />
 
       <Burger
@@ -18,8 +18,8 @@ const NavbarNew: React.FC = () => {
       />
 
       <Group visibleFrom="lg" m="xl">
-        <Text>Home</Text>
-        <Text>Over Mirjam</Text>
+        <Anchor href="/#/home">Home</Anchor>
+        <Anchor href="/#/about">Over Mirjam</Anchor>
         <Text>Coaching</Text>
         <Text>Training</Text>
         <Text>Systeemspel</Text>
