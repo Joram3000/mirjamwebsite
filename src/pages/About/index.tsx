@@ -7,6 +7,7 @@ import {
   Stack,
   Image,
   Button,
+  useMantineTheme,
 } from "@mantine/core";
 import Footer from "../../components/footer/footer.tsx";
 import Statement from "../../components/statement";
@@ -22,6 +23,8 @@ import samenwerkingsPartner3 from "../../assets/images/Samenwerkingspartners3.pn
 import samenwerkingsPartner4 from "../../assets/images/Samenwerkingspartners5.png";
 
 const MirjamKroonAbout: React.FC = () => {
+  const theme = useMantineTheme();
+
   const samenwerkingsPartners = [
     {
       img: samenwerkingsPartner,
@@ -57,7 +60,7 @@ const MirjamKroonAbout: React.FC = () => {
 
   return (
     <>
-      <Box bg="beige">
+      <Box bg={theme.colors.custom[1]}>
         <Container>
           <Group align="center" justify="flex-end" grow>
             <Stack>
@@ -71,15 +74,13 @@ const MirjamKroonAbout: React.FC = () => {
             <Image src={Mirjam6} />
           </Group>
         </Container>
-      </Box>
 
-      <Statement
-        text="“Ik word ik door jij”"
-        subText="Martin Büber"
-        color="darkBlue"
-      />
+        <Statement
+          text="“Ik word ik door jij”"
+          subText="Martin Büber"
+          color={theme.colors.custom[2]}
+        />
 
-      <Box bg="beige">
         <Container p="xl">
           <Title pb="xl">Waar kun je me voor vragen?</Title>
           <Text pb="xl">
@@ -116,7 +117,7 @@ const MirjamKroonAbout: React.FC = () => {
         </Container>
       </Box>
 
-      <Box bg="darkGreen">
+      <Box bg={theme.colors.custom[0]}>
         <Container>
           <Group grow align="flex-start" h="100%">
             <Stack>
@@ -210,7 +211,7 @@ const MirjamKroonAbout: React.FC = () => {
         </Container>
       </Box>
 
-      <Box bg="darkGreen">
+      <Box bg={theme.colors.custom[0]}>
         <Container p="xl">
           <Title pb="xl">Samenwerkingspartners</Title>
           <Stack>

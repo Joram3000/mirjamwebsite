@@ -7,10 +7,13 @@ import {
   Container,
   Anchor,
   Box,
+  useMantineTheme,
 } from "@mantine/core";
 import "./footer.module.css";
 
 const Footer: React.FC = () => {
+  const theme = useMantineTheme();
+
   const contactGegevens = [
     "Mirjam Kroon-Hoekendijk",
     "Dorpsweg 71",
@@ -22,7 +25,7 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <Box bg="darkBlue">
+    <Box bg={theme.colors.custom[4]}>
       <Container p="xl">
         <Group justify="space-between" pb="lg">
           <Title>Contact</Title>

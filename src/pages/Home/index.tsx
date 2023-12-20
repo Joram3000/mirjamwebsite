@@ -8,18 +8,19 @@ import {
   Button,
   Image,
   SimpleGrid,
+  useMantineTheme,
 } from "@mantine/core";
 
 import Footer from "../../components/footer/footer.tsx";
-
 import SmallCard from "../../components/smallCard";
 import Statement from "../../components/statement";
-
 import Mirjam6 from "../../assets/images/mirjam6.jpg";
 import cirkels from "../../assets/images/cirkels.png";
 import iconnetje from "../../assets/svg/icoontjes (1).png";
 
 const MirjamKroonHomepage: React.FC = () => {
+  const theme = useMantineTheme();
+
   const cardContent = [
     {
       icon: iconnetje,
@@ -43,7 +44,7 @@ const MirjamKroonHomepage: React.FC = () => {
 
   return (
     <>
-      <Box bg="beige">
+      <Box bg={theme.colors.custom[1]}>
         <Container>
           <Stack w="50%">
             <Title>Anders kijken naar samenwerkingsvraagstukken</Title>
@@ -54,15 +55,13 @@ const MirjamKroonHomepage: React.FC = () => {
           </Stack>
           <Image src={cirkels} />
         </Container>
-      </Box>
 
-      <Statement
-        text="To observe the system is to change it"
-        subText="Niels Bohr"
-        color="blue"
-      />
+        <Statement
+          text="To observe the system is to change it"
+          subText="Niels Bohr"
+          color={theme.colors.custom[2]}
+        />
 
-      <Box bg="beige">
         <Container p="xl">
           <Stack align="flex-start">
             <Title w="50%">
@@ -123,7 +122,7 @@ const MirjamKroonHomepage: React.FC = () => {
         </Container>
       </Box>
 
-      <Box bg="beige">
+      <Box bg={theme.colors.custom[1]}>
         <Container p="xl">
           <Title pb="xl">Klant Ervaringen</Title>
 
