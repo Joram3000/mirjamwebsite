@@ -1,5 +1,6 @@
 import "@mantine/core/styles.css";
-import { createTheme, MantineProvider } from "@mantine/core";
+import theme from "./styles/mantine-theme";
+import { MantineProvider } from "@mantine/core";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/layout";
 import MirjamKroonHomepage from "./pages/Home";
@@ -22,12 +23,6 @@ const router = createHashRouter([
     ],
   },
 ]);
-
-const theme = createTheme({
-  fontFamily: "Verdana, sans-serif",
-  primaryColor: "lime",
-  defaultRadius: 0,
-});
 
 function App() {
   return (

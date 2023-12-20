@@ -1,11 +1,16 @@
 import { createTheme } from "@mantine/core";
 
 const theme = createTheme({
-  fontFamily: "Verdana, sans-serif",
+  fontFamily: "Inter, sans-serif", // FONT KLOPT NOG NIET
   primaryColor: "lime",
   defaultRadius: 0,
   colors: {
-    cta: [
+    custom: [
+      "#008080",
+      "#F2F3ED",
+      "#024D7B",
+      "#8BC53E",
+      "#024D7B",
       "#FFEEDF",
       "#F8D7BF",
       "#F3BD96",
@@ -22,11 +27,11 @@ const theme = createTheme({
     Anchor: {
       styles: (theme: {
         colors: {
-          brand: any[];
+          custom: string[];
         };
       }) => ({
         root: {
-          color: theme.colors.brand[1],
+          color: "white",
         },
       }),
     },
