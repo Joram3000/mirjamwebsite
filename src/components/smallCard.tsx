@@ -1,4 +1,4 @@
-import { Button, Stack, Text, Title, Image, Card } from "@mantine/core";
+import { Button, Stack, Text, Title, Image } from "@mantine/core";
 
 type card = {
   icon: string;
@@ -13,17 +13,15 @@ interface smallCardProps {
 
 const SmallCard: React.FC<smallCardProps> = ({ card }) => {
   return (
-    <Card withBorder bg="none">
-      <Stack align="center" h="100%">
-        <Image src={card.icon} w={100} h={100} />
-        <Title>{card.title}</Title>
+    <Stack align="center" h="100%">
+      <Image src={card.icon} w={100} h={100} />
+      <Title>{card.title}</Title>
 
-        <Stack h="100%" justify="space-between">
-          <Text ta="center">{card.text}</Text>
-          <Button>{card.buttonText}</Button>
-        </Stack>
+      <Stack h="100%" justify="space-between">
+        <Text ta="center">{card.text}</Text>
+        <Button>{card.buttonText}</Button>
       </Stack>
-    </Card>
+    </Stack>
   );
 };
 
