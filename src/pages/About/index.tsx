@@ -9,10 +9,8 @@ import {
   Button,
   useMantineTheme,
 } from "@mantine/core";
-import Footer from "../../components/footer/footer.tsx";
 import Statement from "../../components/statement";
 import PeopleCard from "../../components/peopleCard";
-
 import Mirjam6 from "../../assets/images/mirjam6.jpg";
 import Tree from "../../assets/images/Tree.jpg";
 import BesidesWork from "../../assets/images/besidesWork.jpg";
@@ -163,7 +161,7 @@ const MirjamKroonAbout: React.FC = () => {
           </Group>
         </Container>
       </Box>
-      <Box bg="beige">
+      <Box bg={theme.colors.custom[1]}>
         <Container p="xl">
           <Title>Over Mirjam</Title>
           <Text pb="lg">
@@ -221,7 +219,6 @@ const MirjamKroonAbout: React.FC = () => {
           </Stack>
         </Container>
       </Box>
-      <Footer />
     </>
   );
 };

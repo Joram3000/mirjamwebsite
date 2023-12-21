@@ -8,19 +8,16 @@ import {
   Image,
   Button,
   SimpleGrid,
+  useMantineTheme,
 } from "@mantine/core";
-import Footer from "../../components/footer/footer.tsx";
 import Statement from "../../components/statement";
-
-import Mirjam6 from "../../assets/images/mirjam6.jpg";
-import Tree from "../../assets/images/Tree.jpg";
 import IMG_4864 from "../../assets/images/IMG_4864.jpg";
-import BesidesWork from "../../assets/images/besidesWork.jpg";
 
 const MirjamKroonCoaching: React.FC = () => {
+  const theme = useMantineTheme();
   return (
     <>
-      <Box bg="beige">
+      <Box bg={theme.colors.custom[1]}>
         <Container p="xl">
           <Stack align="center">
             <Title>Coaching</Title>
@@ -222,8 +219,6 @@ const MirjamKroonCoaching: React.FC = () => {
           </SimpleGrid>
         </Container>
       </Box>
-
-      <Footer />
     </>
   );
 };

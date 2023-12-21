@@ -1,6 +1,7 @@
 import { AppShell } from "@mantine/core";
 import NavbarNew from "../navbar/indexnew";
 import { Outlet } from "react-router-dom";
+import Footer from "../footer/footer";
 
 const Layout: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const Layout: React.FC = () => {
 
       <AppShell.Main>
         <Outlet />
+        <Footer />
       </AppShell.Main>
     </AppShell>
   );

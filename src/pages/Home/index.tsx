@@ -11,7 +11,6 @@ import {
   useMantineTheme,
 } from "@mantine/core";
 
-import Footer from "../../components/footer/footer.tsx";
 import SmallCard from "../../components/smallCard";
 import Statement from "../../components/statement";
 import Mirjam6 from "../../assets/images/mirjam6.jpg";
@@ -160,8 +159,6 @@ const MirjamKroonHomepage: React.FC = () => {
           </SimpleGrid>
         </Container>
       </Box>
-
-      <Footer />
     </>
   );
 };
