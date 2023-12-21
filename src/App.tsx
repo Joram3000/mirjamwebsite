@@ -7,6 +7,8 @@ import MirjamKroonHomepage from "./pages/Home";
 import MirjamKroonAbout from "./pages/About";
 import ErrorPage from "./pages/Error";
 import MirjamKroonCoaching from "./pages/Coaching";
+import MirjamKroonContact from "./pages/Contact";
+import MirjamKroonTraining from "./pages/Training";
 
 const router = createHashRouter([
   {
@@ -18,8 +20,9 @@ const router = createHashRouter([
       { path: "/*", element: <MirjamKroonHomepage /> },
       { path: "/about", element: <MirjamKroonAbout /> },
       { path: "/coaching", element: <MirjamKroonCoaching /> },
-      { path: "/training", element: <MirjamKroonCoaching /> },
+      { path: "/training", element: <MirjamKroonTraining /> },
       { path: "/systeemspel", element: <MirjamKroonCoaching /> },
+      { path: "/contact", element: <MirjamKroonContact /> },
     ],
   },
 ]);
