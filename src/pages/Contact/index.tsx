@@ -17,7 +17,7 @@ const MirjamKroonContact: React.FC = () => {
 
   return (
     <>
-      <Box bg={theme.colors.custom[1]}>
+      <Box c={theme.colors.custom[3]}>
         <Container p="xl">
           <Title ta="center">Contact</Title>
           <Group grow>

@@ -22,7 +22,7 @@ const MirjamKroonSysteemspel: React.FC = () => {
         </Container>
       </Box>
 
-      <Box bg="beige">
+      {/* <Box bg="beige">
         <Container p="xl">
           <Group grow align="flex-start">
             <Image src={IMG_4864} />
@@ -39,10 +39,10 @@ const MirjamKroonSysteemspel: React.FC = () => {
             </Stack>
           </Group>
         </Container>
-      </Box>
+      </Box> */}
 
       <Box bg="darkGreen">
-        <Container p="xl">
+        {/* <Container p="xl">
           <Title>
             Voor persoonlijke coaching begeleid ik je graag op thema’s als:
           </Title>
@@ -73,7 +73,7 @@ const MirjamKroonSysteemspel: React.FC = () => {
             </strong>{" "}
             En daar kunnen veel soorten vragen onder vallen.
           </Text>
-        </Container>
+        </Container> */}
       </Box>
     </>
   );

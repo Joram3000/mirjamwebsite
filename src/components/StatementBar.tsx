@@ -1,18 +1,14 @@
-import { Box, Stack, Text, Title } from "@mantine/core";
+import { Box, Stack, Text, Title, useMantineTheme } from "@mantine/core";
 
 interface StatementBarProps {
   text: string;
   subText: string;
-  color?: string;
 }
 
-const StatementBar: React.FC<StatementBarProps> = ({
-  text,
-  subText,
-  color,
-}) => {
+const StatementBar: React.FC<StatementBarProps> = ({ text, subText }) => {
+  const theme = useMantineTheme();
   return (
-    <Box p="xl" bg={color ?? "orange"}>
+    <Box p="xl" bg={theme.colors.custom[2]} c={theme.colors.custom[6]}>
       <Stack align="center">
         <Title>{text}</Title>
         <Text>{subText}</Text>

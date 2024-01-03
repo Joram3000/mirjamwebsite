@@ -17,17 +17,17 @@ const MirjamKroonCoaching: React.FC = () => {
   const theme = useMantineTheme();
   return (
     <>
-      <Box bg={theme.colors.custom[1]}>
+      <Box>
         <Container p="xl">
-          <Stack align="center">
+          <Stack align="center" c={theme.colors.custom[1]}>
             <Title>Coaching</Title>
             <Title h={3}>Persoonlijke coaching & teamcoaching</Title>
           </Stack>
         </Container>
       </Box>
 
-      <Box bg="beige">
-        <Container p="xl">
+      <Box bg="white">
+        <Container p="xl" c={theme.colors.custom[1]}>
           <Group grow align="flex-start">
             <Image src={IMG_4864} />
             <Stack>
@@ -48,11 +48,13 @@ const MirjamKroonCoaching: React.FC = () => {
       <Statement
         text="“Kleine veranderingen kunnen groots effect hebben”"
         subText="Joep Choy"
-        color="blue"
       />
-      <Statement text="" subText="" color="darkBlue" />
+      <Statement
+        text="hoi ik ben een waterplaatje"
+        subText="hoi ik ben een waterplaatje"
+      />
 
-      <Box bg="beige">
+      <Box c={theme.colors.custom[1]}>
         <Container p="xl">
           <Title>Teamcoaching</Title>
           <Title>"The system in the room"</Title>
@@ -94,7 +96,7 @@ const MirjamKroonCoaching: React.FC = () => {
         </Container>
       </Box>
 
-      <Box bg="darkGreen">
+      <Box bg={theme.colors.custom[3]} c="white">
         <Container p="xl">
           <Title>
             Voor persoonlijke coaching begeleid ik je graag op thema’s als:
@@ -129,8 +131,8 @@ const MirjamKroonCoaching: React.FC = () => {
         </Container>
       </Box>
 
-      <Box bg="beige">
-        <Container p="xl">
+      <Box>
+        <Container p="xl" c={theme.colors.custom[3]}>
           <Title>Hoe zou een persoonlijk coachtraject eruit kunnen zien?</Title>
 
           <Text>
@@ -153,12 +155,12 @@ const MirjamKroonCoaching: React.FC = () => {
       </Box>
 
       <Box>
-        <Title pb="xl" ta="center" bg="beige">
+        <Title pb="xl" ta="center" c={theme.colors.custom[3]}>
           Tools die kunnen worden ingezet:
         </Title>
-        <Container p="xl">
+        <Container p="xl" c="white">
           <Group grow>
-            <Stack>
+            <Stack bg={theme.colors.custom[3]} c="white">
               <Title>Insights Discovery®</Title>
               <Text>
                 Een van de instrumenten die kunnen helpen bij het elkaar beter
@@ -182,7 +184,7 @@ const MirjamKroonCoaching: React.FC = () => {
                 zwaktes van het team.
               </Text>
             </Stack>
-            <Stack bg="darkGreen">
+            <Stack bg={theme.colors.custom[2]}>
               <Title>Myers-Briggs Type-indicator</Title>
               <Text>
                 Ook de Myers-Briggs Type-indicator (step 2) is net zoals de
@@ -204,9 +206,9 @@ const MirjamKroonCoaching: React.FC = () => {
         </Container>
       </Box>
 
-      <Box bg="beige">
-        <Container p="xl">
-          <Title pb="xl">Klant Ervaringen</Title>
+      <Box>
+        <Container p="xl" c={theme.colors.custom[3]}>
+          <Title pb="xl">Reviews</Title>
 
           <SimpleGrid cols={{ base: 1, sm: 2 }}>
             <Stack justify="space-between">

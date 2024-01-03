@@ -11,6 +11,7 @@ const theme = createTheme({
       "#024D7B", // darkblue
       "#008080", // ziekenhuis groen
       "#8BC53E", //limey
+      "#edf7f6", //white?
 
       "#FFEEDF",
       "#F8D7BF",

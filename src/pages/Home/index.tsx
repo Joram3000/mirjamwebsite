@@ -15,26 +15,28 @@ import SmallCard from "../../components/smallCard";
 import Statement from "../../components/StatementBar";
 import Mirjam6 from "../../assets/images/mirjam6.jpg";
 import cirkels from "../../assets/images/cirkels.png";
-import iconnetje from "../../assets/svg/icoontjes (1).png";
+import systeemspel from "../../assets/svg/systeemspel.png";
+import teamcoaching from "../../assets/svg/teamcoaching.png";
+import training from "../../assets/svg/training.png";
 
 const MirjamKroonHomepage: React.FC = () => {
   const theme = useMantineTheme();
 
   const cardContent = [
     {
-      icon: iconnetje,
+      icon: teamcoaching,
       title: "(Team)coaching",
       text: "‘The system in the room’ onderzoeken. Niet praten over ‘hoe het zou moeten zijn’, maar samen exploreren en het moedige gesprek leren voeren. Samen ontdekken hoe je effectiever wordt.",
       buttonText: "Bekijk coaching",
     },
     {
-      icon: iconnetje,
+      icon: training,
       title: "Training",
       text: "Diverse trainingen die jou of het team helpen impact te vergroten door middel van betere communicatie.",
       buttonText: "Bekijk trainingen",
     },
     {
-      icon: iconnetje,
+      icon: systeemspel,
       title: "Systeemspel",
       text: "Hoe stoppen we met het herhalen van patronen en kunnen we leren kijken naar de behoefte en bedoeling die erachter schuilgaat? Het systeemspel is een leuke manier om anders te leren kijken.",
       buttonText: "Bekijk systeemspel ",
@@ -58,7 +60,6 @@ const MirjamKroonHomepage: React.FC = () => {
         <Statement
           text="To observe the system is to change it"
           subText="Niels Bohr"
-          color={theme.colors.custom[2]}
         />
 
         <Container p="xl">
@@ -116,7 +117,7 @@ const MirjamKroonHomepage: React.FC = () => {
 
             <SimpleGrid cols={{ base: 1, sm: 3 }}>
               {cardContent.map((card) => (
-                <SmallCard card={card} />
+                <SmallCard key={card.title} card={card} />
               ))}
             </SimpleGrid>
           </Stack>

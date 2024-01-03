@@ -73,11 +73,7 @@ const MirjamKroonAbout: React.FC = () => {
           </Group>
         </Container>
 
-        <Statement
-          text="“Ik word ik door jij”"
-          subText="Martin Büber"
-          color={theme.colors.custom[2]}
-        />
+        <Statement text="“Ik word ik door jij”" subText="Martin Büber" />
 
         <Container p="xl" c={theme.colors.custom[3]}>
           <Title pb="xl">Waar kun je me voor vragen?</Title>

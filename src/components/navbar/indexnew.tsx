@@ -2,7 +2,6 @@ import {
   Group,
   Burger,
   Image,
-  Text,
   Button,
   Anchor,
   useMantineTheme,
@@ -47,8 +46,9 @@ const NavbarNew: React.FC = () => {
         <Anchor c={theme.colors.custom[1]} href="/#/systeemspel">
           Systeemspel
         </Anchor>
-
-        <Button>Contact Opnemen</Button>
+        <Anchor c={theme.colors.custom[1]} href="/#/contact">
+          <Button>Contact Opnemen</Button>
+        </Anchor>
       </Group>
     </Group>
   );
