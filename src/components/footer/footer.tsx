@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
         </Group>
 
         {contactGegevens.map((gegeven) => (
-          <Text>
+          <Text key={gegeven}>
             <li>{gegeven}</li>
           </Text>
         ))}

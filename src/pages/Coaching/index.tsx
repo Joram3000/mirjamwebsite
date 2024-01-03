@@ -31,7 +31,6 @@ const MirjamKroonCoaching: React.FC = () => {
           <Group grow align="flex-start">
             <Image src={IMG_4864} />
             <Stack>
-              <Title>En naast werk?</Title>
               <Text pb="lg">
                 Obstakels op je weg, herhalende patronen in de interactie met
                 anderen? Gedrag veranderen is niet eenvoudig.
@@ -57,7 +56,7 @@ const MirjamKroonCoaching: React.FC = () => {
         <Container p="xl">
           <Title>Teamcoaching</Title>
           <Title>"The system in the room"</Title>
-          <Text>
+          <Text pb="md">
             Het lijkt wel alsof we na de coronatijd met nieuwe teamvragen en
             leiderschap-issues te maken hebben gekregen. Leidinggeven op
             afstand, hoe houden we cohesie? Wat verwachten we wel en niet van
@@ -69,19 +68,19 @@ const MirjamKroonCoaching: React.FC = () => {
             hard blijft werken, maar dat het team gaat groeien in
             verantwoordelijkheid nemen..
           </Text>
-          <Text>
+          <Text pb="md">
             Bij teamcoaching gaat het echt om “the system in the room”. Niet
             praten over “hoe het zou moeten zijn”, maar samen exploreren en het
             moedige gesprek leren voeren. Samen ontdekken hoe je effectiever
             wordt. Hoe je onuitgesproken zaken die onder de tafel verdwijnen
             maar wel invloed hebben, boven de tafel leert bespreken.
           </Text>
-          <Text>
+          <Text pb="md">
             Teamcoaching wordt vaak ingezet als er gedoe is, maar het kan ook
             zinvol zijn om eens te kijken hoe jullie als team de dingen doen en
             wat daar beter in kan.
           </Text>
-          <Text>
+          <Text pb="md">
             Mijn aanpak is een systemische, dat wil zeggen dat ik jullie help
             kijken naar wat er tussen mensen gebeurt. Onze eerste manier van
             kijken is vaak lineair met als vraag: wie is waar de oorzaak van?
@@ -100,15 +99,32 @@ const MirjamKroonCoaching: React.FC = () => {
           <Title>
             Voor persoonlijke coaching begeleid ik je graag op thema’s als:
           </Title>
-          <Text>
-            Met meer ontspanning en zelfvertrouwen je plek innemen Effectiever
-            communiceren Helder krijgen waar je eigen hart sneller van gaat
-            kloppen Verlies verwerken
-          </Text>
+          <ul>
+            <li>
+              <Text>
+                Met meer ontspanning en zelfvertrouwen je plek innemen
+              </Text>
+            </li>
+            <li>
+              <Text>Effectiever communiceren</Text>
+            </li>
+            <li>
+              <Text>
+                Helder krijgen waar je eigen hart sneller van gaat kloppen
+              </Text>
+            </li>
+            <li>
+              <Text>Verlies verwerken</Text>
+            </li>
+          </ul>
+
           <Text>
             Voorwaarde om een coachtraject te laten werken is een eigen
-            leervraag. Waar zit de spanning tussen waar je nu bent en waar je
-            heen wilt? En daar kunnen veel soorten vragen onder vallen.
+            leervraag.
+            <strong>
+              Waar zit de spanning tussen waar je nu bent en waar je heen wilt?
+            </strong>{" "}
+            En daar kunnen veel soorten vragen onder vallen.
           </Text>
         </Container>
       </Box>
@@ -118,11 +134,18 @@ const MirjamKroonCoaching: React.FC = () => {
           <Title>Hoe zou een persoonlijk coachtraject eruit kunnen zien?</Title>
 
           <Text>
-            Een eerste gesprek is een gesprek waarbij we wederzijds kijken of er
-            voldoende klik is en onderzoeken we samen de coachingsvraag. Een
-            traject beslaat meestal 5 tot 7 sessies, soms meer. Tussen de
-            sessies ga je verder met je eigen leerproces aan de hand van
-            experimenten die je gaat uittesten in de praktijk.
+            <ul>
+              <li>
+                Een eerste gesprek is een gesprek waarbij we wederzijds kijken
+                of er voldoende klik is en onderzoeken we samen de
+                coachingsvraag.
+              </li>
+              <li>Een traject beslaat meestal 5 tot 7 sessies, soms meer.</li>
+              <li>
+                Tussen de sessies ga je verder met je eigen leerproces aan de
+                hand van experimenten die je gaat uittesten in de praktijk.
+              </li>
+            </ul>
           </Text>
 
           <Button>Vraag vrijblijvend naar de mogelijkheden</Button>
