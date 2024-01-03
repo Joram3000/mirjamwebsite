@@ -44,7 +44,10 @@ const NavbarNew: React.FC = () => {
         <Anchor c={theme.colors.custom[2]} href="/#/training">
           Training
         </Anchor>
-        <Text c={theme.colors.custom[2]}>Systeemspel</Text>
+        <Anchor c={theme.colors.custom[2]} href="/#/systeemspel">
+          Systeemspel
+        </Anchor>
+
         <Button>Contact Opnemen</Button>
       </Group>
     </Group>

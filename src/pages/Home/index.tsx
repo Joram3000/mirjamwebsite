@@ -12,7 +12,7 @@ import {
 } from "@mantine/core";
 
 import SmallCard from "../../components/smallCard";
-import Statement from "../../components/statement";
+import Statement from "../../components/StatementBar";
 import Mirjam6 from "../../assets/images/mirjam6.jpg";
 import cirkels from "../../assets/images/cirkels.png";
 import iconnetje from "../../assets/svg/icoontjes (1).png";

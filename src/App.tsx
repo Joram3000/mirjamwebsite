@@ -9,6 +9,7 @@ import ErrorPage from "./pages/Error";
 import MirjamKroonCoaching from "./pages/Coaching";
 import MirjamKroonContact from "./pages/Contact";
 import MirjamKroonTraining from "./pages/Training";
+import MirjamKroonSysteemspel from "./pages/Systeemspel";
 
 const router = createHashRouter([
   {
@@ -21,7 +22,7 @@ const router = createHashRouter([
       { path: "/about", element: <MirjamKroonAbout /> },
       { path: "/coaching", element: <MirjamKroonCoaching /> },
       { path: "/training", element: <MirjamKroonTraining /> },
-      { path: "/systeemspel", element: <MirjamKroonCoaching /> },
+      { path: "/systeemspel", element: <MirjamKroonSysteemspel /> },
       { path: "/contact", element: <MirjamKroonContact /> },
     ],
   },

@@ -10,7 +10,7 @@ import {
   SimpleGrid,
   useMantineTheme,
 } from "@mantine/core";
-import Statement from "../../components/statement";
+import Statement from "../../components/StatementBar";
 import IMG_4864 from "../../assets/images/IMG_4864.jpg";
 
 const MirjamKroonCoaching: React.FC = () => {

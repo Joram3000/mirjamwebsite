@@ -1,12 +1,16 @@
 import { Box, Stack, Text, Title } from "@mantine/core";
 
-interface StatementProps {
+interface StatementBarProps {
   text: string;
   subText: string;
   color?: string;
 }
 
-const Statement: React.FC<StatementProps> = ({ text, subText, color }) => {
+const StatementBar: React.FC<StatementBarProps> = ({
+  text,
+  subText,
+  color,
+}) => {
   return (
     <Box p="xl" bg={color ?? "orange"}>
       <Stack align="center">
@@ -17,4 +21,4 @@ const Statement: React.FC<StatementProps> = ({ text, subText, color }) => {
   );
 };
 
-export default Statement;
+export default StatementBar;

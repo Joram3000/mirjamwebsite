@@ -9,7 +9,7 @@ import {
   Button,
   useMantineTheme,
 } from "@mantine/core";
-import Statement from "../../components/statement";
+import Statement from "../../components/StatementBar";
 import PeopleCard from "../../components/peopleCard";
 import Mirjam6 from "../../assets/images/mirjam6.jpg";
 import Tree from "../../assets/images/Tree.jpg";
