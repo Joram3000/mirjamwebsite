@@ -13,20 +13,21 @@ import {
 import Statement from "../../components/StatementBar";
 import IMG_4864 from "../../assets/images/IMG_4864.jpg";
 
+
 const MirjamKroonCoaching: React.FC = () => {
   const theme = useMantineTheme();
   return (
     <>
       <Box>
-        <Container p="xl">
-          <Stack align="center" c={theme.colors.custom[1]}>
-            <Title>Coaching</Title>
-            <Title h={3}>Persoonlijke coaching & teamcoaching</Title>
-          </Stack>
-        </Container>
+        <Stack align="center" c={theme.colors.custom[1]} mb="xl">
+          <Title>Coaching</Title>
+          <Title pb="xl" h={3}>
+            Persoonlijke coaching & teamcoaching
+          </Title>
+        </Stack>
       </Box>
 
-      <Box bg="white">
+      <Box>
         <Container p="xl" c={theme.colors.custom[1]}>
           <Group grow align="flex-start">
             <Image src={IMG_4864} />
@@ -43,18 +44,16 @@ const MirjamKroonCoaching: React.FC = () => {
             </Stack>
           </Group>
         </Container>
-      </Box>
 
-      <Statement
-        text="“Kleine veranderingen kunnen groots effect hebben”"
-        subText="Joep Choy"
-      />
-      <Statement
-        text="hoi ik ben een waterplaatje"
-        subText="hoi ik ben een waterplaatje"
-      />
+        <Statement
+          text="“Kleine veranderingen kunnen groots effect hebben”"
+          subText="Joep Choy"
+        />
+        <Statement
+          text="hoi ik ben een waterplaatje"
+          subText="hoi ik ben een waterplaatje"
+        />
 
-      <Box c={theme.colors.custom[1]}>
         <Container p="xl">
           <Title>Teamcoaching</Title>
           <Title>"The system in the room"</Title>
@@ -153,14 +152,14 @@ const MirjamKroonCoaching: React.FC = () => {
           <Button>Vraag vrijblijvend naar de mogelijkheden</Button>
         </Container>
       </Box>
+      <Title pb="xl" ta="center" c={theme.colors.custom[3]}>
+        Tools die kunnen worden ingezet:
+      </Title>
 
-      <Box>
-        <Title pb="xl" ta="center" c={theme.colors.custom[3]}>
-          Tools die kunnen worden ingezet:
-        </Title>
-        <Container p="xl" c="white">
-          <Group grow>
-            <Stack bg={theme.colors.custom[3]} c="white">
+      <Box bg={theme.colors.custom[3]} c="white">
+        <Container p="xl">
+          <Group bg={theme.colors.custom[3]} grow>
+            <Stack c="white">
               <Title>Insights Discovery®</Title>
               <Text>
                 Een van de instrumenten die kunnen helpen bij het elkaar beter

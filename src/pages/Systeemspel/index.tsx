@@ -6,74 +6,124 @@ import {
   Group,
   Stack,
   Image,
+  Button,
   useMantineTheme,
 } from "@mantine/core";
-import IMG_4864 from "../../assets/images/IMG_4864.jpg";
+import fotowater from "../../assets/images/fotowater.png";
+import IMG_3543 from "../../assets/images/IMG_3543.jpg";
 
 const MirjamKroonSysteemspel: React.FC = () => {
   const theme = useMantineTheme();
   return (
     <>
-      <Box bg={theme.colors.custom[1]}>
+      <Box>
+        <Title ta="center">Systeemspel</Title>
+
+        <Image src={fotowater} w="100%" h="50vh" />
+      </Box>
+
+      <Box bg={theme.colors.custom[0]} c={theme.colors.custom[1]}>
         <Container p="xl">
-          <Stack align="center">
-            <Title>Systeemspel</Title>
-          </Stack>
+          <Text pb="xl">
+            Bij het spelen van het systeemspel ga je aan de hand van een
+            verhaal, in de vorm van een film, leren om met een systeembril te
+            kijken naar samenwerkingsvraagstukken. En krijg je manieren
+            aangereikt om de vastgelopen situatie weer vlot te trekken.
+          </Text>
+
+          <Group grow>
+            <Stack>
+              <Text>
+                Om je eigen deskundigheid te bevorderen vanuit bijvoorbeeld een
+                rol als HR-manager of trainer, kun je mij inhuren om het spel
+                samen te spelen.
+              </Text>
+              <Text>
+                Het spel waarbinnen je je eigen kennis ontwikkelt over
+                systemisch kijken duurt een dag. Met eigen casussen de geleerde
+                kennis toepassen geeft een meerwaarde.
+              </Text>
+            </Stack>
+            <Text>
+              Omdat ik vanuit meerdere systemische achtergronden opgeleid ben
+              (Hellingerwerk, Marijke Spansjersbergen), breng ik een rijk
+              gevulde gereedschapskist mee. De wereld wordt er niet eenvoudiger
+              maar wel veel rijker van als we doorkrijgen hoeveel samenhang er
+              is tussen goede doelen stellen en goede relaties ontwikkelen. Hoe
+              patronen zich vaak herhalen en ook te veranderen zijn.
+            </Text>
+          </Group>
         </Container>
       </Box>
 
-      {/* <Box bg="beige">
-        <Container p="xl">
-          <Group grow align="flex-start">
-            <Image src={IMG_4864} />
+      <Box bg={theme.colors.custom[3]} c="white">
+        <Container>
+          <Group grow align="flex-start" h="100%">
             <Stack>
+              <Title py="xl" order={2}>
+                Anders leren kijken
+              </Title>
               <Text pb="lg">
-                Obstakels op je weg, herhalende patronen in de interactie met
-                anderen? Gedrag veranderen is niet eenvoudig.
+                We zijn zo gewend om lineair te kijken. "Wie"of "wat" is het
+                probleem, en hoe lossen we het op. De realiteit is complexer. De
+                systeembenadering helpt ons om die complexiteit recht te doen en
+                om op onderzoek uit te gaan aan de hand van een aantal
+                kapstokken. We kennen allemaal de "hoe meer de een..... des te
+                meer de ander", elkaar versterkende patronen. Hoe meer de grote
+                lijnen geschetst worden, hoe meer details er toe doen. Hoe
+                harder er een bepaalde mening verkondigd wordt, hoe meer de
+                neiging tot dempen ingezet wordt. Zo'n vaart zal het toch ook
+                wel niet lopen... en zo kunnen patronen zich blijven herhalen.
               </Text>
               <Text pb="lg">
-                Wanneer er maatwerk nodig is, loop ik graag een tijdje mee. In
-                mijn rol als coach zie ik mezelf als klankbord, uitdager,
-                spiegel en kennisbron.
+                Volgens de systeembenadering is het antwoord op de vraag: ‘Wat
+                gaat helpen in het systeem zelf’ te vinden. Elk gedrag is
+                logisch, hoe stoppen we met het blijven herhalen van patronen en
+                kunnen we leren kijken naar de behoefte en bedoeling die
+                erachter schuilgaat? Weg van oorzaak gevolg denken, op zoek naar
+                het ontschuldigen van die patronen omdat ze zo logisch zijn.
               </Text>
+              <Text pb="lg">
+                "It's not personal, it's the system” Taal ontwikkelen, woorden
+                vinden voor wat zich afspeelt tussen mensen, dat is het
+                gereedschap voor een systeemdenker. Het systeemspel is een leuke
+                manier om basiskennis op te doen om anders te leren kijken. Heb
+                je interesse om hier meer over te leren en ontdekken? Ik vertel
+                je er graag meer over.
+              </Text>
+
+              <Button>Vraag vrijblijvend naar de mogelijkheden</Button>
             </Stack>
+
+            <Image src={IMG_3543} />
           </Group>
         </Container>
-      </Box> */}
 
-      <Box bg="darkGreen">
-        {/* <Container p="xl">
-          <Title>
-            Voor persoonlijke coaching begeleid ik je graag op thema’s als:
-          </Title>
-          <ul>
-            <li>
+        <Box c={theme.colors.custom[1]}>
+          <Container>
+            <Title>Review</Title>
+            <Stack justify="space-between">
               <Text>
-                Met meer ontspanning en zelfvertrouwen je plek innemen
+                Mirjam is een fijne trainer. Ze heeft veel kennis en weet het op
+                een ontspannen manier over te brengen. Mirjam wil waarde
+                toevoegen. Pas als ze denkt dat ze dat kan, besluit ze in te
+                stappen. Ze denkt mee, adviseert. Ze zet zichzelf daarbij niet
+                op de voorgrond, ze is dienend aan het proces. Mirjam varieert
+                in haar werkvormen, prikkelt al in de check-in, zet een
+                systemisch spel in en dompel je in verschillende oefeningen.
+                Spelenderwijs kom je tot belangrijke gesprekken en essentiële
+                inzichten. Hiermee raakt ze hoofd en hart. Want ze leert je
+                anders kijken, ze laat je ervaren wat er in de interactie
+                gebeurt en wat jouw aandeel daarin is. Ontschuldigend, zoals het
+                systemisch betaamt. Waardevol.
               </Text>
-            </li>
-            <li>
-              <Text>Effectiever communiceren</Text>
-            </li>
-            <li>
-              <Text>
-                Helder krijgen waar je eigen hart sneller van gaat kloppen
-              </Text>
-            </li>
-            <li>
-              <Text>Verlies verwerken</Text>
-            </li>
-          </ul>
 
-          <Text>
-            Voorwaarde om een coachtraject te laten werken is een eigen
-            leervraag.
-            <strong>
-              Waar zit de spanning tussen waar je nu bent en waar je heen wilt?
-            </strong>{" "}
-            En daar kunnen veel soorten vragen onder vallen.
-          </Text>
-        </Container> */}
+              <Stack style={{ borderLeft: "1px dotted green" }}>
+                <Text>Paul Hilhorst De Boer & Ritsema van Eck</Text>
+              </Stack>
+            </Stack>
+          </Container>
+        </Box>
       </Box>
     </>
   );

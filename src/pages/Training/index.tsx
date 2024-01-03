@@ -6,16 +6,18 @@ import {
   useMantineTheme,
   Text,
   Button,
+  Image,
 } from "@mantine/core";
+import plaatje from "../../assets/images/IMG_4552.jpg";
 
 const MirjamKroonTraining: React.FC = () => {
   const theme = useMantineTheme();
   return (
     <>
       <Box c={theme.colors.custom[1]}>
-        <Container p="xl">
-          <Title>Trainingen</Title>
-          <Text>Foto</Text>
+        <Title ta="center">Trainingen</Title>
+        <Image src={plaatje} w="100%" h="50vh" />
+        <Container>
           <Title>Wegen ontstaan, waar mensen samen gaan</Title>
           <Text>
             Het gaat bij trainingen steeds weer om het vergroten van impact door
