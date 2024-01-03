@@ -6,11 +6,12 @@ const theme = createTheme({
   defaultRadius: 0,
   colors: {
     custom: [
-      "#008080",
-      "#F2F3ED",
-      "#024D7B",
-      "#8BC53E",
-      "#024D7B",
+      "#F2F3ED", // broken white
+      "#024D7B", // blue
+      "#024D7B", // darkblue
+      "#008080", // ziekenhuis groen
+      "#8BC53E", //limey
+
       "#FFEEDF",
       "#F8D7BF",
       "#F3BD96",

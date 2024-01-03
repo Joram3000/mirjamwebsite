@@ -43,9 +43,9 @@ const MirjamKroonHomepage: React.FC = () => {
 
   return (
     <>
-      <Box bg={theme.colors.custom[1]}>
+      <Box>
         <Container>
-          <Stack w="50%">
+          <Stack w="50%" c={theme.colors.custom[2]}>
             <Title>Anders kijken naar samenwerkingsvraagstukken</Title>
             <Text>
               Training, coaching en systemische oefeningen voor teams en
@@ -62,7 +62,7 @@ const MirjamKroonHomepage: React.FC = () => {
         />
 
         <Container p="xl">
-          <Stack align="flex-start">
+          <Stack align="flex-start" c={theme.colors.custom[3]}>
             <Title w="50%">
               Werken met de spanning tussen verbinding en authenticiteit
             </Title>
@@ -96,14 +96,16 @@ const MirjamKroonHomepage: React.FC = () => {
 
               <Image src={Mirjam6} />
             </Group>
-            <Button variant="outline">Meer over Mirjam</Button>
+            <Button variant="outline" c={theme.colors.custom[3]}>
+              Meer over Mirjam
+            </Button>
           </Stack>
         </Container>
       </Box>
 
       <Box bg="white">
         <Container p="xl">
-          <Stack align="center">
+          <Stack align="center" c={theme.colors.custom[2]}>
             <Title>Waarvoor kun je bij mij terecht?</Title>
             <Text ta="center">
               Waar mensen samenwerken, valt veel te winnen wanneer er goed
@@ -121,7 +123,7 @@ const MirjamKroonHomepage: React.FC = () => {
         </Container>
       </Box>
 
-      <Box bg={theme.colors.custom[1]}>
+      <Box c={theme.colors.custom[1]}>
         <Container p="xl">
           <Title pb="xl">Klant Ervaringen</Title>
 

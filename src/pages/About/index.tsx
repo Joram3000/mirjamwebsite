@@ -58,8 +58,8 @@ const MirjamKroonAbout: React.FC = () => {
 
   return (
     <>
-      <Box bg={theme.colors.custom[1]}>
-        <Container>
+      <Box>
+        <Container c={theme.colors.custom[3]}>
           <Group align="center" justify="flex-end" grow>
             <Stack>
               <Title>Trainer en coach van groei- en verandertrajecten</Title>
@@ -79,7 +79,7 @@ const MirjamKroonAbout: React.FC = () => {
           color={theme.colors.custom[2]}
         />
 
-        <Container p="xl">
+        <Container p="xl" c={theme.colors.custom[3]}>
           <Title pb="xl">Waar kun je me voor vragen?</Title>
           <Text pb="xl">
             Waar mensen samenwerken, valt veel te winnen wanneer er goed
@@ -115,7 +115,7 @@ const MirjamKroonAbout: React.FC = () => {
         </Container>
       </Box>
 
-      <Box bg={theme.colors.custom[0]}>
+      <Box bg={theme.colors.custom[3]} c="white">
         <Container>
           <Group grow align="flex-start" h="100%">
             <Stack>
@@ -161,7 +161,7 @@ const MirjamKroonAbout: React.FC = () => {
           </Group>
         </Container>
       </Box>
-      <Box bg={theme.colors.custom[1]}>
+      <Box c={theme.colors.custom[3]}>
         <Container p="xl">
           <Title>Over Mirjam</Title>
           <Text pb="lg">
@@ -209,7 +209,7 @@ const MirjamKroonAbout: React.FC = () => {
         </Container>
       </Box>
 
-      <Box bg={theme.colors.custom[0]}>
+      <Box bg={theme.colors.custom[3]} c="white">
         <Container p="xl">
           <Title pb="xl">Samenwerkingspartners</Title>
           <Stack>

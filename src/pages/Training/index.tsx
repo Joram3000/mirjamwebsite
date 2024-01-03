@@ -12,7 +12,7 @@ const MirjamKroonTraining: React.FC = () => {
   const theme = useMantineTheme();
   return (
     <>
-      <Box bg={theme.colors.custom[1]}>
+      <Box c={theme.colors.custom[1]}>
         <Container p="xl">
           <Title>Trainingen</Title>
           <Text>Foto</Text>
@@ -58,8 +58,12 @@ const MirjamKroonTraining: React.FC = () => {
             </ul>
           </Text>
           <Button>Vraag vrijblijvend naar de mogelijkheden</Button>
-          <Title>Reviews</Title>
+        </Container>
+      </Box>
 
+      <Box bg="white" c={theme.colors.custom[1]}>
+        <Container>
+          <Title>Reviews</Title>
           <Stack justify="space-between">
             <Text>
               Niets dan lof! Wat een kundige en fijne vrouw! Rustige en niet

@@ -19,7 +19,7 @@ const NavbarNew: React.FC = () => {
       align="center"
       justify="space-between"
       h={100}
-      bg={theme.colors.custom[1]}
+      bg={theme.colors.custom[0]}
     >
       <Image src={logo} />
 
@@ -32,19 +32,19 @@ const NavbarNew: React.FC = () => {
       />
 
       <Group visibleFrom="lg" m="xl">
-        <Anchor c={theme.colors.custom[2]} href="/#/home">
+        <Anchor c={theme.colors.custom[1]} href="/#/home">
           Home
         </Anchor>
-        <Anchor c={theme.colors.custom[2]} href="/#/about">
+        <Anchor c={theme.colors.custom[1]} href="/#/about">
           Over Mirjam
         </Anchor>
-        <Anchor c={theme.colors.custom[2]} href="/#/coaching">
+        <Anchor c={theme.colors.custom[1]} href="/#/coaching">
           Coaching
         </Anchor>
-        <Anchor c={theme.colors.custom[2]} href="/#/training">
+        <Anchor c={theme.colors.custom[1]} href="/#/training">
           Training
         </Anchor>
-        <Anchor c={theme.colors.custom[2]} href="/#/systeemspel">
+        <Anchor c={theme.colors.custom[1]} href="/#/systeemspel">
           Systeemspel
         </Anchor>
 

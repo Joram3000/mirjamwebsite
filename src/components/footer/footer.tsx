@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <Box bg={theme.colors.custom[4]}>
+    <Box bg={theme.colors.custom[2]} c="white">
       <Container p="xl">
         <Group justify="space-between" pb="lg">
           <Title>Contact</Title>
