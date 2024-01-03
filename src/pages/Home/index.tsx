@@ -106,7 +106,7 @@ const MirjamKroonHomepage: React.FC = () => {
           <Stack align="center">
             <Title>Waarvoor kun je bij mij terecht?</Title>
             <Text ta="center">
-              Waar mensen samenwerken, valt veel te winnen... wanneer er goed
+              Waar mensen samenwerken, valt veel te winnen wanneer er goed
               gecommuniceerd wordt. Of dat nu in de financiële branche is, de
               overheid of de zware maakindustrie. Afstemmen, programma’s op maat
               maken in taal die aansluit, is kenmerkend voor mijn werkwijze.
