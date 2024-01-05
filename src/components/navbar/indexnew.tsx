@@ -3,23 +3,53 @@ import {
   Burger,
   Image,
   Button,
-  Anchor,
   useMantineTheme,
+  NavLink,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import logo from "../../assets/images/logo.png";
+import { useState } from "react";
 
 const NavbarNew: React.FC = () => {
   const theme = useMantineTheme();
   const [opened, { toggle }] = useDisclosure();
+  const [active, setActive] = useState(0);
+
+  const menuData = [
+    {
+      label: "home",
+      linkTo: "/home",
+    },
+    {
+      label: "Over Mirjam",
+      linkTo: "/about",
+    },
+    {
+      label: "Coaching",
+      linkTo: "/coaching",
+    },
+    {
+      label: "Training",
+      linkTo: "/training",
+    },
+    {
+      label: "Systeemspel",
+      linkTo: "/systeemspel",
+    },
+  ];
+
+  const menuItems = menuData.map((item, index) => (
+    <NavLink
+      href={item.linkTo}
+      key={item.label}
+      active={index === active}
+      label={item.label}
+      onClick={() => setActive(index)}
+    />
+  ));
 
   return (
-    <Group
-      align="center"
-      justify="space-between"
-      h={100}
-      bg={theme.colors.custom[0]}
-    >
+    <Group h={100} bg={theme.colors.custom[0]}>
       <Image src={logo} onClick={() => {}} />
 
       <Burger
@@ -29,26 +59,8 @@ const NavbarNew: React.FC = () => {
         size="sm"
         m="lg"
       />
-      <Group visibleFrom="lg" m="xl">
-        <Anchor c={theme.colors.custom[1]} href="/#/home">
-          Home
-        </Anchor>
-        <Anchor c={theme.colors.custom[1]} href="/#/about">
-          Over Mirjam
-        </Anchor>
-        <Anchor c={theme.colors.custom[1]} href="/#/coaching">
-          Coaching
-        </Anchor>
-        <Anchor c={theme.colors.custom[1]} href="/#/training">
-          Training
-        </Anchor>
-        <Anchor c={theme.colors.custom[1]} href="/#/systeemspel">
-          Systeemspel
-        </Anchor>
-        <Anchor c={theme.colors.custom[1]} href="/#/contact">
-          <Button>Contact Opnemen</Button>
-        </Anchor>
-      </Group>
+
+      <Group grow>{menuItems}</Group>
     </Group>
   );
 };

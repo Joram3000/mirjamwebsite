@@ -6,8 +6,8 @@ import Footer from "../footer/footer";
 const Layout: React.FC = () => {
   const theme = useMantineTheme();
   return (
-    <AppShell header={{ height: 100 }} bg={theme.colors.custom[0]}>
-      <AppShell.Header withBorder={false}>
+    <AppShell header={{ height: 100 }}>
+      <AppShell.Header withBorder={false} bg="red">
         <NavbarNew />
       </AppShell.Header>
 

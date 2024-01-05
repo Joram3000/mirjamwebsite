@@ -8,7 +8,7 @@ interface StatementBarProps {
 const StatementBar: React.FC<StatementBarProps> = ({ text, subText }) => {
   const theme = useMantineTheme();
   return (
-    <Box p="xl" bg={theme.colors.custom[2]} c={theme.colors.custom[6]}>
+    <Box p="xl" bg={theme.colors.custom[2]} c="white">
       <Stack align="center">
         <Title size="xxx-large">{text}</Title>
         <Text size="xl">{subText}</Text>

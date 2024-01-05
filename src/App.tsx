@@ -13,7 +13,7 @@ import MirjamKroonSysteemspel from "./pages/Systeemspel";
 
 const router = createBrowserRouter([
   {
-    path: "",
+    path: "/",
     element: <Layout />,
     errorElement: <ErrorPage />,
     children: [
