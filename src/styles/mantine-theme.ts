@@ -1,7 +1,7 @@
 import { createTheme } from "@mantine/core";
 
 const theme = createTheme({
-  fontFamily: "Inter, sans-serif", // FONT KLOPT NOG NIET
+  fontFamily: "Avenir, sans-serif", // FONT Moet AVENIR ZIJN
   primaryColor: "lime",
   defaultRadius: 0,
   colors: {
@@ -9,9 +9,9 @@ const theme = createTheme({
       "#F2F3ED", // broken white
       "#024D7B", // blue
       "#024D7B", // darkblue
-      "#008080", // ziekenhuis groen
-      "#8BC53E", //limey
-      "#edf7f6", //white?
+      "#008080", // donker groen
+      "#8BC53E", //fel groen
+      "#edf7f6", //lichtgroen?
 
       "#FFEEDF",
       "#F8D7BF",
@@ -26,12 +26,18 @@ const theme = createTheme({
     ],
   },
   components: {
+    Text: {
+      styles: {
+        h1: {
+          color: "green",
+          fontsize: "40px",
+
+          // Add any other styles you want to change for the <Title order={2}> component
+        },
+      },
+    },
     Anchor: {
-      styles: (theme: {
-        colors: {
-          custom: string[];
-        };
-      }) => ({
+      styles: () => ({
         root: {
           color: "white",
         },

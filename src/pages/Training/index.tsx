@@ -15,10 +15,12 @@ const MirjamKroonTraining: React.FC = () => {
   return (
     <>
       <Box c={theme.colors.custom[1]}>
-        <Title ta="center">Trainingen</Title>
+        <Title ta="center" order={1}>
+          Trainingen
+        </Title>
         <Image src={plaatje} w="100%" h="50vh" />
-        <Container>
-          <Title>Wegen ontstaan, waar mensen samen gaan</Title>
+        <Container p="xl">
+          <Title order={1}>Wegen ontstaan, waar mensen samen gaan</Title>
           <Text>
             Het gaat bij trainingen steeds weer om het vergroten van impact door
             middel van communicatie. De kracht van de stilte leren gebruiken,
@@ -63,9 +65,9 @@ const MirjamKroonTraining: React.FC = () => {
         </Container>
       </Box>
 
-      <Box bg="white" c={theme.colors.custom[1]}>
+      <Box bg="white" c={theme.colors.custom[1]} p="xl">
         <Container>
-          <Title>Reviews</Title>
+          <Title order={1}>Reviews</Title>
           <Stack justify="space-between">
             <Text>
               Niets dan lof! Wat een kundige en fijne vrouw! Rustige en niet

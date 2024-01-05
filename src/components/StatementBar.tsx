@@ -10,7 +10,7 @@ const StatementBar: React.FC<StatementBarProps> = ({ text, subText }) => {
   return (
     <Box p="xl" bg={theme.colors.custom[2]} c={theme.colors.custom[6]}>
       <Stack align="center">
-        <Title>{text}</Title>
+        <Title size={40}>{text}</Title>
         <Text>{subText}</Text>
       </Stack>
     </Box>

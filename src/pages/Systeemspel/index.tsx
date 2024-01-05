@@ -16,15 +16,14 @@ const MirjamKroonSysteemspel: React.FC = () => {
   const theme = useMantineTheme();
   return (
     <>
-      <Box>
-        <Title ta="center">Systeemspel</Title>
-
-        <Image src={fotowater} w="100%" h="50vh" />
-      </Box>
-
       <Box bg={theme.colors.custom[0]} c={theme.colors.custom[1]}>
+        <Title order={1} ta="center">
+          Systeemspel
+        </Title>
+        <Image src={fotowater} w="100%" h="50vh" />
+
         <Container p="xl">
-          <Text pb="xl">
+          <Text>
             Bij het spelen van het systeemspel ga je aan de hand van een
             verhaal, in de vorm van een film, leren om met een systeembril te
             kijken naar samenwerkingsvraagstukken. En krijg je manieren
@@ -32,7 +31,7 @@ const MirjamKroonSysteemspel: React.FC = () => {
           </Text>
 
           <Group grow>
-            <Stack>
+            <Stack p="xl">
               <Text>
                 Om je eigen deskundigheid te bevorderen vanuit bijvoorbeeld een
                 rol als HR-manager of trainer, kun je mij inhuren om het spel
@@ -57,10 +56,10 @@ const MirjamKroonSysteemspel: React.FC = () => {
       </Box>
 
       <Box bg={theme.colors.custom[3]} c="white">
-        <Container>
+        <Container p="xl">
           <Group grow align="flex-start" h="100%">
             <Stack>
-              <Title py="xl" order={2}>
+              <Title py="xl" order={1}>
                 Anders leren kijken
               </Title>
               <Text pb="lg">
@@ -92,16 +91,18 @@ const MirjamKroonSysteemspel: React.FC = () => {
                 je er graag meer over.
               </Text>
 
-              <Button>Vraag vrijblijvend naar de mogelijkheden</Button>
+              <Button my="xl">Vraag vrijblijvend naar de mogelijkheden</Button>
             </Stack>
 
             <Image src={IMG_3543} />
           </Group>
         </Container>
 
-        <Box c={theme.colors.custom[1]}>
+        <Box c={theme.colors.custom[1]} bg={theme.colors.custom[0]} py="xl">
           <Container>
-            <Title>Review</Title>
+            <Title order={1} ta="center" py="xl">
+              Review
+            </Title>
             <Stack justify="space-between">
               <Text>
                 Mirjam is een fijne trainer. Ze heeft veel kennis en weet het op

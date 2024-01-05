@@ -13,29 +13,26 @@ import {
 import Statement from "../../components/StatementBar";
 import IMG_4864 from "../../assets/images/IMG_4864.jpg";
 
-
 const MirjamKroonCoaching: React.FC = () => {
   const theme = useMantineTheme();
   return (
     <>
       <Box>
         <Stack align="center" c={theme.colors.custom[1]} mb="xl">
-          <Title>Coaching</Title>
-          <Title pb="xl" h={3}>
-            Persoonlijke coaching & teamcoaching
-          </Title>
+          <Title order={1}>Coaching</Title>
+          <Title order={2}>Persoonlijke coaching & teamcoaching</Title>
         </Stack>
       </Box>
 
-      <Box>
-        <Container p="xl" c={theme.colors.custom[1]}>
+      <Box c={theme.colors.custom[1]}>
+        <Container p="xl">
           <Group grow align="flex-start">
-            <Image src={IMG_4864} />
+            <Image src={IMG_4864} h="100%" />
             <Stack>
-              <Text pb="lg">
+              <Title order={2} pb="lg">
                 Obstakels op je weg, herhalende patronen in de interactie met
                 anderen? Gedrag veranderen is niet eenvoudig.
-              </Text>
+              </Title>
               <Text pb="lg">
                 Wanneer er maatwerk nodig is, loop ik graag een tijdje mee. In
                 mijn rol als coach zie ik mezelf als klankbord, uitdager,
@@ -55,8 +52,8 @@ const MirjamKroonCoaching: React.FC = () => {
         />
 
         <Container p="xl">
-          <Title>Teamcoaching</Title>
-          <Title>"The system in the room"</Title>
+          <Title order={1}>Teamcoaching</Title>
+          <Title order={2}>"The system in the room"</Title>
           <Text pb="md">
             Het lijkt wel alsof we na de coronatijd met nieuwe teamvragen en
             leiderschap-issues te maken hebben gekregen. Leidinggeven op
@@ -97,8 +94,9 @@ const MirjamKroonCoaching: React.FC = () => {
 
       <Box bg={theme.colors.custom[3]} c="white">
         <Container p="xl">
-          <Title>
-            Voor persoonlijke coaching begeleid ik je graag op thema’s als:
+          <Title order={2}>
+            Voor <strong>persoonlijke coaching</strong> begeleid ik je graag op
+            thema’s als:
           </Title>
           <ul>
             <li>
@@ -159,7 +157,7 @@ const MirjamKroonCoaching: React.FC = () => {
       <Box bg={theme.colors.custom[3]} c="white">
         <Container p="xl">
           <Group bg={theme.colors.custom[3]} grow>
-            <Stack c="white">
+            <Stack>
               <Title>Insights Discovery®</Title>
               <Text>
                 Een van de instrumenten die kunnen helpen bij het elkaar beter
@@ -207,7 +205,9 @@ const MirjamKroonCoaching: React.FC = () => {
 
       <Box>
         <Container p="xl" c={theme.colors.custom[3]}>
-          <Title pb="xl">Reviews</Title>
+          <Title order={1} pb="xl">
+            Reviews
+          </Title>
 
           <SimpleGrid cols={{ base: 1, sm: 2 }}>
             <Stack justify="space-between">

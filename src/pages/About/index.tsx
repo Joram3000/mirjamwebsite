@@ -62,7 +62,9 @@ const MirjamKroonAbout: React.FC = () => {
         <Container c={theme.colors.custom[3]}>
           <Group align="center" justify="flex-end" grow>
             <Stack>
-              <Title>Trainer en coach van groei- en verandertrajecten</Title>
+              <Title order={1}>
+                Trainer en coach van groei- en verandertrajecten
+              </Title>
               <Text>
                 Ik ben Mirjam Kroon-Hoekendijk. Binnen organisaties ben ik
                 actief als coach en trainer op het gebied van training,
@@ -76,7 +78,9 @@ const MirjamKroonAbout: React.FC = () => {
         <Statement text="“Ik word ik door jij”" subText="Martin Büber" />
 
         <Container p="xl" c={theme.colors.custom[3]}>
-          <Title pb="xl">Waar kun je me voor vragen?</Title>
+          <Title order={1} pb="xl">
+            Waar kun je me voor vragen?
+          </Title>
           <Text pb="xl">
             Waar mensen samenwerken, valt veel te winnen wanneer er goed
             gecommuniceerd wordt. Of dat nu in de financiële branche is,
@@ -115,7 +119,7 @@ const MirjamKroonAbout: React.FC = () => {
         <Container>
           <Group grow align="flex-start" h="100%">
             <Stack>
-              <Title py="xl" order={2}>
+              <Title py="xl" order={1}>
                 “Geen sprookje, maar een soap’’
               </Title>
               <Text pb="lg">
@@ -159,7 +163,7 @@ const MirjamKroonAbout: React.FC = () => {
       </Box>
       <Box c={theme.colors.custom[3]}>
         <Container p="xl">
-          <Title>Over Mirjam</Title>
+          <Title order={1}>Over Mirjam</Title>
           <Text pb="lg">
             Wat je van mij kunt verwachten: vasthoudendheid als het gaat om een
             programma maken wat verschil gaat maken. Ik houd van en geloof in
@@ -182,7 +186,7 @@ const MirjamKroonAbout: React.FC = () => {
         <Container p="xl">
           <Group grow align="flex-start">
             <Stack>
-              <Title>En naast werk?</Title>
+              <Title order={1}>En naast werk?</Title>
               <Text pb="lg">
                 Oudste dochter uit een ondernemend gezin, waar buiten de
                 lijntjes kleuren meer gewaardeerd werd dan erbinnen. De minder
@@ -207,7 +211,9 @@ const MirjamKroonAbout: React.FC = () => {
 
       <Box bg={theme.colors.custom[3]} c="white">
         <Container p="xl">
-          <Title pb="xl">Samenwerkingspartners</Title>
+          <Title order={1} pb="xl">
+            Samenwerkingspartners
+          </Title>
           <Stack>
             {samenwerkingsPartners.map((samenwerkingsPartner) => (
               <PeopleCard samenwerkingsPartner={samenwerkingsPartner} />

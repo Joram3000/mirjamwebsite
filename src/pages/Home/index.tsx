@@ -48,7 +48,9 @@ const MirjamKroonHomepage: React.FC = () => {
       <Box>
         <Container>
           <Stack w="50%" c={theme.colors.custom[2]}>
-            <Title>Anders kijken naar samenwerkingsvraagstukken</Title>
+            <Title order={1}>
+              Anders kijken naar samenwerkingsvraagstukken
+            </Title>
             <Text>
               Training, coaching en systemische oefeningen voor teams en
               personen, om succesvolle werkrelaties te herstellen of te bouwen.
@@ -64,7 +66,7 @@ const MirjamKroonHomepage: React.FC = () => {
 
         <Container p="xl">
           <Stack align="flex-start" c={theme.colors.custom[3]}>
-            <Title w="50%">
+            <Title order={1} w="50%">
               Werken met de spanning tussen verbinding en authenticiteit
             </Title>
 
@@ -107,7 +109,7 @@ const MirjamKroonHomepage: React.FC = () => {
       <Box bg="white">
         <Container p="xl">
           <Stack align="center" c={theme.colors.custom[2]}>
-            <Title>Waarvoor kun je bij mij terecht?</Title>
+            <Title order={1}>Waarvoor kun je bij mij terecht?</Title>
             <Text ta="center">
               Waar mensen samenwerken, valt veel te winnen wanneer er goed
               gecommuniceerd wordt. Of dat nu in de financiële branche is, de
@@ -126,7 +128,9 @@ const MirjamKroonHomepage: React.FC = () => {
 
       <Box c={theme.colors.custom[1]}>
         <Container p="xl">
-          <Title pb="xl">Klant Ervaringen</Title>
+          <Title order={1} pb="xl">
+            Klant Ervaringen
+          </Title>
 
           <SimpleGrid cols={{ base: 1, sm: 2 }}>
             <Stack justify="space-between">

@@ -19,7 +19,9 @@ const MirjamKroonContact: React.FC = () => {
     <>
       <Box c={theme.colors.custom[3]}>
         <Container p="xl">
-          <Title ta="center">Contact</Title>
+          <Title order={1} ta="center">
+            Contact
+          </Title>
           <Group grow>
             <Image src={Mirjam6} />
             <Stack>
