@@ -18,6 +18,7 @@ import cirkels from "../../assets/images/cirkels.png";
 import systeemspel from "../../assets/svg/systeemspel.png";
 import teamcoaching from "../../assets/svg/teamcoaching.png";
 import training from "../../assets/svg/training.png";
+import ClientReview from "../../components/ClientReview";
 
 const MirjamKroonHomepage: React.FC = () => {
   const theme = useMantineTheme();
@@ -46,8 +47,8 @@ const MirjamKroonHomepage: React.FC = () => {
   return (
     <>
       <Box>
-        <Container>
-          <Stack w="50%" c={theme.colors.custom[2]}>
+        <Container c={theme.colors.custom[2]}>
+          <Stack>
             <Title order={1}>
               Anders kijken naar samenwerkingsvraagstukken
             </Title>
@@ -106,9 +107,9 @@ const MirjamKroonHomepage: React.FC = () => {
         </Container>
       </Box>
 
-      <Box bg="white">
+      <Box bg="white" c={theme.colors.custom[2]}>
         <Container p="xl">
-          <Stack align="center" c={theme.colors.custom[2]}>
+          <Stack align="center">
             <Title order={1}>Waarvoor kun je bij mij terecht?</Title>
             <Text ta="center">
               Waar mensen samenwerken, valt veel te winnen wanneer er goed
@@ -133,36 +134,19 @@ const MirjamKroonHomepage: React.FC = () => {
           </Title>
 
           <SimpleGrid cols={{ base: 1, sm: 2 }}>
-            <Stack justify="space-between">
-              <Text>
-                "Mooie kennismaking met het team en met het leren kijken vanuit
+            <ClientReview
+              review="Mooie kennismaking met het team en met het leren kijken vanuit
                 systemisch perspectief. Met een inzichtgevende opstelling als
                 mooi eindresultaat. Mirjam kan een mooie introductie geven met
                 simpele oefeningen zodat iedereen, met kennis of niet, kan
                 deelnemen."
-              </Text>
-              <Stack style={{ borderLeft: "1px dotted green" }}>
-                <Text>"Deelnemer teamcoaching"</Text>
-                <Text>""</Text>
-              </Stack>
-            </Stack>
-
-            <Stack h="100%" justify="space-between">
-              <Text>
-                “Met haar 1 op 1 training heeft Mirjam mij de enorme potentiële
-                waarde laten inzien van o.a. anders (geweldloos) communiceren en
-                hoe ik dit in mijn persoonlijke én professionele omgeving op de
-                juiste manier kan inzetten. Er ging een (nieuwe) wereld van
-                mogelijkheden voor mij open. Dit was een van de beste
-                investeringen in mijn persoonlijke en professionele ontwikkeling
-                van de afgelopen periode.”
-              </Text>
-
-              <Stack style={{ borderLeft: "1px dotted green" }}>
-                <Text>"John Lankester"</Text>
-                <Text>"RWS"</Text>
-              </Stack>
-            </Stack>
+              name="Deelnemer teamcoaching"
+            />
+            <ClientReview
+              review="Met haar 1 op 1 training heeft Mirjam mij de enorme potentiële waarde laten inzien van o.a. anders (geweldloos) communiceren en hoe ik dit in mijn persoonlijke én professionele omgeving op de juiste manier kan inzetten. Er ging een (nieuwe) wereld van mogelijkheden voor mij open. Dit was een van de beste investeringen in mijn persoonlijke en professionele ontwikkeling van de afgelopen periode."
+              name="John Lankester"
+              company="RWS"
+            />
           </SimpleGrid>
         </Container>
       </Box>

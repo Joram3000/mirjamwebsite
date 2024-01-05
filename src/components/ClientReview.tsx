@@ -12,10 +12,15 @@ const ClientReview: React.FC<ClientReviewProps> = ({
   company,
 }) => {
   return (
-    <Stack bg="indigo" h="100%">
-      <Text>{review}</Text>
+    <Stack h="100%" justify="space-between">
+      <Text fs="italic">"{review}"</Text>
 
-      <Stack justify="center" bg="dark">
+      <Stack
+        justify="center"
+        // align="center"
+        style={{ borderLeft: "1px dotted green" }}
+        pl="md"
+      >
         <Text>{name}</Text>
         {company && <Text>{company}</Text>}
       </Stack>

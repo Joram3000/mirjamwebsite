@@ -15,7 +15,7 @@ const SmallCard: React.FC<smallCardProps> = ({ card }) => {
   return (
     <Stack align="center" h="100%">
       <Image src={card.icon} w={100} h={100} />
-      <Title>{card.title}</Title>
+      <Title order={2}>{card.title}</Title>
 
       <Stack h="100%" justify="space-between">
         <Text ta="center">{card.text}</Text>

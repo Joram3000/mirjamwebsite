@@ -11,6 +11,7 @@ import {
 } from "@mantine/core";
 import fotowater from "../../assets/images/fotowater.png";
 import IMG_3543 from "../../assets/images/IMG_3543.jpg";
+import ClientReview from "../../components/ClientReview";
 
 const MirjamKroonSysteemspel: React.FC = () => {
   const theme = useMantineTheme();
@@ -103,9 +104,9 @@ const MirjamKroonSysteemspel: React.FC = () => {
             <Title order={1} ta="center" py="xl">
               Review
             </Title>
-            <Stack justify="space-between">
-              <Text>
-                Mirjam is een fijne trainer. Ze heeft veel kennis en weet het op
+
+            <ClientReview
+              review="Mirjam is een fijne trainer. Ze heeft veel kennis en weet het op
                 een ontspannen manier over te brengen. Mirjam wil waarde
                 toevoegen. Pas als ze denkt dat ze dat kan, besluit ze in te
                 stappen. Ze denkt mee, adviseert. Ze zet zichzelf daarbij niet
@@ -116,13 +117,10 @@ const MirjamKroonSysteemspel: React.FC = () => {
                 inzichten. Hiermee raakt ze hoofd en hart. Want ze leert je
                 anders kijken, ze laat je ervaren wat er in de interactie
                 gebeurt en wat jouw aandeel daarin is. Ontschuldigend, zoals het
-                systemisch betaamt. Waardevol.
-              </Text>
-
-              <Stack style={{ borderLeft: "1px dotted green" }}>
-                <Text>Paul Hilhorst De Boer & Ritsema van Eck</Text>
-              </Stack>
-            </Stack>
+                systemisch betaamt. Waardevol."
+              name="Paul Hilhorst"
+              company="De Boer & Ritsema van Eck"
+            />
           </Container>
         </Box>
       </Box>

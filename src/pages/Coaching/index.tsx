@@ -12,6 +12,7 @@ import {
 } from "@mantine/core";
 import Statement from "../../components/StatementBar";
 import IMG_4864 from "../../assets/images/IMG_4864.jpg";
+import ClientReview from "../../components/ClientReview";
 
 const MirjamKroonCoaching: React.FC = () => {
   const theme = useMantineTheme();
@@ -155,50 +156,53 @@ const MirjamKroonCoaching: React.FC = () => {
       </Title>
 
       <Box bg={theme.colors.custom[3]} c="white">
-        <Container p="xl">
-          <Group bg={theme.colors.custom[3]} grow>
-            <Stack>
-              <Title>Insights Discovery®</Title>
-              <Text>
-                Een van de instrumenten die kunnen helpen bij het elkaar beter
-                begrijpen, is Insights Discovery®. Insights bestaat uit een
-                vragenlijst waar een persoonlijkheidsprofiel uit komt rollen,
-                die gekoppeld wordt aan kleuren. De kleurentaal is gebaseerd op
-                het gedachtegoed van Carl Gustav Jung. De Zwitserse psycholoog
-                en psychiater introduceerde het concept van psychologische
-                voorkeuren. Insights koppelt die voorkeuren aan 4 kleuren. Ze
-                geven je op een aansprekende manier inzicht in je eigen reacties
-                en gedrag en helpen je om te begrijpen waarom andere mensen heel
-                ander gedrag laten zien Hoe veelzeggend iemands eerste kleur ook
-                is, ook iemands tweede, derde en laagste kleur kunnen enorm
-                bepalend zijn voor zijn gedrag. Iedereen gebruikt alle 4 de
-                Insights Kleuren, maar de specifieke volgorde en intensiteit van
-                de kleuren verschilt per persoon: we hebben allemaal onze eigen
-                unieke kleurenmix. Naast een individueel profiel kan er ook een
-                teamprofiel worden gegenereerd waardoor er een overzicht bestaat
-                van welke kleuren veel en welke minder aanwezig zijn in het
-                team. Op grond daarvan kan er inzicht ontstaan in sterkten en
-                zwaktes van het team.
-              </Text>
-            </Stack>
-            <Stack bg={theme.colors.custom[2]}>
-              <Title>Myers-Briggs Type-indicator</Title>
-              <Text>
-                Ook de Myers-Briggs Type-indicator (step 2) is net zoals de
-                Insights Discovery® gebaseerd op het gedachtegoed van Gustav
-                Jung, waarbij verschillen tussen mensen in kaart worden
-                gebracht. Zoals Intra-en extravert, taak-versus mensgericht,
-                gestructureerd of meer go-with-the-flow. De profielteksten zijn
-                toegankelijk en helpen met name om je eigen gebruiksaanwijzing
-                en die van je teamgenoten beter te begrijpen. Wanneer meer
-                begrip voor elkaar en leren omgaan met verschillen een vraag is,
-                kan dit instrument een leuke en speelse start zijn van een
-                teamtraject. De keerzijde kan zijn dat mensen gereduceerd worden
-                tot een kleur en elkaar in een hokje gaan stoppen, maar de wijze
-                waarop dit geïntroduceerd wordt, maakt in dit opzicht hét
-                verschil.
-              </Text>
-            </Stack>
+        <Container>
+          <Group bg={theme.colors.custom[3]} grow align="space-around">
+            <SimpleGrid cols={{ base: 1, sm: 2 }}>
+              <Stack p="md">
+                <Title order={2}>Insights Discovery®</Title>
+                <Text>
+                  Een van de instrumenten die kunnen helpen bij het elkaar beter
+                  begrijpen, is Insights Discovery®. Insights bestaat uit een
+                  vragenlijst waar een persoonlijkheidsprofiel uit komt rollen,
+                  die gekoppeld wordt aan kleuren. De kleurentaal is gebaseerd
+                  op het gedachtegoed van Carl Gustav Jung. De Zwitserse
+                  psycholoog en psychiater introduceerde het concept van
+                  psychologische voorkeuren. Insights koppelt die voorkeuren aan
+                  4 kleuren. Ze geven je op een aansprekende manier inzicht in
+                  je eigen reacties en gedrag en helpen je om te begrijpen
+                  waarom andere mensen heel ander gedrag laten zien Hoe
+                  veelzeggend iemands eerste kleur ook is, ook iemands tweede,
+                  derde en laagste kleur kunnen enorm bepalend zijn voor zijn
+                  gedrag. Iedereen gebruikt alle 4 de Insights Kleuren, maar de
+                  specifieke volgorde en intensiteit van de kleuren verschilt
+                  per persoon: we hebben allemaal onze eigen unieke kleurenmix.
+                  Naast een individueel profiel kan er ook een teamprofiel
+                  worden gegenereerd waardoor er een overzicht bestaat van welke
+                  kleuren veel en welke minder aanwezig zijn in het team. Op
+                  grond daarvan kan er inzicht ontstaan in sterkten en zwaktes
+                  van het team.
+                </Text>
+              </Stack>
+              <Stack py="md" bg={theme.colors.custom[2]}>
+                <Title order={2}>Myers-Briggs Type-indicator</Title>
+                <Text>
+                  Ook de Myers-Briggs Type-indicator (step 2) is net zoals de
+                  Insights Discovery® gebaseerd op het gedachtegoed van Gustav
+                  Jung, waarbij verschillen tussen mensen in kaart worden
+                  gebracht. Zoals Intra-en extravert, taak-versus mensgericht,
+                  gestructureerd of meer go-with-the-flow. De profielteksten
+                  zijn toegankelijk en helpen met name om je eigen
+                  gebruiksaanwijzing en die van je teamgenoten beter te
+                  begrijpen. Wanneer meer begrip voor elkaar en leren omgaan met
+                  verschillen een vraag is, kan dit instrument een leuke en
+                  speelse start zijn van een teamtraject. De keerzijde kan zijn
+                  dat mensen gereduceerd worden tot een kleur en elkaar in een
+                  hokje gaan stoppen, maar de wijze waarop dit geïntroduceerd
+                  wordt, maakt in dit opzicht hét verschil.
+                </Text>
+              </Stack>
+            </SimpleGrid>
           </Group>
         </Container>
       </Box>
@@ -210,36 +214,29 @@ const MirjamKroonCoaching: React.FC = () => {
           </Title>
 
           <SimpleGrid cols={{ base: 1, sm: 2 }}>
-            <Stack justify="space-between">
-              <Text>
-                "Mooie kennismaking met het team en met het leren kijken vanuit
+            <ClientReview
+              review="Mooie kennismaking met het team en met het leren kijken vanuit
                 systemisch perspectief. Met een inzichtgevende opstelling als
                 mooi eindresultaat. Mirjam kan een mooie introductie geven met
                 simpele oefeningen zodat iedereen, met kennis of niet, kan
                 deelnemen."
-              </Text>
-              <Stack style={{ borderLeft: "1px dotted green" }}>
-                <Text>"Deelnemer teamcoaching"</Text>
-                <Text>""</Text>
-              </Stack>
-            </Stack>
-
-            <Stack h="100%" justify="space-between">
-              <Text>
-                “Met haar 1 op 1 training heeft Mirjam mij de enorme potentiële
-                waarde laten inzien van o.a. anders (geweldloos) communiceren en
-                hoe ik dit in mijn persoonlijke én professionele omgeving op de
-                juiste manier kan inzetten. Er ging een (nieuwe) wereld van
-                mogelijkheden voor mij open. Dit was een van de beste
-                investeringen in mijn persoonlijke en professionele ontwikkeling
-                van de afgelopen periode.”
-              </Text>
-
-              <Stack style={{ borderLeft: "1px dotted green" }}>
-                <Text>"John Lankester"</Text>
-                <Text>"RWS"</Text>
-              </Stack>
-            </Stack>
+              name="Anoniem"
+            />
+            <ClientReview
+              review="Mirjam is een bevlogen coach. Ik heb haar leren kennen in de
+training onboarding voor nieuwe leidinggevenden en heb
+haar daarna terug gevraagd om voor mijn team een Insight
+training te verzorgen. Waarom ik Mirjam heb gevraagd voor
+de training binnen mijn team? Ze heeft oog voor zowel de
+groepsdynamiek als voor de verschillende individuen. Dat
+maakt dat je als cursist je gezien voelt, en dat er mede door
+haar begeleiding in de groep een warme -en open sfeer
+ontstaat. Wat Mirjam typeert is dat ze je uit je comfort zone
+probeert te halen, waardoor je naar jezelf kijkt waarom je de
+dingen doet zoals je ze doet maar ook hoe je zaken kunt
+doorbreken."
+              name="Manager Risk en Compliance bij een grote verzekeraar"
+            />
           </SimpleGrid>
         </Container>
       </Box>

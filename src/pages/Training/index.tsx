@@ -9,6 +9,7 @@ import {
   Image,
 } from "@mantine/core";
 import plaatje from "../../assets/images/IMG_4552.jpg";
+import ClientReview from "../../components/ClientReview";
 
 const MirjamKroonTraining: React.FC = () => {
   const theme = useMantineTheme();
@@ -20,7 +21,9 @@ const MirjamKroonTraining: React.FC = () => {
         </Title>
         <Image src={plaatje} w="100%" h="50vh" />
         <Container p="xl">
-          <Title order={1}>Wegen ontstaan, waar mensen samen gaan</Title>
+          <Title w="50%" order={2}>
+            Wegen ontstaan, waar mensen samen gaan
+          </Title>
           <Text>
             Het gaat bij trainingen steeds weer om het vergroten van impact door
             middel van communicatie. De kracht van de stilte leren gebruiken,
@@ -67,19 +70,16 @@ const MirjamKroonTraining: React.FC = () => {
 
       <Box bg="white" c={theme.colors.custom[1]} p="xl">
         <Container>
-          <Title order={1}>Reviews</Title>
-          <Stack justify="space-between">
-            <Text>
-              Niets dan lof! Wat een kundige en fijne vrouw! Rustige en niet
+          <Title py="xl" order={1}>
+            Reviews
+          </Title>
+          <ClientReview
+            review="Niets dan lof! Wat een kundige en fijne vrouw! Rustige en niet
               oordelende persoon, komt prettig over. Mirjam heeft mij eerst
               vakkundig uit mijn comfortzone gehaald en mij, voor mijn gevoel
-              iig, daarna onder zorgvuldige begeleiding gebracht waar ik nu sta.
-            </Text>
-
-            <Stack style={{ borderLeft: "1px dotted green" }}>
-              <Text>Deelnemer training</Text>
-            </Stack>
-          </Stack>
+              iig, daarna onder zorgvuldige begeleiding gebracht waar ik nu sta."
+            name="Deelnemer teamcoaching"
+          />
         </Container>
       </Box>
     </>
