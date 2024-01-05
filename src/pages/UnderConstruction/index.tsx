@@ -20,8 +20,8 @@ const UnderConstructionPage = () => {
           samenwerkingsvraagstukken en individuele-en teamcoaching.
         </p>
         <p>
-          Binnenkort is mijn nieuwe website te bezoeken. Nu is
-          er informatie te vinden op mijn LinkedIn profiel:
+          Binnenkort is mijn nieuwe website te bezoeken. Nu is er informatie te
+          vinden op mijn LinkedIn profiel:
         </p>
       </div>
 

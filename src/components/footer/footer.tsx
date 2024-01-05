@@ -1,0 +1,56 @@
+import {
+  Title,
+  Text,
+  Group,
+  Button,
+  Divider,
+  Container,
+  Anchor,
+  Box,
+  useMantineTheme,
+} from "@mantine/core";
+import "./footer.module.css";
+
+const Footer: React.FC = () => {
+  const theme = useMantineTheme();
+
+  const contactGegevens = [
+    "Mirjam Kroon-Hoekendijk",
+    "Dorpsweg 71",
+    "4223 ND",
+    "Hoornaar",
+    "Zuid-Holland",
+    "mirjam@kroontrainingadvies.com",
+    "0653507815",
+  ];
+
+  return (
+    <Box bg={theme.colors.custom[2]} c="white">
+      <Container p="xl">
+        <Group justify="space-between" pb="lg">
+          <Title order={1}>Contact</Title>
+          <Button>Neem contact op</Button>
+        </Group>
+
+        {contactGegevens.map((gegeven) => (
+          <Text key={gegeven}>
+            <li>{gegeven}</li>
+          </Text>
+        ))}
+
+        <Divider my="lg" color="white" size="xs" />
+
+        <Group justify="space-between" align="flex-end" pb="lg">
+          <Anchor href="" target="_blank" underline="always">
+            <li>Privacyverklaring</li>
+            <li>Disclaimer</li>
+            <li>Algemene voorwaarden</li>
+          </Anchor>
+          <Text>2023 Kibbeling Media. All right reserved.</Text>
+        </Group>
+      </Container>
+    </Box>
+  );
+};
+
+export default Footer;
