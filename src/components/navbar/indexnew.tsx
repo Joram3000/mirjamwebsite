@@ -20,7 +20,7 @@ const NavbarNew: React.FC = () => {
       h={100}
       bg={theme.colors.custom[0]}
     >
-      <Image src={logo} />
+      <Image src={logo} onClick={() => {}} />
 
       <Burger
         opened={opened}
@@ -29,7 +29,6 @@ const NavbarNew: React.FC = () => {
         size="sm"
         m="lg"
       />
-
       <Group visibleFrom="lg" m="xl">
         <Anchor c={theme.colors.custom[1]} href="/#/home">
           Home

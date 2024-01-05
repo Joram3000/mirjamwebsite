@@ -17,7 +17,6 @@ const ClientReview: React.FC<ClientReviewProps> = ({
 
       <Stack
         justify="center"
-        // align="center"
         style={{ borderLeft: "1px dotted green" }}
         pl="md"
       >

@@ -29,7 +29,9 @@ const Footer: React.FC = () => {
       <Container p="xl">
         <Group justify="space-between" pb="lg">
           <Title order={1}>Contact</Title>
-          <Button>Neem contact op</Button>
+          <Anchor c={theme.colors.custom[1]} href="/#/contact">
+            <Button onClick={() => {}}>Neem contact op</Button>
+          </Anchor>
         </Group>
 
         {contactGegevens.map((gegeven) => (

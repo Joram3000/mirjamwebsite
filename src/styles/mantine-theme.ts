@@ -1,7 +1,7 @@
-import { createTheme, rem } from "@mantine/core";
+import { createTheme } from "@mantine/core";
 
 const theme = createTheme({
-  fontFamily: "Avenir, sans-serif", // FONT Moet AVENIR ZIJN
+  fontFamily: "Avenir, sans-serif",
   primaryColor: "lime",
   defaultRadius: 0,
   colors: {
@@ -26,12 +26,9 @@ const theme = createTheme({
     ],
   },
   headings: {
-    // properties for all headings
     fontWeight: "400",
-    // properties for individual headings, all of them are optional
     sizes: {
       h1: {
-        // fontSize: rem(36),
         // lineHeight: "1.4",
       },
     },

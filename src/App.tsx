@@ -1,7 +1,7 @@
 import "@mantine/core/styles.css";
 import theme from "./styles/mantine-theme";
 import { MantineProvider } from "@mantine/core";
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/layout";
 import MirjamKroonHomepage from "./pages/Home";
 import MirjamKroonAbout from "./pages/About";
@@ -11,7 +11,7 @@ import MirjamKroonContact from "./pages/Contact";
 import MirjamKroonTraining from "./pages/Training";
 import MirjamKroonSysteemspel from "./pages/Systeemspel";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "",
     element: <Layout />,

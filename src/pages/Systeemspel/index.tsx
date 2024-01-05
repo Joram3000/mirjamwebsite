@@ -21,8 +21,7 @@ const MirjamKroonSysteemspel: React.FC = () => {
         <Title order={1} ta="center">
           Systeemspel
         </Title>
-        <Image src={fotowater} w="100%" h="50vh" />
-
+        <Image src={fotowater} />
         <Container p="xl">
           <Text>
             Bij het spelen van het systeemspel ga je aan de hand van een
@@ -31,8 +30,8 @@ const MirjamKroonSysteemspel: React.FC = () => {
             aangereikt om de vastgelopen situatie weer vlot te trekken.
           </Text>
 
-          <Group grow>
-            <Stack p="xl">
+          <Group grow align="space-around" my="md">
+            <Stack>
               <Text>
                 Om je eigen deskundigheid te bevorderen vanuit bijvoorbeeld een
                 rol als HR-manager of trainer, kun je mij inhuren om het spel
@@ -44,14 +43,17 @@ const MirjamKroonSysteemspel: React.FC = () => {
                 kennis toepassen geeft een meerwaarde.
               </Text>
             </Stack>
-            <Text>
-              Omdat ik vanuit meerdere systemische achtergronden opgeleid ben
-              (Hellingerwerk, Marijke Spansjersbergen), breng ik een rijk
-              gevulde gereedschapskist mee. De wereld wordt er niet eenvoudiger
-              maar wel veel rijker van als we doorkrijgen hoeveel samenhang er
-              is tussen goede doelen stellen en goede relaties ontwikkelen. Hoe
-              patronen zich vaak herhalen en ook te veranderen zijn.
-            </Text>
+            <Stack>
+              <Text>
+                Omdat ik vanuit meerdere systemische achtergronden opgeleid ben
+                (Hellingerwerk, Marijke Spansjersbergen), breng ik een rijk
+                gevulde gereedschapskist mee. De wereld wordt er niet
+                eenvoudiger maar wel veel rijker van als we doorkrijgen hoeveel
+                samenhang er is tussen goede doelen stellen en goede relaties
+                ontwikkelen. Hoe patronen zich vaak herhalen en ook te
+                veranderen zijn.
+              </Text>
+            </Stack>
           </Group>
         </Container>
       </Box>
