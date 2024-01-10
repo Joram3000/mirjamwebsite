@@ -3,12 +3,13 @@ import {
   Container,
   Title,
   Text,
-  Group,
   Stack,
   Button,
   Image,
   SimpleGrid,
   useMantineTheme,
+  Flex,
+  em,
 } from "@mantine/core";
 
 import SmallCard from "../../components/smallCard";
@@ -19,10 +20,13 @@ import systeemspel from "../../assets/svg/systeemspel.png";
 import teamcoaching from "../../assets/svg/teamcoaching.png";
 import training from "../../assets/svg/training.png";
 import ClientReview from "../../components/ClientReview";
+import { useMediaQuery } from "@mantine/hooks";
+import { Link } from "react-router-dom";
 
 const MirjamKroonHomepage: React.FC = () => {
-  const theme = useMantineTheme();
+  const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
 
+  const theme = useMantineTheme();
   const cardContent = [
     {
       icon: teamcoaching,
@@ -48,15 +52,17 @@ const MirjamKroonHomepage: React.FC = () => {
     <>
       <Box bg={theme.colors.custom[0]} c={theme.colors.custom[2]}>
         <Container>
-          <Stack>
-            <Title order={1}>
+          <Stack ta="center">
+            <Title order={isMobile ? 2 : 1}>
               Anders kijken naar samenwerkingsvraagstukken
             </Title>
+
             <Text>
               Training, coaching en systemische oefeningen voor teams en
               personen, om succesvolle werkrelaties te herstellen of te bouwen.
             </Text>
           </Stack>
+
           <Image src={cirkels} />
         </Container>
 
@@ -65,15 +71,15 @@ const MirjamKroonHomepage: React.FC = () => {
           subText="Niels Bohr"
         />
 
-        <Container p="xl">
+        <Container p="md">
           <Stack align="flex-start" c={theme.colors.custom[3]}>
             <Title order={1}>
               Werken met de spanning tussen verbinding en authenticiteit
             </Title>
 
-            <Group justify="space-around" align="center">
-              <Stack>
-                <Text>
+            <Flex direction={isMobile ? "column" : "row"} align="stretch">
+              <Flex direction="column" align="center" justify="space-around">
+                <Text pb="md">
                   Is in jouw team van professionals ieder vooral gefocust op
                   zijn eigen werk, zonder dat ze elkaar sterker maken? Vormt de
                   directie geen eenheid? Blijven leidinggevenden moeilijke
@@ -81,14 +87,14 @@ const MirjamKroonHomepage: React.FC = () => {
                   collega niet, omdat deze alles zelf probeert op te lossen? Of
                   vind je het zelf moeilijk om hulp te vragen aan collega’s?
                 </Text>
-                <Text>
+                <Text pb="md">
                   Als mens leren we onszelf kennen door in verbinding te zijn
                   met anderen. We hebben een spiegel nodig. Om onze eigen
                   krachten te ontdekken, én om die in te zetten in samenwerking.
                   Maar hoe zorg je ervoor dat deze beide kanten voldoende
                   zichtbaar zijn?
                 </Text>
-                <Text>
+                <Text pb="md">
                   Door gesprekken en oefeningen ontdekken we wat er tussen
                   elkaar gebeurt. Ik houd van het begrip “moedige gesprekken”
                   moedig is in het Frans ‘Courage’ en heeft zijn oorsprong in
@@ -96,23 +102,27 @@ const MirjamKroonHomepage: React.FC = () => {
                   ook ons hart nodig, moed om de echte gesprekken te voeren, die
                   gevoerd moeten worden.
                 </Text>
-              </Stack>
+              </Flex>
 
               <Image src={Mirjam6} />
-            </Group>
-            <Button
-              variant="outline"
-              c={theme.colors.custom[3]}
-              onClick={() => {}}
-            >
-              Meer over Mirjam
-            </Button>
+            </Flex>
+
+            <Link to="/about">
+              <Button
+                variant="outline"
+                c={theme.colors.custom[3]}
+                onClick={() => {}}
+                fullWidth={isMobile ? true : false}
+              >
+                Meer over Mirjam
+              </Button>
+            </Link>
           </Stack>
         </Container>
       </Box>
 
       <Box bg="white" c={theme.colors.custom[2]}>
-        <Container p="xl">
+        <Container p="md">
           <Stack align="center">
             <Title order={1}>Waarvoor kun je bij mij terecht?</Title>
             <Text ta="center">
@@ -132,7 +142,7 @@ const MirjamKroonHomepage: React.FC = () => {
       </Box>
 
       <Box c={theme.colors.custom[1]}>
-        <Container p="xl">
+        <Container p="md">
           <Title order={1} pb="xl">
             Klant Ervaringen
           </Title>

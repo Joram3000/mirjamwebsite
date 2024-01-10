@@ -1,4 +1,4 @@
-import { Stack, Text } from "@mantine/core";
+import { Stack, Text, rem } from "@mantine/core";
 
 interface ClientReviewProps {
   review: string;
@@ -16,9 +16,10 @@ const ClientReview: React.FC<ClientReviewProps> = ({
       <Text fs="italic">"{review}"</Text>
 
       <Stack
-        justify="center"
+        justify="space-evenly"
         style={{ borderLeft: "1px dotted green" }}
         pl="md"
+        h={rem(60)}
       >
         <Text>{name}</Text>
         {company && <Text>{company}</Text>}

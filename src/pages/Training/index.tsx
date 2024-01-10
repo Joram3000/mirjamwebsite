@@ -15,12 +15,13 @@ const MirjamKroonTraining: React.FC = () => {
   return (
     <>
       <Box c={theme.colors.custom[1]}>
-        <Title ta="center" order={1}>
+        <Title my="md" ta="center" order={1}>
           Trainingen
         </Title>
         <Image src={plaatje} w="100%" h="50vh" />
-        <Container p="xl">
-          <Title w="50%" order={2}>
+
+        <Container p="md">
+          <Title pb="md" order={2}>
             Wegen ontstaan, waar mensen samen gaan
           </Title>
           <Text>
@@ -47,29 +48,29 @@ const MirjamKroonTraining: React.FC = () => {
             opdrachtgever.
           </Text>
           <Text>De meest recente trainingen</Text>
-          <Text>
-            <ul>
-              <li>Leidinggeven met Lef (het moedige gesprek voeren).</li>
-              <li>De Leider als teamcoach of individuele coach.</li>
-              <li>
-                Ik ben als een van de vaste trainers betrokken bij het programma
-                De Informele Leider van de Baak. Een programma waarbij je leert
-                hoe je mensen mee kunt krijgen zonder informele macht.
-              </li>
-              <li>
-                Insights-teamtrainingen, gebruiksaanwijzingen om elkaar te
-                begrijpen
-              </li>
-              <li>Feedback-trainingen</li>
-            </ul>
-          </Text>
+
+          <ol>
+            <li>Leidinggeven met Lef (het moedige gesprek voeren).</li>
+            <li>De Leider als teamcoach of individuele coach.</li>
+            <li>
+              Ik ben als een van de vaste trainers betrokken bij het programma
+              De Informele Leider van de Baak. Een programma waarbij je leert
+              hoe je mensen mee kunt krijgen zonder informele macht.
+            </li>
+            <li>
+              Insights-teamtrainingen, gebruiksaanwijzingen om elkaar te
+              begrijpen
+            </li>
+            <li>Feedback-trainingen</li>
+          </ol>
+
           <Button onClick={() => console.log("Hoi ik ben geklikt")}>
             Vraag vrijblijvend naar de mogelijkheden
           </Button>
         </Container>
       </Box>
 
-      <Box bg="white" c={theme.colors.custom[1]} p="xl">
+      <Box bg="white" c={theme.colors.custom[1]} m="xl">
         <Container>
           <Title py="xl" order={1}>
             Reviews

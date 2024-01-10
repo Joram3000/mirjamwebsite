@@ -1,38 +1,25 @@
-import { useState } from "react";
-
 import classes from "./NavbarSimple.module.css";
+import { Link } from "react-router-dom";
 import { menuData } from "./indexnew";
-import { NavLink } from "@mantine/core";
 
-export function NavbarSimple() {
-  const [active, setActive] = useState("Home");
+interface NavbarSimpleProps {
+  isActive: string;
+  setActive: (value: string) => void;
+}
 
+const NavbarSimple: React.FC<NavbarSimpleProps> = ({ isActive, setActive }) => {
   const links = menuData.map((item) => (
-    <NavLink
+    <Link
       className={classes.link}
-      data-active={item.label === active || undefined}
-      href={item.linkTo}
+      data-active={item.label === isActive || undefined}
       key={item.label}
-      onClick={(event) => {
-        event.preventDefault();
+      to={item.link}
+      onClick={() => {
         setActive(item.label);
       }}
     >
       {item.label}
-    </NavLink>
-
-    // <a
-    //   className={classes.link}
-    //   data-active={item.label === active || undefined}
-    //   href={item.linkTo}
-    //   key={item.label}
-    //   onClick={(event) => {
-    //     event.preventDefault();
-    //     setActive(item.label);
-    //   }}
-    // >
-    //   {item.label}
-    // </a>
+    </Link>
   ));
 
   return (
@@ -40,4 +27,6 @@ export function NavbarSimple() {
       <div className={classes.navbarMain}>{links}</div>
     </nav>
   );
-}
+};
+
+export default NavbarSimple;

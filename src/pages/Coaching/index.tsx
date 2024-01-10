@@ -3,42 +3,49 @@ import {
   Container,
   Title,
   Text,
-  Group,
   Stack,
   Image,
   Button,
   SimpleGrid,
   useMantineTheme,
+  Flex,
+  em,
+  Group,
+  Collapse,
 } from "@mantine/core";
 import Statement from "../../components/StatementBar";
 import IMG_4864 from "../../assets/images/IMG_4864.jpg";
 import ClientReview from "../../components/ClientReview";
+import { useDisclosure, useMediaQuery } from "@mantine/hooks";
 
 const MirjamKroonCoaching: React.FC = () => {
   const theme = useMantineTheme();
+  const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
+  const [opened, { toggle }] = useDisclosure(false);
   return (
     <>
       <Box c={theme.colors.custom[1]} bg="white">
-        <Stack align="center" m="xl">
+        <Stack ta="center" align="center" my="md">
           <Title order={1}>Coaching</Title>
           <Title order={2}>Persoonlijke coaching & teamcoaching</Title>
         </Stack>
 
-        <Container p="xl">
-          <Group grow align="flex-start">
-            <Image src={IMG_4864} h="100%" />
-            <Stack>
-              <Title order={2} pb="lg">
+        <Container>
+          <Flex align="flex-start" direction={isMobile ? "column" : "row"}>
+            <Image src={IMG_4864} w={isMobile ? "100%" : "50%"} />
+
+            <Stack m={isMobile ? "" : "md"} my="md">
+              <Title order={isMobile ? 3 : 2}>
                 Obstakels op je weg, herhalende patronen in de interactie met
                 anderen? Gedrag veranderen is niet eenvoudig.
               </Title>
-              <Text pb="lg">
+              <Text>
                 Wanneer er maatwerk nodig is, loop ik graag een tijdje mee. In
                 mijn rol als coach zie ik mezelf als klankbord, uitdager,
                 spiegel en kennisbron.
               </Text>
             </Stack>
-          </Group>
+          </Flex>
         </Container>
 
         <Statement
@@ -46,7 +53,7 @@ const MirjamKroonCoaching: React.FC = () => {
           subText="Joep Choy"
         />
 
-        <Container p="xl">
+        <Container p="md">
           <Title order={1}>Teamcoaching</Title>
           <Title order={2}>"The system in the room"</Title>
           <Text pb="md">
@@ -68,27 +75,33 @@ const MirjamKroonCoaching: React.FC = () => {
             wordt. Hoe je onuitgesproken zaken die onder de tafel verdwijnen
             maar wel invloed hebben, boven de tafel leert bespreken.
           </Text>
-          <Text pb="md">
-            Teamcoaching wordt vaak ingezet als er gedoe is, maar het kan ook
-            zinvol zijn om eens te kijken hoe jullie als team de dingen doen en
-            wat daar beter in kan.
-          </Text>
-          <Text pb="md">
-            Mijn aanpak is een systemische, dat wil zeggen dat ik jullie help
-            kijken naar wat er tussen mensen gebeurt. Onze eerste manier van
-            kijken is vaak lineair met als vraag: wie is waar de oorzaak van?
-            Maar de realiteit is meestal complexer, in groepen en tussen mensen
-            verloopt de interactie circulair. We haken voortdurend op elkaar in.
-            Dat ontwarren wanneer er spanning is, helpt om de spanning te
-            verlagen. Deze werkwijze heeft als doel op individueel niveau te
-            ontschuldigen en meer te kijken naar het effect van gedrag en hoe we
-            elkaar soms vast kunnen zetten.
-          </Text>
+
+          <Collapse in={opened}>
+            <Text pb="md">
+              Teamcoaching wordt vaak ingezet als er gedoe is, maar het kan ook
+              zinvol zijn om eens te kijken hoe jullie als team de dingen doen
+              en wat daar beter in kan.
+            </Text>
+            <Text pb="md">
+              Mijn aanpak is een systemische, dat wil zeggen dat ik jullie help
+              kijken naar wat er tussen mensen gebeurt. Onze eerste manier van
+              kijken is vaak lineair met als vraag: wie is waar de oorzaak van?
+              Maar de realiteit is meestal complexer, in groepen en tussen
+              mensen verloopt de interactie circulair. We haken voortdurend op
+              elkaar in. Dat ontwarren wanneer er spanning is, helpt om de
+              spanning te verlagen. Deze werkwijze heeft als doel op individueel
+              niveau te ontschuldigen en meer te kijken naar het effect van
+              gedrag en hoe we elkaar soms vast kunnen zetten.
+            </Text>
+          </Collapse>
+          <Button variant="outline" onClick={toggle}>
+            {!opened ? "Lees meer" : "Haal weg"}
+          </Button>
         </Container>
       </Box>
 
       <Box bg={theme.colors.custom[3]} c="white">
-        <Container p="xl">
+        <Container p="md">
           <Title order={2}>
             Voor <strong>persoonlijke coaching</strong> begeleid ik je graag op
             thema’s als:
@@ -124,7 +137,7 @@ const MirjamKroonCoaching: React.FC = () => {
       </Box>
 
       <Box>
-        <Container p="xl" c={theme.colors.custom[3]}>
+        <Container p="md" c={theme.colors.custom[3]}>
           <Title>Hoe zou een persoonlijk coachtraject eruit kunnen zien?</Title>
 
           <Text>
@@ -150,7 +163,7 @@ const MirjamKroonCoaching: React.FC = () => {
       </Title>
 
       <Box bg={theme.colors.custom[3]} c="white">
-        <Container>
+        <Container p="">
           <SimpleGrid cols={{ base: 1, sm: 2 }}>
             <Stack p="xl">
               <Title order={2}>Insights Discovery®</Title>

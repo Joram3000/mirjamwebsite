@@ -5,7 +5,7 @@ import Footer from "../footer/footer";
 
 const Layout: React.FC = () => {
   return (
-    <AppShell header={{ height: 100 }}>
+    <AppShell header={{ height: 116 }}>
       <AppShell.Header withBorder={false}>
         <NavbarNew />
       </AppShell.Header>

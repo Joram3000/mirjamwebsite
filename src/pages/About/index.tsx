@@ -8,6 +8,9 @@ import {
   Image,
   Button,
   useMantineTheme,
+  em,
+  Flex,
+  ScrollArea,
 } from "@mantine/core";
 import Statement from "../../components/StatementBar";
 import PeopleCard from "../../components/peopleCard";
@@ -19,8 +22,10 @@ import samenwerkingsPartner1 from "../../assets/images/Samenwerkingspartners1.pn
 import samenwerkingsPartner2 from "../../assets/images/Samenwerkingspartners2.png";
 import samenwerkingsPartner3 from "../../assets/images/Samenwerkingspartners3.png";
 import samenwerkingsPartner4 from "../../assets/images/Samenwerkingspartners5.png";
+import { useMediaQuery } from "@mantine/hooks";
 
 const MirjamKroonAbout: React.FC = () => {
+  const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
   const theme = useMantineTheme();
 
   const samenwerkingsPartners = [
@@ -56,13 +61,20 @@ const MirjamKroonAbout: React.FC = () => {
     },
   ];
 
+  // <Flex direction={isMobile ? "column" : "row"} align="stretch">
+  //         <Flex direction="column" align="center" justify="space-around"></Flex>
+
   return (
     <>
       <Box>
         <Container c={theme.colors.custom[3]}>
-          <Group align="center" justify="flex-end" grow>
-            <Stack>
-              <Title order={1}>
+          <Flex direction={isMobile ? "column" : "row"} align="center">
+            <Flex
+              direction="column"
+              ta={isMobile ? "center" : "start"}
+              justify="center"
+            >
+              <Title order={1} pb="md">
                 Trainer en coach van groei- en verandertrajecten
               </Title>
               <Text>
@@ -70,14 +82,14 @@ const MirjamKroonAbout: React.FC = () => {
                 actief als coach en trainer op het gebied van training,
                 ontwikkeling en samenwerkingsvraagstukken.
               </Text>
-            </Stack>
+            </Flex>
             <Image src={Mirjam6} />
-          </Group>
+          </Flex>
         </Container>
 
         <Statement text="“Ik word ik door jij”" subText="Martin Büber" />
 
-        <Container p="xl" c={theme.colors.custom[3]}>
+        <Container p="md" c={theme.colors.custom[3]}>
           <Title order={1} pb="xl">
             Waar kun je me voor vragen?
           </Title>
@@ -117,52 +129,61 @@ const MirjamKroonAbout: React.FC = () => {
 
       <Box bg={theme.colors.custom[3]} c="white">
         <Container>
-          <Group grow align="flex-start" h="100%">
+          <Title py="xl" order={1}>
+            “Geen sprookje, maar een soap’’
+          </Title>
+
+          <Group grow align="flex-start">
             <Stack>
-              <Title py="xl" order={1}>
-                “Geen sprookje, maar een soap’’
-              </Title>
-              <Text pb="lg">
-                De realiteit van het leven, heeft meer van een soap dan van een
-                sprookje. In een sprookje zouden we het liefst geloven. Er was
-                eens…… en …. ze leefden nog lang en gelukkig. Een sprookje heeft
-                een begin en een eind, je denkt daarbinnen in oorzaak-gevolg.
-              </Text>
-              <Text pb="lg">
-                Het leven is geen sprookje maar meer een voortdurend inhaken van
-                de ene gebeurtenis op de andere. Iemand reageert, een ander pakt
-                hem op en voor dat je het weet is de hele groep aan het inhaken
-                op wat er in het team of in de organisatie gebeurt. Van nature
-                denken we lineair maar de realiteit is meer circulair.
-              </Text>
-              <Text pb="lg">
-                Samenwerken gaat vanuit systeemdenken niet alleen om mensen,
-                maar vooral om de talloze relaties en verbindingen waar mensen
-                deel van uitmaken. Om naar samenwerkingsvraagstukken te kijken
-                helpt het om uit te zoomen in plaats van in te zoomen.
-                Systeemdenken is leren kijken naar samenhang en patronen. We
-                kijken met de systeembril niet ín mensen, maar tussen mensen.
-                Gedrag wordt veel meer bepaald door relaties en context dan door
-                persoonlijkheid: terwijl we vaak denken dat het andersom is. Wij
-                hebben de neiging om karakter en persoonlijkheid over te
-                waarderen, en het belang van relaties en context als verklaring
-                voor gedrag te onderschatten.
-              </Text>
-              <Text pb="lg">
-                Systeemdenken daagt je uit om op een andere manier naar
-                samenwerkingsvraagstukken te kijken. ‘Anders kijken’
-                veronderstelt ‘anders denken’. Dit kan in de praktijk best
-                lastig zijn.
-              </Text>
-              <Button>Bekijk video over de Constructieve Roddel</Button>
+              <ScrollArea.Autosize mah={600}>
+                <Stack>
+                  <Text pb="lg">
+                    De realiteit van het leven, heeft meer van een soap dan van
+                    een sprookje. In een sprookje zouden we het liefst geloven.
+                    Er was eens…… en …. ze leefden nog lang en gelukkig. Een
+                    sprookje heeft een begin en een eind, je denkt daarbinnen in
+                    oorzaak-gevolg.
+                  </Text>
+                  <Text pb="lg">
+                    Het leven is geen sprookje maar meer een voortdurend inhaken
+                    van de ene gebeurtenis op de andere. Iemand reageert, een
+                    ander pakt hem op en voor dat je het weet is de hele groep
+                    aan het inhaken op wat er in het team of in de organisatie
+                    gebeurt. Van nature denken we lineair maar de realiteit is
+                    meer circulair.
+                  </Text>
+                  {isMobile && <Image src={Tree} />}
+                  <Text pb="lg">
+                    Samenwerken gaat vanuit systeemdenken niet alleen om mensen,
+                    maar vooral om de talloze relaties en verbindingen waar
+                    mensen deel van uitmaken. Om naar samenwerkingsvraagstukken
+                    te kijken helpt het om uit te zoomen in plaats van in te
+                    zoomen. Systeemdenken is leren kijken naar samenhang en
+                    patronen. We kijken met de systeembril niet ín mensen, maar
+                    tussen mensen. Gedrag wordt veel meer bepaald door relaties
+                    en context dan door persoonlijkheid: terwijl we vaak denken
+                    dat het andersom is. Wij hebben de neiging om karakter en
+                    persoonlijkheid over te waarderen, en het belang van
+                    relaties en context als verklaring voor gedrag te
+                    onderschatten.
+                  </Text>
+                  <Text pb="lg">
+                    Systeemdenken daagt je uit om op een andere manier naar
+                    samenwerkingsvraagstukken te kijken. ‘Anders kijken’
+                    veronderstelt ‘anders denken’. Dit kan in de praktijk best
+                    lastig zijn.
+                  </Text>
+                </Stack>
+              </ScrollArea.Autosize>
+              <Button mb="md">Bekijk video over de Constructieve Roddel</Button>
             </Stack>
 
-            <Image src={Tree} />
+            {!isMobile && <Image src={Tree} />}
           </Group>
         </Container>
       </Box>
       <Box c={theme.colors.custom[3]}>
-        <Container p="xl">
+        <Container p="md">
           <Title order={1}>Over Mirjam</Title>
           <Text pb="lg">
             Wat je van mij kunt verwachten: vasthoudendheid als het gaat om een
@@ -183,8 +204,8 @@ const MirjamKroonAbout: React.FC = () => {
           <Button>Bekijk LinkedIn-profiel</Button>
         </Container>
 
-        <Container p="xl">
-          <Group grow align="flex-start">
+        <Container p="md">
+          <Flex align="flex-start">
             <Stack>
               <Title order={1}>En naast werk?</Title>
               <Text pb="lg">
@@ -195,6 +216,7 @@ const MirjamKroonAbout: React.FC = () => {
                 te verbinden een belangrijk onderwerp in mijn werk is geworden.
                 Je leert mensen vaak dat wat je zelf moet leren.
               </Text>
+              {isMobile && <Image src={BesidesWork} />}
               <Text pb="lg">
                 Getrouwd met mijn jeugdliefde (Dick), moeder van 3 volwassen
                 kinderen. Enthousiast over wonen op het platteland (Hoornaar
@@ -204,21 +226,21 @@ const MirjamKroonAbout: React.FC = () => {
                 Rome naar Assisi).
               </Text>
             </Stack>
-            <Image src={BesidesWork} />
-          </Group>
+            {!isMobile && <Image src={BesidesWork} w="40%" />}
+          </Flex>
         </Container>
       </Box>
 
       <Box bg={theme.colors.custom[3]} c="white">
-        <Container p="xl">
-          <Title order={1} pb="xl">
-            Samenwerkingspartners
-          </Title>
-          <Stack>
-            {samenwerkingsPartners.map((samenwerkingsPartner) => (
-              <PeopleCard samenwerkingsPartner={samenwerkingsPartner} />
-            ))}
-          </Stack>
+        <Container ta="center">
+          <Title pt="xl">Samenwerkingspartners</Title>
+
+          {samenwerkingsPartners.map((samenwerkingsPartner) => (
+            <PeopleCard
+              key={samenwerkingsPartner.name}
+              samenwerkingsPartner={samenwerkingsPartner}
+            />
+          ))}
         </Container>
       </Box>
     </>

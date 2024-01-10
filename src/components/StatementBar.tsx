@@ -1,4 +1,5 @@
 import { Box, Stack, Text, Title, useMantineTheme } from "@mantine/core";
+import { isMobile } from "react-device-detect";
 
 interface StatementBarProps {
   text: string;
@@ -8,9 +9,14 @@ interface StatementBarProps {
 const StatementBar: React.FC<StatementBarProps> = ({ text, subText }) => {
   const theme = useMantineTheme();
   return (
-    <Box p="xl" bg={theme.colors.custom[2]} c="white">
+    <Box
+      p={isMobile ? "md" : "xl"}
+      bg={theme.colors.custom[2]}
+      c="white"
+      ta="center"
+    >
       <Stack align="center">
-        <Title size="xxx-large">{text}</Title>
+        <Title size={isMobile ? "xx-large" : "xxx-large"}>{text}</Title>
         <Text size="xl">{subText}</Text>
       </Stack>
     </Box>
@@ -18,3 +24,5 @@ const StatementBar: React.FC<StatementBarProps> = ({ text, subText }) => {
 };
 
 export default StatementBar;
+
+// py={{ base: 'xs', sm: 'md', lg: 'xl' }}

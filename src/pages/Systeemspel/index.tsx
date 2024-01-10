@@ -6,15 +6,20 @@ import {
   Group,
   Stack,
   Image,
-  Button,
   useMantineTheme,
+  Flex,
+  em,
+  ScrollArea,
 } from "@mantine/core";
 import fotowater from "../../assets/images/fotowater.png";
 import IMG_3543 from "../../assets/images/IMG_3543.jpg";
 import ClientReview from "../../components/ClientReview";
+import { useMediaQuery } from "@mantine/hooks";
 
 const MirjamKroonSysteemspel: React.FC = () => {
   const theme = useMantineTheme();
+  const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
+
   return (
     <>
       <Box bg={theme.colors.custom[0]} c={theme.colors.custom[1]}>
@@ -22,7 +27,7 @@ const MirjamKroonSysteemspel: React.FC = () => {
           Systeemspel
         </Title>
         <Image src={fotowater} />
-        <Container p="xl">
+        <Container p="md">
           <Text>
             Bij het spelen van het systeemspel ga je aan de hand van een
             verhaal, in de vorm van een film, leren om met een systeembril te
@@ -59,49 +64,54 @@ const MirjamKroonSysteemspel: React.FC = () => {
       </Box>
 
       <Box bg={theme.colors.custom[3]} c="white">
-        <Container p="xl">
-          <Group grow align="flex-start" h="100%">
-            <Stack>
-              <Title py="xl" order={1}>
-                Anders leren kijken
-              </Title>
-              <Text pb="lg">
-                We zijn zo gewend om lineair te kijken. "Wie"of "wat" is het
-                probleem, en hoe lossen we het op. De realiteit is complexer. De
-                systeembenadering helpt ons om die complexiteit recht te doen en
-                om op onderzoek uit te gaan aan de hand van een aantal
-                kapstokken. We kennen allemaal de "hoe meer de een..... des te
-                meer de ander", elkaar versterkende patronen. Hoe meer de grote
-                lijnen geschetst worden, hoe meer details er toe doen. Hoe
-                harder er een bepaalde mening verkondigd wordt, hoe meer de
-                neiging tot dempen ingezet wordt. Zo'n vaart zal het toch ook
-                wel niet lopen... en zo kunnen patronen zich blijven herhalen.
+        <Container>
+          <Flex direction={isMobile ? "column" : "row"}>
+            <Stack h="100%">
+              <ScrollArea.Autosize mah={600}>
+                <Stack>
+                  <Title order={1}>Anders leren kijken</Title>
+                  <Text pb="lg">
+                    We zijn zo gewend om lineair te kijken. "Wie"of "wat" is het
+                    probleem, en hoe lossen we het op. De realiteit is
+                    complexer. De systeembenadering helpt ons om die
+                    complexiteit recht te doen en om op onderzoek uit te gaan
+                    aan de hand van een aantal kapstokken. We kennen allemaal de
+                    "hoe meer de een..... des te meer de ander", elkaar
+                    versterkende patronen. Hoe meer de grote lijnen geschetst
+                    worden, hoe meer details er toe doen. Hoe harder er een
+                    bepaalde mening verkondigd wordt, hoe meer de neiging tot
+                    dempen ingezet wordt. Zo'n vaart zal het toch ook wel niet
+                    lopen... en zo kunnen patronen zich blijven herhalen.
+                  </Text>
+                  {isMobile && <Image src={IMG_3543} />}
+                  <Text pb="lg">
+                    Volgens de systeembenadering is het antwoord op de vraag:
+                    ‘Wat gaat helpen in het systeem zelf’ te vinden. Elk gedrag
+                    is logisch, hoe stoppen we met het blijven herhalen van
+                    patronen en kunnen we leren kijken naar de behoefte en
+                    bedoeling die erachter schuilgaat? Weg van oorzaak gevolg
+                    denken, op zoek naar het ontschuldigen van die patronen
+                    omdat ze zo logisch zijn.
+                  </Text>
+                  <Text pb="lg">
+                    "It's not personal, it's the system” Taal ontwikkelen,
+                    woorden vinden voor wat zich afspeelt tussen mensen, dat is
+                    het gereedschap voor een systeemdenker. Het systeemspel is
+                    een leuke manier om basiskennis op te doen om anders te
+                    leren kijken. Heb je interesse om hier meer over te leren en
+                    ontdekken? Ik vertel je er graag meer over.
+                  </Text>
+                </Stack>
+              </ScrollArea.Autosize>
+              <Text ta="center" fw={700} c="red">
+                "BUTTON":Vraag vrijblijvend naar de mogelijkheden
               </Text>
-              <Text pb="lg">
-                Volgens de systeembenadering is het antwoord op de vraag: ‘Wat
-                gaat helpen in het systeem zelf’ te vinden. Elk gedrag is
-                logisch, hoe stoppen we met het blijven herhalen van patronen en
-                kunnen we leren kijken naar de behoefte en bedoeling die
-                erachter schuilgaat? Weg van oorzaak gevolg denken, op zoek naar
-                het ontschuldigen van die patronen omdat ze zo logisch zijn.
-              </Text>
-              <Text pb="lg">
-                "It's not personal, it's the system” Taal ontwikkelen, woorden
-                vinden voor wat zich afspeelt tussen mensen, dat is het
-                gereedschap voor een systeemdenker. Het systeemspel is een leuke
-                manier om basiskennis op te doen om anders te leren kijken. Heb
-                je interesse om hier meer over te leren en ontdekken? Ik vertel
-                je er graag meer over.
-              </Text>
-
-              <Button my="xl">Vraag vrijblijvend naar de mogelijkheden</Button>
             </Stack>
-
-            <Image src={IMG_3543} />
-          </Group>
+            {!isMobile && <Image src={IMG_3543} w="50%" />}
+          </Flex>
         </Container>
 
-        <Box c={theme.colors.custom[1]} bg={theme.colors.custom[0]} py="xl">
+        <Box c={theme.colors.custom[1]} bg={theme.colors.custom[0]} py="md">
           <Container>
             <Title order={1} ta="center" py="xl">
               Review

@@ -12,18 +12,18 @@ import {
 } from "@mantine/core";
 import "./footer.module.css";
 
+export const contactGegevens = [
+  "Mirjam Kroon-Hoekendijk",
+  "Dorpsweg 71",
+  "4223 ND",
+  "Hoornaar",
+  "Zuid-Holland",
+  "mirjam@kroontrainingadvies.com",
+  "0653507815",
+];
+
 const Footer: React.FC = () => {
   const theme = useMantineTheme();
-
-  const contactGegevens = [
-    "Mirjam Kroon-Hoekendijk",
-    "Dorpsweg 71",
-    "4223 ND",
-    "Hoornaar",
-    "Zuid-Holland",
-    "mirjam@kroontrainingadvies.com",
-    "0653507815",
-  ];
 
   const links = [
     {
@@ -46,7 +46,9 @@ const Footer: React.FC = () => {
         <Group justify="space-between" pb="lg">
           <Title order={1}>Contact</Title>
 
-          <Button>Neem contact op</Button>
+          <Anchor href="/contact">
+            <Button>Neem contact op</Button>
+          </Anchor>
         </Group>
 
         {contactGegevens.map((gegeven) => (
@@ -58,7 +60,12 @@ const Footer: React.FC = () => {
         <Group justify="space-between" align="flex-end" pb="lg">
           <Stack>
             {links.map((link) => (
-              <Anchor href={link.link} target="_blank" underline="always">
+              <Anchor
+                key={link.label}
+                href={link.link}
+                target="_blank"
+                underline="always"
+              >
                 {link.label}
               </Anchor>
             ))}
