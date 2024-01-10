@@ -10,7 +10,6 @@ import {
   useMantineTheme,
   Flex,
   em,
-  Group,
   Collapse,
 } from "@mantine/core";
 import Statement from "../../components/StatementBar";

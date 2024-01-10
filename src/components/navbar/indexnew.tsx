@@ -4,13 +4,10 @@ import {
   Image,
   Button,
   useMantineTheme,
-  Drawer,
   Stack,
   Collapse,
-  Box,
-  em,
 } from "@mantine/core";
-import { useDisclosure, useMediaQuery } from "@mantine/hooks";
+import { useDisclosure } from "@mantine/hooks";
 import logo from "../../assets/images/logo.png";
 import { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
@@ -40,7 +37,7 @@ export const menuData = [
 
 const NavbarNew: React.FC = () => {
   const theme = useMantineTheme();
-  const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
+  // const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
 
   const [opened, { toggle, close }] = useDisclosure(false);
   const [active, setActive] = useState("Home");
