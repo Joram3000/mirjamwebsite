@@ -8,17 +8,14 @@ import {
   Image,
   useMantineTheme,
   Flex,
-  em,
   ScrollArea,
 } from "@mantine/core";
 import fotowater from "../../assets/images/fotowater.png";
 import IMG_3543 from "../../assets/images/IMG_3543.jpg";
 import ClientReview from "../../components/ClientReview";
-import { useMediaQuery } from "@mantine/hooks";
 
 const MirjamKroonSysteemspel: React.FC = () => {
   const theme = useMantineTheme();
-  const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
 
   return (
     <>
@@ -65,7 +62,7 @@ const MirjamKroonSysteemspel: React.FC = () => {
 
       <Box bg={theme.colors.custom[3]} c="white">
         <Container>
-          <Flex direction={isMobile ? "column" : "row"}>
+          <Flex direction={{ base: "column", md: "row" }}>
             <Stack h="100%">
               <ScrollArea.Autosize mah={600}>
                 <Stack>
@@ -83,7 +80,7 @@ const MirjamKroonSysteemspel: React.FC = () => {
                     dempen ingezet wordt. Zo'n vaart zal het toch ook wel niet
                     lopen... en zo kunnen patronen zich blijven herhalen.
                   </Text>
-                  {isMobile && <Image src={IMG_3543} />}
+                  <Image hiddenFrom="lg" src={IMG_3543} />
                   <Text pb="lg">
                     Volgens de systeembenadering is het antwoord op de vraag:
                     ‘Wat gaat helpen in het systeem zelf’ te vinden. Elk gedrag
@@ -107,7 +104,7 @@ const MirjamKroonSysteemspel: React.FC = () => {
                 "BUTTON":Vraag vrijblijvend naar de mogelijkheden
               </Text>
             </Stack>
-            {!isMobile && <Image src={IMG_3543} w="50%" />}
+            <Image visibleFrom="lg" src={IMG_3543} w="50%" />
           </Flex>
         </Container>
 

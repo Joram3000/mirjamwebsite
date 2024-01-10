@@ -14,7 +14,7 @@ const MirjamKroonTraining: React.FC = () => {
   const theme = useMantineTheme();
   return (
     <>
-      <Box c={theme.colors.custom[1]}>
+      <Box py="md" c={theme.colors.custom[1]} bg={theme.colors.custom[0]}>
         <Title my="md" ta="center" order={1}>
           Trainingen
         </Title>
@@ -70,7 +70,7 @@ const MirjamKroonTraining: React.FC = () => {
         </Container>
       </Box>
 
-      <Box bg="white" c={theme.colors.custom[1]} m="xl">
+      <Box bg="white" c={theme.colors.custom[1]}>
         <Container>
           <Title py="xl" order={1}>
             Reviews

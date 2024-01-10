@@ -81,13 +81,13 @@ const NavbarNew: React.FC = () => {
     >
       <Link to="/home">
         <Image
-          visibleFrom="lg"
+          visibleFrom="md"
           src={logo}
           onClick={() => onClickNavLink("Home")}
         />
       </Link>
 
-      <Group align="center" justify="space-between" w="100%" hiddenFrom="lg">
+      <Group align="center" justify="space-between" w="100%" hiddenFrom="md">
         <Link to="/home">
           <Image src={logo} onClick={() => onClickNavLink("Home")} w={150} />
         </Link>
@@ -110,7 +110,7 @@ const NavbarNew: React.FC = () => {
         </Stack>
       </Collapse>
 
-      <Group visibleFrom="lg">
+      <Group visibleFrom="md">
         {menuItems}
         <NavLink to="/contact" onClick={() => setActive("Contact")}>
           <Button>Contact</Button>

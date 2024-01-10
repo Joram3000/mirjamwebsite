@@ -18,7 +18,8 @@ const ClientReview: React.FC<ClientReviewProps> = ({
       <Stack
         justify="space-evenly"
         style={{ borderLeft: "1px dotted green" }}
-        pl="md"
+        my="md"
+        p="md"
         h={rem(60)}
       >
         <Text>{name}</Text>

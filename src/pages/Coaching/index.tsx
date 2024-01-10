@@ -23,12 +23,13 @@ const MirjamKroonCoaching: React.FC = () => {
   const [opened, { toggle }] = useDisclosure(false);
   return (
     <>
-      <Box c={theme.colors.custom[1]} bg="white">
-        <Stack ta="center" align="center" my="md">
+      <Box pt="md" c={theme.colors.custom[1]} bg={theme.colors.custom[0]}>
+        <Stack ta="center" align="center" my="md" pb="md">
           <Title order={1}>Coaching</Title>
           <Title order={2}>Persoonlijke coaching & teamcoaching</Title>
         </Stack>
-
+      </Box>
+      <Box bg="white">
         <Container>
           <Flex align="flex-start" direction={isMobile ? "column" : "row"}>
             <Image src={IMG_4864} w={isMobile ? "100%" : "50%"} />
@@ -51,7 +52,8 @@ const MirjamKroonCoaching: React.FC = () => {
           text="“Kleine veranderingen kunnen groots effect hebben”"
           subText="Joep Choy"
         />
-
+      </Box>
+      <Box bg={theme.colors.custom[0]} c={theme.colors.custom[1]}>
         <Container p="md">
           <Title order={1}>Teamcoaching</Title>
           <Title order={2}>"The system in the room"</Title>
@@ -127,9 +129,11 @@ const MirjamKroonCoaching: React.FC = () => {
           <Text>
             Voorwaarde om een coachtraject te laten werken is een eigen
             leervraag.
+            <br />
             <strong>
               Waar zit de spanning tussen waar je nu bent en waar je heen wilt?
             </strong>{" "}
+            <br />
             En daar kunnen veel soorten vragen onder vallen.
           </Text>
         </Container>

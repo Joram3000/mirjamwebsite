@@ -19,26 +19,31 @@ const MirjamKroonContact: React.FC = () => {
   const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
 
   return (
-    <Box c={theme.colors.custom[3]} p="xl">
+    <Box c={theme.colors.custom[3]} bg={theme.colors.custom[0]} p="xl">
       <Container>
         <Title order={1} ta="center">
           Contact
         </Title>
 
-        <Flex align="stretch">
+        <Flex align="stretch" p="md">
           <Image visibleFrom="md" h="50vh" src={Mirjam6} />
 
-          <Stack justify="space-around">
+          <Stack justify="flex-start" px="md">
             <Text>
               Benieuwd naar wat ik voor jouw organisatie kan betekenen? Neem
               gerust vrijblijvend contact op om te kijken wat mogelijk is.
             </Text>
             <Text>
-              Mirjam Kroon-Hoekendijk<br />
-              Dorpsweg 71<br />
-              4223 ND<br />
-              Hoornaar Zuid-Holland<br />
-              mirjam@kroontrainingadvies.com<br />
+              Mirjam Kroon-Hoekendijk
+              <br />
+              Dorpsweg 71
+              <br />
+              4223 ND
+              <br />
+              Hoornaar Zuid-Holland
+              <br />
+              mirjam@kroontrainingadvies.com
+              <br />
               0653507815
             </Text>
           </Stack>

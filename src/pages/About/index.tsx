@@ -66,7 +66,7 @@ const MirjamKroonAbout: React.FC = () => {
 
   return (
     <>
-      <Box>
+      <Box bg={theme.colors.custom[0]}>
         <Container c={theme.colors.custom[3]}>
           <Flex direction={isMobile ? "column" : "row"} align="center">
             <Flex
@@ -182,7 +182,7 @@ const MirjamKroonAbout: React.FC = () => {
           </Group>
         </Container>
       </Box>
-      <Box c={theme.colors.custom[3]}>
+      <Box c={theme.colors.custom[3]} bg={theme.colors.custom[0]}>
         <Container p="md">
           <Title order={1}>Over Mirjam</Title>
           <Text pb="lg">
@@ -205,8 +205,8 @@ const MirjamKroonAbout: React.FC = () => {
         </Container>
 
         <Container p="md">
-          <Flex align="flex-start">
-            <Stack>
+          <Flex align="stretch">
+            <Stack justify="space-between">
               <Title order={1}>En naast werk?</Title>
               <Text pb="lg">
                 Oudste dochter uit een ondernemend gezin, waar buiten de
@@ -216,6 +216,7 @@ const MirjamKroonAbout: React.FC = () => {
                 te verbinden een belangrijk onderwerp in mijn werk is geworden.
                 Je leert mensen vaak dat wat je zelf moet leren.
               </Text>
+
               {isMobile && <Image src={BesidesWork} />}
               <Text pb="lg">
                 Getrouwd met mijn jeugdliefde (Dick), moeder van 3 volwassen

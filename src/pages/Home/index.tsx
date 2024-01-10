@@ -52,7 +52,7 @@ const MirjamKroonHomepage: React.FC = () => {
     <>
       <Box bg={theme.colors.custom[0]} c={theme.colors.custom[2]}>
         <Container>
-          <Stack ta="center">
+          <Stack>
             <Title order={isMobile ? 2 : 1}>
               Anders kijken naar samenwerkingsvraagstukken
             </Title>
@@ -141,7 +141,7 @@ const MirjamKroonHomepage: React.FC = () => {
         </Container>
       </Box>
 
-      <Box c={theme.colors.custom[1]}>
+      <Box c={theme.colors.custom[1]} bg={theme.colors.custom[0]}>
         <Container p="md">
           <Title order={1} pb="xl">
             Klant Ervaringen

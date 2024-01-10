@@ -1,5 +1,5 @@
-import { Box, Stack, Text, Title, useMantineTheme } from "@mantine/core";
-import { isMobile } from "react-device-detect";
+import { Box, Stack, Text, Title, em, useMantineTheme } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 
 interface StatementBarProps {
   text: string;
@@ -8,6 +8,8 @@ interface StatementBarProps {
 
 const StatementBar: React.FC<StatementBarProps> = ({ text, subText }) => {
   const theme = useMantineTheme();
+  const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
+
   return (
     <Box
       p={isMobile ? "md" : "xl"}
