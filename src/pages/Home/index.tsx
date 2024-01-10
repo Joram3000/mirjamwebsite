@@ -46,8 +46,8 @@ const MirjamKroonHomepage: React.FC = () => {
 
   return (
     <>
-      <Box>
-        <Container c={theme.colors.custom[2]}>
+      <Box bg={theme.colors.custom[0]} c={theme.colors.custom[2]}>
+        <Container>
           <Stack>
             <Title order={1}>
               Anders kijken naar samenwerkingsvraagstukken
@@ -67,11 +67,11 @@ const MirjamKroonHomepage: React.FC = () => {
 
         <Container p="xl">
           <Stack align="flex-start" c={theme.colors.custom[3]}>
-            <Title order={1} w="50%">
+            <Title order={1}>
               Werken met de spanning tussen verbinding en authenticiteit
             </Title>
 
-            <Group grow>
+            <Group justify="space-around" align="center">
               <Stack>
                 <Text>
                   Is in jouw team van professionals ieder vooral gefocust op
@@ -100,7 +100,11 @@ const MirjamKroonHomepage: React.FC = () => {
 
               <Image src={Mirjam6} />
             </Group>
-            <Button variant="outline" c={theme.colors.custom[3]}>
+            <Button
+              variant="outline"
+              c={theme.colors.custom[3]}
+              onClick={() => {}}
+            >
               Meer over Mirjam
             </Button>
           </Stack>

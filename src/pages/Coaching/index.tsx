@@ -18,14 +18,12 @@ const MirjamKroonCoaching: React.FC = () => {
   const theme = useMantineTheme();
   return (
     <>
-      <Box>
-        <Stack align="center" c={theme.colors.custom[1]} mb="xl">
+      <Box c={theme.colors.custom[1]} bg="white">
+        <Stack align="center" m="xl">
           <Title order={1}>Coaching</Title>
           <Title order={2}>Persoonlijke coaching & teamcoaching</Title>
         </Stack>
-      </Box>
 
-      <Box c={theme.colors.custom[1]} bg="white">
         <Container p="xl">
           <Group grow align="flex-start">
             <Image src={IMG_4864} h="100%" />

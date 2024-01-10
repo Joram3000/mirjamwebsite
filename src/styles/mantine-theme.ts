@@ -17,12 +17,6 @@ const theme = createTheme({
       "#F8D7BF",
       "#F3BD96",
       "#EEA36D",
-      "#E8833A",
-      "#E46F1B",
-      "#B75915",
-      "#894310",
-      "#5B2D0B",
-      "#2E1605",
     ],
   },
   headings: {

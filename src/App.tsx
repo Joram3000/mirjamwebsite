@@ -3,13 +3,13 @@ import theme from "./styles/mantine-theme";
 import { MantineProvider } from "@mantine/core";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/layout";
-import MirjamKroonHomepage from "./pages/Home";
-import MirjamKroonAbout from "./pages/About";
+import Homepage from "./pages/Home";
+import About from "./pages/About";
 import ErrorPage from "./pages/Error";
-import MirjamKroonCoaching from "./pages/Coaching";
-import MirjamKroonContact from "./pages/Contact";
-import MirjamKroonTraining from "./pages/Training";
-import MirjamKroonSysteemspel from "./pages/Systeemspel";
+import Coaching from "./pages/Coaching";
+import Contact from "./pages/Contact";
+import Training from "./pages/Training";
+import Systeemspel from "./pages/Systeemspel";
 
 const router = createBrowserRouter([
   {
@@ -17,13 +17,12 @@ const router = createBrowserRouter([
     element: <Layout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "/", element: <MirjamKroonHomepage /> },
-      { path: "/*", element: <MirjamKroonHomepage /> },
-      { path: "/about", element: <MirjamKroonAbout /> },
-      { path: "/coaching", element: <MirjamKroonCoaching /> },
-      { path: "/training", element: <MirjamKroonTraining /> },
-      { path: "/systeemspel", element: <MirjamKroonSysteemspel /> },
-      { path: "/contact", element: <MirjamKroonContact /> },
+      { path: "/*", element: <Homepage /> },
+      { path: "/about", element: <About /> },
+      { path: "/coaching", element: <Coaching /> },
+      { path: "/training", element: <Training /> },
+      { path: "/systeemspel", element: <Systeemspel /> },
+      { path: "/contact", element: <Contact /> },
     ],
   },
 ]);

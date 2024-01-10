@@ -1,7 +1,6 @@
 import {
   Box,
   Container,
-  Stack,
   Title,
   useMantineTheme,
   Text,
@@ -64,7 +63,9 @@ const MirjamKroonTraining: React.FC = () => {
               <li>Feedback-trainingen</li>
             </ul>
           </Text>
-          <Button>Vraag vrijblijvend naar de mogelijkheden</Button>
+          <Button onClick={() => console.log("Hoi ik ben geklikt")}>
+            Vraag vrijblijvend naar de mogelijkheden
+          </Button>
         </Container>
       </Box>
 
