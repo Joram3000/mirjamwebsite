@@ -11,7 +11,7 @@ import {
   ScrollArea,
 } from "@mantine/core";
 import fotowater from "../../assets/images/fotowater.png";
-import IMG_3543 from "../../assets/images/IMG_3543.jpg";
+import IMG_35432 from "../../assets/images/IMG_35432.jpg";
 import ClientReview from "../../components/ClientReview";
 
 const MirjamKroonSysteemspel: React.FC = () => {
@@ -78,7 +78,7 @@ const MirjamKroonSysteemspel: React.FC = () => {
                     dempen ingezet wordt. Zo'n vaart zal het toch ook wel niet
                     lopen... en zo kunnen patronen zich blijven herhalen.
                   </Text>
-                  <Image hiddenFrom="lg" src={IMG_3543} />
+                  <Image hiddenFrom="lg" src={IMG_35432} />
                   <Text pb="lg">
                     Volgens de systeembenadering is het antwoord op de vraag:
                     ‘Wat gaat helpen in het systeem zelf’ te vinden. Elk gedrag
@@ -106,7 +106,7 @@ const MirjamKroonSysteemspel: React.FC = () => {
                 p="md"
                 pos="relative"
                 visibleFrom="lg"
-                src={IMG_3543}
+                src={IMG_35432}
                 w="50%"
               />
             </Flex>
