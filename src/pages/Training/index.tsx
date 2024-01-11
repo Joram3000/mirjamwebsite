@@ -52,18 +52,28 @@ const MirjamKroonTraining: React.FC = () => {
           <Text>De meest recente trainingen:</Text>
 
           <ul>
-            <li>Leidinggeven met Lef (het moedige gesprek voeren).</li>
-            <li>De Leider als teamcoach of individuele coach.</li>
             <li>
-              Ik ben als een van de vaste trainers betrokken bij het programma
-              De Informele Leider van de Baak. Een programma waarbij je leert
-              hoe je mensen mee kunt krijgen zonder informele macht.
+              <Text>Leidinggeven met Lef (het moedige gesprek voeren). </Text>
             </li>
             <li>
-              Insights-teamtrainingen, gebruiksaanwijzingen om elkaar te
-              begrijpen
+              <Text>De Leider als teamcoach of individuele coach. </Text>
             </li>
-            <li>Feedback-trainingen</li>
+            <li>
+              <Text>
+                Ik ben als een van de vaste trainers betrokken bij het programma
+                De Informele Leider van de Baak. Een programma waarbij je leert
+                hoe je mensen mee kunt krijgen zonder informele macht.
+              </Text>
+            </li>
+            <li>
+              <Text>
+                Insights-teamtrainingen, gebruiksaanwijzingen om elkaar te
+                begrijpen
+              </Text>
+            </li>
+            <li>
+              <Text>Feedback-trainingen </Text>
+            </li>
           </ul>
 
           <Button onClick={() => console.log("Hoi ik ben geklikt")}>

@@ -13,7 +13,7 @@ interface smallCardProps {
 
 const SmallCard: React.FC<smallCardProps> = ({ card }) => {
   return (
-    <Stack align="center" h="100%">
+    <Stack align="center" h="100%" p="md">
       <Image src={card.icon} w={100} h={100} />
       <Title order={2}>{card.title}</Title>
 

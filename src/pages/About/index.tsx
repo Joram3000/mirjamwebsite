@@ -127,22 +127,14 @@ const MirjamKroonAbout: React.FC = () => {
           </Text>
         </Container>
       </Box>
-      <Button
-        onClick={() =>
-          scrollIntoView({
-            alignment: "center",
-          })
-        }
-      >
-        Scroll to target
-      </Button>
-      <Box bg={theme.colors.custom[3]} c="white">
+
+      <Box bg={inViewport ? theme.colors.custom[3] : "blue"} c="white">
         <Container>
           <Title py="xl" order={1}>
             “Geen sprookje, maar een soap’’
           </Title>
 
-          <Group grow align="flex-start" ref={targetRef}>
+          <Group grow align="flex-start" ref={ref}>
             <Stack>
               <ScrollArea.Autosize mah={600}>
                 <Stack>

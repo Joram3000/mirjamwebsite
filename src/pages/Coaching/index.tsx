@@ -30,14 +30,19 @@ const MirjamKroonCoaching: React.FC = () => {
         c={theme.colors.custom[1]}
         bg={theme.colors.custom[0]}
       >
-        <Stack ta="center" align="center" my="md" pb="md">
+        <Stack ta="center" align="center" py="md" pb="md">
           <Title order={1}>Coaching</Title>
           <Title order={2}>Persoonlijke coaching & teamcoaching</Title>
         </Stack>
       </Box>
+
       <Box bg="white" c={theme.colors.custom[1]}>
         <Container>
-          <Flex align="stretch" direction={isMobile ? "column" : "row"}>
+          <Flex
+            align="stretch"
+            direction={isMobile ? "column" : "row"}
+            gap="md"
+          >
             <Image src={IMG_4864} w={isMobile ? "100%" : "50%"} />
 
             <Stack m="md" my="md" align="center" justify="space-evenly">
