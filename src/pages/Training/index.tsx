@@ -9,7 +9,7 @@ import {
   Flex,
   Stack,
 } from "@mantine/core";
-import plaatje from "../../assets/images/IMG_4552.jpg";
+import plaatje from "../../assets/images/IMG_45522.jpg";
 import ClientReview from "../../components/ClientReview";
 
 const MirjamKroonTraining: React.FC = () => {
