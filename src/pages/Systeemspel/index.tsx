@@ -19,20 +19,22 @@ const MirjamKroonSysteemspel: React.FC = () => {
 
   return (
     <>
-      <Box bg={theme.colors.custom[0]} c={theme.colors.custom[1]}>
+      <Box bg={theme.colors.custom[0]} c={theme.colors.custom[1]} pt="md">
         <Title order={1} ta="center">
           Systeemspel
         </Title>
+
         <Image src={fotowater} />
-        <Container p="md">
-          <Text w="70%" p="md">
+
+        <Container>
+          <Text>
             Bij het spelen van het systeemspel ga je aan de hand van een
             verhaal, in de vorm van een film, leren om met een systeembril te
             kijken naar samenwerkingsvraagstukken. En krijg je manieren
             aangereikt om de vastgelopen situatie weer vlot te trekken.
           </Text>
 
-          <Group grow align="space-around" my="md">
+          <Group grow align="space-around">
             <Stack py="md">
               <Text>
                 Om je eigen deskundigheid te bevorderen vanuit bijvoorbeeld een

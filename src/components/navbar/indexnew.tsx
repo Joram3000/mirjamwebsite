@@ -37,7 +37,6 @@ export const menuData = [
 
 const NavbarNew: React.FC = () => {
   const theme = useMantineTheme();
-  // const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
 
   const [opened, { toggle, close }] = useDisclosure(false);
   const [active, setActive] = useState("Home");
@@ -49,8 +48,6 @@ const NavbarNew: React.FC = () => {
     );
     if (currentMenuItem) {
       setActive(currentMenuItem.label);
-    } else {
-      setActive(""); // Reset active state if the path doesn't match any menu item
     }
   }, [location.pathname]);
 
@@ -64,7 +61,7 @@ const NavbarNew: React.FC = () => {
       to={item.link}
       key={item.label}
       onClick={() => onClickNavLink(item.label)}
-      style={{ color: item.label === active ? "blue" : "" }} // ACTIVE STYLES
+      style={{ backgroundColor: item.label === active ? "blue" : "" }} // ACTIVE STYLES
     >
       {item.label}
     </NavLink>

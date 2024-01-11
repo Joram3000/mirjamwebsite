@@ -10,6 +10,7 @@ import {
   useMantineTheme,
   Flex,
   em,
+  Anchor,
 } from "@mantine/core";
 
 import SmallCard from "../../components/smallCard";
@@ -106,17 +107,11 @@ const MirjamKroonHomepage: React.FC = () => {
 
               <Image src={Mirjam6} />
             </Flex>
-
-            <Link to="/about">
-              <Button
-                variant="outline"
-                c={theme.colors.custom[3]}
-                onClick={() => {}}
-                fullWidth={isMobile ? true : false}
-              >
+            <Anchor href="/about">
+              <Button variant="outline" fullWidth={isMobile ? true : false}>
                 Meer over Mirjam
               </Button>
-            </Link>
+            </Anchor>
           </Stack>
         </Container>
       </Box>
@@ -144,7 +139,7 @@ const MirjamKroonHomepage: React.FC = () => {
       <Box c={theme.colors.custom[1]} bg={theme.colors.custom[0]}>
         <Container p="md">
           <Title order={1} pb="xl">
-            Klant Ervaringen
+            Klantervaringen
           </Title>
 
           <SimpleGrid cols={{ base: 1, sm: 2 }}>

@@ -8,7 +8,6 @@ import {
   Image,
   Button,
   useMantineTheme,
-  em,
   Flex,
   ScrollArea,
 } from "@mantine/core";
@@ -22,12 +21,9 @@ import samenwerkingsPartner1 from "../../assets/images/Samenwerkingspartners1.pn
 import samenwerkingsPartner2 from "../../assets/images/Samenwerkingspartners2.png";
 import samenwerkingsPartner3 from "../../assets/images/Samenwerkingspartners3.png";
 import samenwerkingsPartner4 from "../../assets/images/Samenwerkingspartners5.png";
-import { useMediaQuery, useInViewport } from "@mantine/hooks";
 
 const MirjamKroonAbout: React.FC = () => {
-  const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
   const theme = useMantineTheme();
-  const { ref, inViewport } = useInViewport();
 
   const samenwerkingsPartners = [
     {
@@ -69,10 +65,10 @@ const MirjamKroonAbout: React.FC = () => {
     <>
       <Box bg={theme.colors.custom[0]}>
         <Container c={theme.colors.custom[3]}>
-          <Flex direction={isMobile ? "column" : "row"} align="center">
+          <Flex direction={{ base: "column", md: "row" }} align="center">
             <Flex
               direction="column"
-              ta={isMobile ? "center" : "start"}
+              ta={{ base: "center", md: "start" }}
               justify="center"
             >
               <Title order={1} pb="md">
@@ -128,13 +124,13 @@ const MirjamKroonAbout: React.FC = () => {
         </Container>
       </Box>
 
-      <Box bg={inViewport ? theme.colors.custom[3] : "blue"} c="white">
+      <Box bg={theme.colors.custom[3]} c="white">
         <Container>
-          <Title py="xl" order={1}>
+          <Title py="xl" order={1} ta="center">
             “Geen sprookje, maar een soap’’
           </Title>
 
-          <Group grow align="flex-start" ref={ref}>
+          <Flex align="flex-start" gap="md">
             <Stack>
               <ScrollArea.Autosize mah={600}>
                 <Stack>
@@ -153,7 +149,7 @@ const MirjamKroonAbout: React.FC = () => {
                     gebeurt. Van nature denken we lineair maar de realiteit is
                     meer circulair.
                   </Text>
-                  {isMobile && <Image src={Tree} />}
+                  <Image hiddenFrom="md" src={Tree} />
                   <Text pb="lg">
                     Samenwerken gaat vanuit systeemdenken niet alleen om mensen,
                     maar vooral om de talloze relaties en verbindingen waar
@@ -179,8 +175,8 @@ const MirjamKroonAbout: React.FC = () => {
               <Button mb="md">Bekijk video over de Constructieve Roddel</Button>
             </Stack>
 
-            {!isMobile && <Image src={Tree} />}
-          </Group>
+            <Image visibleFrom="md" w="50%" src={Tree} />
+          </Flex>
         </Container>
       </Box>
       <Box c={theme.colors.custom[3]} bg={theme.colors.custom[0]}>
@@ -218,7 +214,7 @@ const MirjamKroonAbout: React.FC = () => {
                 Je leert mensen vaak dat wat je zelf moet leren.
               </Text>
 
-              {isMobile && <Image src={BesidesWork} />}
+              <Image hiddenFrom="md" src={BesidesWork} />
               <Text pb="lg">
                 Getrouwd met mijn jeugdliefde (Dick), moeder van 3 volwassen
                 kinderen. Enthousiast over wonen op het platteland (Hoornaar
@@ -228,7 +224,7 @@ const MirjamKroonAbout: React.FC = () => {
                 Rome naar Assisi).
               </Text>
             </Stack>
-            {!isMobile && <Image src={BesidesWork} w="40%" />}
+            <Image visibleFrom="md" src={BesidesWork} w="40%" />
           </Flex>
         </Container>
       </Box>
