@@ -20,21 +20,27 @@ import { useDisclosure, useMediaQuery } from "@mantine/hooks";
 const MirjamKroonCoaching: React.FC = () => {
   const theme = useMantineTheme();
   const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
+
   const [opened, { toggle }] = useDisclosure(false);
   return (
     <>
-      <Box pt="md" c={theme.colors.custom[1]} bg={theme.colors.custom[0]}>
+      <Box
+        id="boxx"
+        pt="md"
+        c={theme.colors.custom[1]}
+        bg={theme.colors.custom[0]}
+      >
         <Stack ta="center" align="center" my="md" pb="md">
           <Title order={1}>Coaching</Title>
           <Title order={2}>Persoonlijke coaching & teamcoaching</Title>
         </Stack>
       </Box>
-      <Box bg="white">
+      <Box bg="white" c={theme.colors.custom[1]}>
         <Container>
-          <Flex align="flex-start" direction={isMobile ? "column" : "row"}>
+          <Flex align="stretch" direction={isMobile ? "column" : "row"}>
             <Image src={IMG_4864} w={isMobile ? "100%" : "50%"} />
 
-            <Stack m={isMobile ? "" : "md"} my="md">
+            <Stack m="md" my="md" align="center" justify="space-evenly">
               <Title order={isMobile ? 3 : 2}>
                 Obstakels op je weg, herhalende patronen in de interactie met
                 anderen? Gedrag veranderen is niet eenvoudig.
@@ -107,6 +113,7 @@ const MirjamKroonCoaching: React.FC = () => {
             Voor <strong>persoonlijke coaching</strong> begeleid ik je graag op
             thema’s als:
           </Title>
+
           <ul>
             <li>
               <Text>
@@ -141,22 +148,31 @@ const MirjamKroonCoaching: React.FC = () => {
 
       <Box>
         <Container p="md" c={theme.colors.custom[3]}>
-          <Title>Hoe zou een persoonlijk coachtraject eruit kunnen zien?</Title>
+          <Title>
+            Hoe zou een <strong>persoonlijk coachtraject</strong> eruit kunnen
+            zien?
+          </Title>
 
-          <Text>
-            <ul>
-              <li>
+          <ul>
+            <li>
+              <Text>
                 Een eerste gesprek is een gesprek waarbij we wederzijds kijken
                 of er voldoende klik is en onderzoeken we samen de
                 coachingsvraag.
-              </li>
-              <li>Een traject beslaat meestal 5 tot 7 sessies, soms meer.</li>
-              <li>
+              </Text>
+            </li>
+            <li>
+              <Text>
+                Een traject beslaat meestal 5 tot 7 sessies, soms meer.
+              </Text>
+            </li>
+            <li>
+              <Text>
                 Tussen de sessies ga je verder met je eigen leerproces aan de
                 hand van experimenten die je gaat uittesten in de praktijk.
-              </li>
-            </ul>
-          </Text>
+              </Text>
+            </li>
+          </ul>
 
           <Button>Vraag vrijblijvend naar de mogelijkheden</Button>
         </Container>

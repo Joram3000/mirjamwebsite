@@ -22,34 +22,36 @@ const MirjamKroonTraining: React.FC = () => {
 
         <Container p="md">
           <Title pb="md" order={2}>
-            Wegen ontstaan, waar mensen samen gaan
+            Wegen ontstaan,
+            <br />
+            waar mensen samen gaan
           </Title>
-          <Text>
+          <Text pb="md">
             Het gaat bij trainingen steeds weer om het vergroten van impact door
-            middel van communicatie. De kracht van de stilte leren gebruiken,
-            want we kletsen zo vaak door het waardevolle denkproces van de ander
-            heen.
-          </Text>
-          <Text>
+            middel van communicatie.
+            <br />
+            De kracht van de stilte leren gebruiken, want we kletsen zo vaak
+            door het waardevolle denkproces van de ander heen.
+            <br />
+            <br />
             Vaardigheden als de bal bij de ander leggen, zorgen dat mensen in
             beweging komen, zijn mooie trainingsonderwerpen. Ik zie een
             trainingscontext als een klein laboratorium, waarbij je inzoomt op
             een vaardigheid die je wilt vergroten, aanleren of verbeteren.
-          </Text>
-          <Text>
+            <br />
+            <br />
             Wanneer de koppeling aan de praktijk meegenomen wordt in het
             programma, kan een training een zinvolle manier van leren zijn. Het
             werkt resultaatverhogend wanneer een trainingsdag onderdeel is van
             een grotere beweging die ingezet wordt of bijvoorbeeld opgevolgd
             wordt door intervisie.
-          </Text>
-          <Text>
+            <br /> <br />
             Trainingen zijn altijd maatwerk, afhankelijk van de vraag van de
             opdrachtgever.
           </Text>
-          <Text>De meest recente trainingen</Text>
+          <Text>De meest recente trainingen:</Text>
 
-          <ol>
+          <ul>
             <li>Leidinggeven met Lef (het moedige gesprek voeren).</li>
             <li>De Leider als teamcoach of individuele coach.</li>
             <li>
@@ -62,7 +64,7 @@ const MirjamKroonTraining: React.FC = () => {
               begrijpen
             </li>
             <li>Feedback-trainingen</li>
-          </ol>
+          </ul>
 
           <Button onClick={() => console.log("Hoi ik ben geklikt")}>
             Vraag vrijblijvend naar de mogelijkheden

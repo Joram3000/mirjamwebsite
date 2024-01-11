@@ -25,7 +25,7 @@ const MirjamKroonSysteemspel: React.FC = () => {
         </Title>
         <Image src={fotowater} />
         <Container p="md">
-          <Text>
+          <Text w="70%" p="md">
             Bij het spelen van het systeemspel ga je aan de hand van een
             verhaal, in de vorm van een film, leren om met een systeembril te
             kijken naar samenwerkingsvraagstukken. En krijg je manieren
@@ -33,7 +33,7 @@ const MirjamKroonSysteemspel: React.FC = () => {
           </Text>
 
           <Group grow align="space-around" my="md">
-            <Stack>
+            <Stack py="md">
               <Text>
                 Om je eigen deskundigheid te bevorderen vanuit bijvoorbeeld een
                 rol als HR-manager of trainer, kun je mij inhuren om het spel
@@ -45,26 +45,24 @@ const MirjamKroonSysteemspel: React.FC = () => {
                 kennis toepassen geeft een meerwaarde.
               </Text>
             </Stack>
-            <Stack>
-              <Text>
-                Omdat ik vanuit meerdere systemische achtergronden opgeleid ben
-                (Hellingerwerk, Marijke Spansjersbergen), breng ik een rijk
-                gevulde gereedschapskist mee. De wereld wordt er niet
-                eenvoudiger maar wel veel rijker van als we doorkrijgen hoeveel
-                samenhang er is tussen goede doelen stellen en goede relaties
-                ontwikkelen. Hoe patronen zich vaak herhalen en ook te
-                veranderen zijn.
-              </Text>
-            </Stack>
+
+            <Text py="md">
+              Omdat ik vanuit meerdere systemische achtergronden opgeleid ben
+              (Hellingerwerk, Marijke Spansjersbergen), breng ik een rijk
+              gevulde gereedschapskist mee. De wereld wordt er niet eenvoudiger
+              maar wel veel rijker van als we doorkrijgen hoeveel samenhang er
+              is tussen goede doelen stellen en goede relaties ontwikkelen. Hoe
+              patronen zich vaak herhalen en ook te veranderen zijn.
+            </Text>
           </Group>
         </Container>
       </Box>
 
       <Box bg={theme.colors.custom[3]} c="white">
-        <Container>
-          <Flex direction={{ base: "column", md: "row" }}>
-            <Stack h="100%">
-              <ScrollArea.Autosize mah={600}>
+        <ScrollArea.Autosize mah={600}>
+          <Container>
+            <Flex direction={{ base: "column", md: "row" }}>
+              <Stack h="100%">
                 <Stack>
                   <Title order={1}>Anders leren kijken</Title>
                   <Text pb="lg">
@@ -99,14 +97,21 @@ const MirjamKroonSysteemspel: React.FC = () => {
                     ontdekken? Ik vertel je er graag meer over.
                   </Text>
                 </Stack>
-              </ScrollArea.Autosize>
-              <Text ta="center" fw={700} c="red">
-                "BUTTON":Vraag vrijblijvend naar de mogelijkheden
-              </Text>
-            </Stack>
-            <Image visibleFrom="lg" src={IMG_3543} w="50%" />
-          </Flex>
-        </Container>
+
+                <Text ta="center" fw={700} c="red">
+                  "BUTTON":Vraag vrijblijvend naar de mogelijkheden
+                </Text>
+              </Stack>
+              <Image
+                p="md"
+                pos="relative"
+                visibleFrom="lg"
+                src={IMG_3543}
+                w="50%"
+              />
+            </Flex>
+          </Container>
+        </ScrollArea.Autosize>
 
         <Box c={theme.colors.custom[1]} bg={theme.colors.custom[0]} py="md">
           <Container>

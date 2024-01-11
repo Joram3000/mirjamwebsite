@@ -25,8 +25,8 @@ const MirjamKroonContact: React.FC = () => {
           Contact
         </Title>
 
-        <Flex align="stretch" p="md">
-          <Image visibleFrom="md" h="50vh" src={Mirjam6} />
+        <Flex align="stretch" p="md" gap="md">
+          <Image visibleFrom="md" w="50%" src={Mirjam6} />
 
           <Stack justify="flex-start" px="md">
             <Text>
@@ -51,10 +51,13 @@ const MirjamKroonContact: React.FC = () => {
 
         <Divider my="xl" />
 
-        <Flex direction={isMobile ? "column" : "row"} align="center">
+        <Flex direction={isMobile ? "column" : "row"} align="center" gap="md">
           <Text p="md">
-            Moeite met het vinden van het adres? Zoek hier de route op via
-            Google Maps!
+            Moeite met het vinden van het adres?
+            <br />
+            Zoek hier de route op
+            <br />
+            via Google Maps!
           </Text>
           <Image w={{ base: "100%", md: "50%" }} src={Kaartje} />
         </Flex>

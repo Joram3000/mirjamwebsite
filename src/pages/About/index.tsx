@@ -22,11 +22,12 @@ import samenwerkingsPartner1 from "../../assets/images/Samenwerkingspartners1.pn
 import samenwerkingsPartner2 from "../../assets/images/Samenwerkingspartners2.png";
 import samenwerkingsPartner3 from "../../assets/images/Samenwerkingspartners3.png";
 import samenwerkingsPartner4 from "../../assets/images/Samenwerkingspartners5.png";
-import { useMediaQuery } from "@mantine/hooks";
+import { useMediaQuery, useInViewport } from "@mantine/hooks";
 
 const MirjamKroonAbout: React.FC = () => {
   const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
   const theme = useMantineTheme();
+  const { ref, inViewport } = useInViewport();
 
   const samenwerkingsPartners = [
     {
@@ -126,14 +127,22 @@ const MirjamKroonAbout: React.FC = () => {
           </Text>
         </Container>
       </Box>
-
+      <Button
+        onClick={() =>
+          scrollIntoView({
+            alignment: "center",
+          })
+        }
+      >
+        Scroll to target
+      </Button>
       <Box bg={theme.colors.custom[3]} c="white">
         <Container>
           <Title py="xl" order={1}>
             “Geen sprookje, maar een soap’’
           </Title>
 
-          <Group grow align="flex-start">
+          <Group grow align="flex-start" ref={targetRef}>
             <Stack>
               <ScrollArea.Autosize mah={600}>
                 <Stack>
