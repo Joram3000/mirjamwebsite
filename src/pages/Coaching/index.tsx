@@ -13,7 +13,7 @@ import {
   Collapse,
 } from "@mantine/core";
 import Statement from "../../components/StatementBar";
-import IMG_4864 from "../../assets/images/IMG_4864.jpg";
+import IMG_4864 from "../../assets/images/IMG_48642.jpg";
 import ClientReview from "../../components/ClientReview";
 import { useDisclosure, useMediaQuery } from "@mantine/hooks";
 
