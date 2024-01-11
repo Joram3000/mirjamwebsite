@@ -22,7 +22,6 @@ import teamcoaching from "../../assets/svg/teamcoaching.png";
 import training from "../../assets/svg/training.png";
 import ClientReview from "../../components/ClientReview";
 import { useMediaQuery } from "@mantine/hooks";
-import { Link } from "react-router-dom";
 
 const MirjamKroonHomepage: React.FC = () => {
   const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
