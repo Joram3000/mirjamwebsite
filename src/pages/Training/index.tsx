@@ -6,6 +6,8 @@ import {
   Text,
   Button,
   Image,
+  Flex,
+  Stack,
 } from "@mantine/core";
 import plaatje from "../../assets/images/IMG_4552.jpg";
 import ClientReview from "../../components/ClientReview";
@@ -49,36 +51,45 @@ const MirjamKroonTraining: React.FC = () => {
             Trainingen zijn altijd maatwerk, afhankelijk van de vraag van de
             opdrachtgever.
           </Text>
-          <Text>De meest recente trainingen:</Text>
+          <Flex gap="md" direction={{ base: "column", md: "row" }}>
+            <Image hiddenFrom="md" src={plaatje} />
+            <Stack>
+              <Text>De meest recente trainingen:</Text>
+              <ul>
+                <li>
+                  <Text>
+                    Leidinggeven met Lef (het moedige gesprek voeren).{" "}
+                  </Text>
+                </li>
+                <li>
+                  <Text>De Leider als teamcoach of individuele coach. </Text>
+                </li>
+                <li>
+                  <Text>
+                    Ik ben als een van de vaste trainers betrokken bij het
+                    programma De Informele Leider van de Baak. Een programma
+                    waarbij je leert hoe je mensen mee kunt krijgen zonder
+                    informele macht.
+                  </Text>
+                </li>
+                <li>
+                  <Text>
+                    Insights-teamtrainingen, gebruiksaanwijzingen om elkaar te
+                    begrijpen
+                  </Text>
+                </li>
+                <li>
+                  <Text>Feedback-trainingen </Text>
+                </li>
+              </ul>
 
-          <ul>
-            <li>
-              <Text>Leidinggeven met Lef (het moedige gesprek voeren). </Text>
-            </li>
-            <li>
-              <Text>De Leider als teamcoach of individuele coach. </Text>
-            </li>
-            <li>
-              <Text>
-                Ik ben als een van de vaste trainers betrokken bij het programma
-                De Informele Leider van de Baak. Een programma waarbij je leert
-                hoe je mensen mee kunt krijgen zonder informele macht.
-              </Text>
-            </li>
-            <li>
-              <Text>
-                Insights-teamtrainingen, gebruiksaanwijzingen om elkaar te
-                begrijpen
-              </Text>
-            </li>
-            <li>
-              <Text>Feedback-trainingen </Text>
-            </li>
-          </ul>
+              <Button onClick={() => console.log("Hoi ik ben geklikt")}>
+                Vraag vrijblijvend naar de mogelijkheden
+              </Button>
+            </Stack>
 
-          <Button onClick={() => console.log("Hoi ik ben geklikt")}>
-            Vraag vrijblijvend naar de mogelijkheden
-          </Button>
+            <Image visibleFrom="md" src={plaatje} w="40%" />
+          </Flex>
         </Container>
       </Box>
 
