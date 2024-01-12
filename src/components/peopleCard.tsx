@@ -1,5 +1,4 @@
-import { Stack, Text, Title, Image, Flex, em } from "@mantine/core";
-import { useMediaQuery } from "@mantine/hooks";
+import { Stack, Text, Title, Image, Flex } from "@mantine/core";
 
 type samenwerkingsPartner = {
   img?: string;
@@ -15,15 +14,17 @@ interface PeopleCardProps {
 
 const PeopleCard: React.FC<PeopleCardProps> = ({
   samenwerkingsPartner,
-  size = 150,
+  size = 200,
 }) => {
-  const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
-
   return (
-    <Flex direction={isMobile ? "column" : "row"} p="md" align="center">
-      <Image w={isMobile ? "50%" : size} src={samenwerkingsPartner.img} />
-      <Stack p="md">
-        <Title ta={isMobile ? "center" : "left"} order={isMobile ? 1 : 2}>
+    <Flex direction={{ base: "column", md: "row" }} p="md" align="center">
+      <Image
+        w={{ base: "100%", md: size }}
+        p="md"
+        src={samenwerkingsPartner.img}
+      />
+      <Stack p="md" h="100%">
+        <Title ta={{ base: "center", md: "left" }} order={1}>
           {samenwerkingsPartner.name}
         </Title>
         <Text ta="left">{samenwerkingsPartner.text}</Text>

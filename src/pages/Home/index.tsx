@@ -9,7 +9,6 @@ import {
   SimpleGrid,
   useMantineTheme,
   Flex,
-  em,
   Anchor,
 } from "@mantine/core";
 
@@ -21,11 +20,9 @@ import systeemspel from "../../assets/svg/systeemspel.png";
 import teamcoaching from "../../assets/svg/teamcoaching.png";
 import training from "../../assets/svg/training.png";
 import ClientReview from "../../components/ClientReview";
-import { useMediaQuery } from "@mantine/hooks";
+import { Link } from "react-router-dom";
 
 const MirjamKroonHomepage: React.FC = () => {
-  const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
-
   const theme = useMantineTheme();
   const cardContent = [
     {
@@ -50,20 +47,25 @@ const MirjamKroonHomepage: React.FC = () => {
 
   return (
     <>
-      <Box bg={theme.colors.custom[0]} c={theme.colors.custom[2]}>
+      <Box bg={theme.colors.custom[0]} c={theme.colors.custom[2]} pt="md">
         <Container>
-          <Stack>
-            <Title order={isMobile ? 2 : 1}>
+          <Stack pb="md">
+            <Title visibleFrom="md" order={1}>
+              Anders kijken naar
+              <br />
+              samenwerkingsvraagstukken
+            </Title>
+            <Title hiddenFrom="md" order={2}>
               Anders kijken naar samenwerkingsvraagstukken
             </Title>
 
-            <Text>
+            <Text w={{ base: "100%", md: "70%" }}>
               Training, coaching en systemische oefeningen voor teams en
               personen, om succesvolle werkrelaties te herstellen of te bouwen.
             </Text>
           </Stack>
 
-          <Image src={cirkels} />
+          <Image src={cirkels} pb="md" />
         </Container>
 
         <Statement
@@ -77,7 +79,7 @@ const MirjamKroonHomepage: React.FC = () => {
               Werken met de spanning tussen verbinding en authenticiteit
             </Title>
 
-            <Flex direction={isMobile ? "column" : "row"} align="stretch">
+            <Flex direction={{ base: "column", md: "row" }} align="stretch">
               <Flex direction="column" align="center" justify="space-around">
                 <Text pb="md">
                   Is in jouw team van professionals ieder vooral gefocust op
@@ -106,11 +108,9 @@ const MirjamKroonHomepage: React.FC = () => {
 
               <Image src={Mirjam6} />
             </Flex>
-            <Anchor href="/about">
-              <Button variant="outline" fullWidth={isMobile ? true : false}>
-                Meer over Mirjam
-              </Button>
-            </Anchor>
+            <Link to="/about">
+              <Button variant="outline">Meer over Mirjam</Button>
+            </Link>
           </Stack>
         </Container>
       </Box>

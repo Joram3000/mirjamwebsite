@@ -3,9 +3,10 @@ import {
   Burger,
   Image,
   Button,
-  useMantineTheme,
   Stack,
   Collapse,
+  Container,
+  useMantineTheme,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import logo from "../../assets/images/logo.png";
@@ -61,59 +62,57 @@ const NavbarNew: React.FC = () => {
       to={item.link}
       key={item.label}
       onClick={() => onClickNavLink(item.label)}
-      style={{ backgroundColor: item.label === active ? "blue" : "" }} // ACTIVE STYLES
+      style={{
+        textDecoration: item.label === active ? "underline" : "none",
+        color: theme.colors.custom[2],
+      }}
     >
       {item.label}
     </NavLink>
   ));
 
   return (
-    <Group
-      bg={theme.colors.custom[0]}
-      justify="space-between"
-      align="center"
-      p="md"
-
-      // h={opened ? "100%" : 116}
-    >
-      <Link to="/home">
-        <Image
-          visibleFrom="md"
-          src={logo}
-          onClick={() => onClickNavLink("Home")}
-        />
-      </Link>
-
-      <Group align="center" justify="space-between" w="100%" hiddenFrom="md">
+    <Container p={0} bg={theme.colors.custom[0]}>
+      <Group justify="space-between" align="center" py="md">
         <Link to="/home">
-          <Image src={logo} onClick={() => onClickNavLink("Home")} w={150} />
+          <Image
+            visibleFrom="md"
+            src={logo}
+            onClick={() => onClickNavLink("Home")}
+          />
         </Link>
-        <Burger
-          opened={opened}
-          onClick={toggle}
-          hiddenFrom="lg"
-          size="sm"
-          m="lg"
-        />
-      </Group>
 
-      <Collapse in={opened} w="100%">
-        <Stack align="center" justify="center">
+        <Group align="center" justify="space-between" w="100%" hiddenFrom="md">
+          <Link to="/home">
+            <Image src={logo} onClick={() => onClickNavLink("Home")} w={150} />
+          </Link>
+          <Burger
+            opened={opened}
+            onClick={toggle}
+            hiddenFrom="lg"
+            size="sm"
+            m="lg"
+          />
+        </Group>
+
+        <Collapse in={opened} w="100%">
+          <Stack align="center" justify="center">
+            {menuItems}
+
+            <NavLink to="/contact" onClick={() => onClickNavLink("Contact")}>
+              <Button>Contact</Button>
+            </NavLink>
+          </Stack>
+        </Collapse>
+
+        <Group visibleFrom="md">
           {menuItems}
-
-          <NavLink to="/contact" onClick={() => onClickNavLink("Contact")}>
+          <NavLink to="/contact" onClick={() => setActive("Contact")}>
             <Button>Contact</Button>
           </NavLink>
-        </Stack>
-      </Collapse>
-
-      <Group visibleFrom="md">
-        {menuItems}
-        <NavLink to="/contact" onClick={() => setActive("Contact")}>
-          <Button>Contact</Button>
-        </NavLink>
+        </Group>
       </Group>
-    </Group>
+    </Container>
   );
 };
 

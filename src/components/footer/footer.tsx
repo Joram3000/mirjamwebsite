@@ -11,6 +11,7 @@ import {
   Stack,
 } from "@mantine/core";
 import "./footer.module.css";
+import { Link } from "react-router-dom";
 
 export const contactGegevens = [
   "Mirjam Kroon-Hoekendijk",
@@ -46,9 +47,9 @@ const Footer: React.FC = () => {
         <Group justify="space-between" pb="lg">
           <Title order={1}>Contact</Title>
 
-          <Anchor href="/contact">
+          <Link to="/contact">
             <Button>Neem contact op</Button>
-          </Anchor>
+          </Link>
         </Group>
 
         {contactGegevens.map((gegeven) => (

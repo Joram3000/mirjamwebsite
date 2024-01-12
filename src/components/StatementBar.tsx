@@ -1,5 +1,4 @@
-import { Box, Stack, Text, Title, em, useMantineTheme } from "@mantine/core";
-import { useMediaQuery } from "@mantine/hooks";
+import { Box, Stack, Text, Title, useMantineTheme } from "@mantine/core";
 
 interface StatementBarProps {
   text: string;
@@ -8,17 +7,16 @@ interface StatementBarProps {
 
 const StatementBar: React.FC<StatementBarProps> = ({ text, subText }) => {
   const theme = useMantineTheme();
-  const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
 
   return (
     <Box
-      p={isMobile ? "md" : "xl"}
+      p={{ base: "md", md: "xl" }}
       bg={theme.colors.custom[2]}
       c="white"
       ta="center"
     >
       <Stack align="center">
-        <Title size={isMobile ? "xx-large" : "xxx-large"}>{text}</Title>
+        <Title size="xxx-large">{text}</Title>
         <Text size="xl">{subText}</Text>
       </Stack>
     </Box>
@@ -26,5 +24,3 @@ const StatementBar: React.FC<StatementBarProps> = ({ text, subText }) => {
 };
 
 export default StatementBar;
-
-// py={{ base: 'xs', sm: 'md', lg: 'xl' }}

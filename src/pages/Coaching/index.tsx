@@ -9,17 +9,15 @@ import {
   SimpleGrid,
   useMantineTheme,
   Flex,
-  em,
   Collapse,
 } from "@mantine/core";
 import Statement from "../../components/StatementBar";
 import IMG_4864 from "../../assets/images/IMG_48642.jpg";
 import ClientReview from "../../components/ClientReview";
-import { useDisclosure, useMediaQuery } from "@mantine/hooks";
+import { useDisclosure } from "@mantine/hooks";
 
 const MirjamKroonCoaching: React.FC = () => {
   const theme = useMantineTheme();
-  const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
 
   const [opened, { toggle }] = useDisclosure(false);
   return (
@@ -40,13 +38,17 @@ const MirjamKroonCoaching: React.FC = () => {
         <Container>
           <Flex
             align="stretch"
-            direction={isMobile ? "column" : "row"}
+            direction={{ base: "column", md: "row" }}
             gap="md"
           >
-            <Image src={IMG_4864} w={isMobile ? "100%" : "50%"} />
+            <Image src={IMG_4864} w={{ base: "100%", md: "50%" }} />
 
             <Stack m="md" my="md" align="center" justify="space-evenly">
-              <Title order={isMobile ? 3 : 2}>
+              <Title visibleFrom="md" order={2}>
+                Obstakels op je weg, herhalende patronen in de interactie met
+                anderen? Gedrag veranderen is niet eenvoudig.
+              </Title>
+              <Title hiddenFrom="md" order={3}>
                 Obstakels op je weg, herhalende patronen in de interactie met
                 anderen? Gedrag veranderen is niet eenvoudig.
               </Title>
@@ -107,7 +109,7 @@ const MirjamKroonCoaching: React.FC = () => {
             </Text>
           </Collapse>
           <Button variant="outline" onClick={toggle}>
-            {!opened ? "Lees meer" : "Haal weg"}
+            {!opened ? "Lees meer" : "Lees minder"}
           </Button>
         </Container>
       </Box>
@@ -238,9 +240,8 @@ const MirjamKroonCoaching: React.FC = () => {
       <Box>
         <Container p="xl" c={theme.colors.custom[3]}>
           <Title order={1} pb="xl">
-            Reviews
+            Klantervaringen
           </Title>
-
           <SimpleGrid cols={{ base: 1, sm: 2 }}>
             <ClientReview
               review="Mooie kennismaking met het team en met het leren kijken vanuit

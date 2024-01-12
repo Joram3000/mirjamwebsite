@@ -8,18 +8,15 @@ import {
   Text,
   Divider,
   Flex,
-  em,
 } from "@mantine/core";
 import Mirjam6 from "../../assets/images/mirjam6.jpg";
 import Kaartje from "../../assets/images/kaartje.png";
-import { useMediaQuery } from "@mantine/hooks";
 
 const MirjamKroonContact: React.FC = () => {
   const theme = useMantineTheme();
-  const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
 
   return (
-    <Box c={theme.colors.custom[3]} bg={theme.colors.custom[0]} p="xl">
+    <Box c={theme.colors.custom[3]} bg={theme.colors.custom[0]} p="md">
       <Container>
         <Title order={1} ta="center">
           Contact
@@ -51,7 +48,7 @@ const MirjamKroonContact: React.FC = () => {
 
         <Divider my="xl" />
 
-        <Flex direction={isMobile ? "column" : "row"} align="center" gap="md">
+        <Flex direction={{ base: "column", md: "row" }} align="center" gap="md">
           <Text p="md">
             Moeite met het vinden van het adres?
             <br />

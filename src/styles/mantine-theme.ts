@@ -22,16 +22,14 @@ const theme = createTheme({
   headings: {
     fontWeight: "400",
     sizes: {
-      h1: {
-        // lineHeight: "1.4",
-      },
+      h1: {},
     },
   },
   components: {
     Anchor: {
       styles: () => ({
         root: {
-          color: "white",
+          color: "orange", //"white",
         },
       }),
     },

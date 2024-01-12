@@ -57,9 +57,6 @@ const MirjamKroonAbout: React.FC = () => {
     },
   ];
 
-  // <Flex direction={isMobile ? "column" : "row"} align="stretch">
-  //         <Flex direction="column" align="center" justify="space-around"></Flex>
-
   return (
     <>
       <Box bg={theme.colors.custom[0]}>
