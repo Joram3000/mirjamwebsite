@@ -243,7 +243,14 @@ const MirjamKroonAbout: React.FC = () => {
             internationaal gecertificeerd NLP trainer, De Maskermaker,
             Oplossingsgericht coachen en nog veel meer.
           </Text>
-          <Button>Bekijk LinkedIn-profiel</Button>
+
+          <Button
+            component="a"
+            href="https://www.linkedin.com/in/mirjam-kroon-hoekendijk-0a99104/"
+            target="_blank"
+          >
+            Bekijk LinkedIn-profiel
+          </Button>
         </Container>
 
         <Container p="md">

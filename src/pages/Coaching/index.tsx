@@ -240,7 +240,7 @@ const MirjamKroonCoaching: React.FC = () => {
       </Box>
 
       <Box bg={theme.colors.custom[0]}>
-        <Container p="xl" c={theme.colors.custom[3]}>
+        <Container p="md" c={theme.colors.custom[3]}>
           <Title order={1} pb="xl">
             Review
           </Title>

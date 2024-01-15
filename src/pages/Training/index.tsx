@@ -90,8 +90,8 @@ const MirjamKroonTraining: React.FC = () => {
       </Box>
 
       <Box bg="white" c={theme.colors.custom[1]}>
-        <Container>
-          <Title py="xl" order={1}>
+        <Container p="md">
+          <Title pb="xl" order={1}>
             Review
           </Title>
           <ClientReview

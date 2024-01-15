@@ -110,9 +110,9 @@ const MirjamKroonSysteemspel: React.FC = () => {
           </Flex>
         </Container>
 
-        <Box c={theme.colors.custom[1]} bg={theme.colors.custom[0]} py="md">
-          <Container>
-            <Title order={1} ta="center" py="xl">
+        <Box c={theme.colors.custom[1]} bg={theme.colors.custom[0]}>
+          <Container p="md">
+            <Title order={1} pb="xl">
               Review
             </Title>
 

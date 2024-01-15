@@ -8,9 +8,10 @@ import {
   Text,
   Divider,
   Flex,
+  Anchor,
 } from "@mantine/core";
 import Mirjam6 from "../../assets/images/mirjam6.jpg";
-import Kaartje from "../../assets/images/kaartje.png";
+import Kaartje from "../../assets/images/googlemapsdorpsweg71.jpg";
 
 const MirjamKroonContact: React.FC = () => {
   const theme = useMantineTheme();
@@ -46,7 +47,7 @@ const MirjamKroonContact: React.FC = () => {
           </Stack>
         </Flex>
 
-        <Divider my="xl" />
+        <Divider my="xl" color={theme.colors.custom[3]} />
 
         <Flex
           direction={{ base: "column", md: "row" }}
@@ -54,18 +55,32 @@ const MirjamKroonContact: React.FC = () => {
           gap="md"
           justify="space-between"
         >
-          <Text p="md">
-            Route Vanaf A27 afslag 25: neem de N214 richting Noordeloos, na 1,4
-            km linksaf bij de afslag Hoornaar. Op de T-splitsing rechtsaf, na
-            400 m vind je links de Lutjeswaardse Middenweg. Het kantoor is het
-            eerste pand aan de rechterzijde. Parkeren voor de deur.
-            {/* Moeite met het vinden van het adres?
-            <br />
-            Zoek hier de route op
-            <br />
-            via Google Maps! */}
-          </Text>
-          <Image w={{ base: "100%", md: "50%" }} src={Kaartje} />
+          <Stack>
+            <Title>Route</Title>
+            <Text>
+              Route Vanaf A27 afslag 25: neem de N214 richting Noordeloos, na
+              1,4 km linksaf bij de afslag Hoornaar. Op de T-splitsing rechtsaf,
+              na 400 m vind je links de Lutjeswaardse Middenweg. Het kantoor is
+              het eerste pand aan de rechterzijde. Parkeren voor de deur.
+            </Text>
+            <Text>
+              Moeite met het vinden van het adres?
+              <br />
+              <Anchor
+                target="_blank"
+                href="https://maps.app.goo.gl/sdYCBvtfTNQbiB3R7"
+              >
+                Zoek hier de route op via Google Maps!
+              </Anchor>
+            </Text>
+          </Stack>
+          <Image
+            onClick={() =>
+              console.log("https://maps.app.goo.gl/sdYCBvtfTNQbiB3R7")
+            }
+            w={{ base: "100%", md: "50%" }}
+            src={Kaartje}
+          />
         </Flex>
       </Container>
     </Box>

@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
               </Anchor>
             ))}
           </Stack>
-          <Text>2023 Kibbeling Media. All right reserved.</Text>
+          <Text>2023 Kibbeling Media. All rights reserved.</Text>
         </Group>
       </Container>
     </Box>
