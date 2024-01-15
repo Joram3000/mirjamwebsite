@@ -15,11 +15,11 @@ import PeopleCard from "../../components/peopleCard";
 import Mirjam6 from "../../assets/images/mirjam6.jpg";
 import Tree from "../../assets/images/Tree.jpg";
 import BesidesWork from "../../assets/images/besidesWork.jpg";
-import samenwerkingsPartner from "../../assets/images/Samenwerkingspartners.png";
-import samenwerkingsPartner1 from "../../assets/images/Samenwerkingspartners1.png";
-import samenwerkingsPartner2 from "../../assets/images/Samenwerkingspartners2.png";
-import samenwerkingsPartner3 from "../../assets/images/Samenwerkingspartners3.png";
-import samenwerkingsPartner4 from "../../assets/images/Samenwerkingspartners5.png";
+import samenwerkingsPartner1 from "../../assets/images/Samenwerkingspartners.png";
+import samenwerkingsPartner2 from "../../assets/images/Samenwerkingspartners1.png";
+import samenwerkingsPartner from "../../assets/images/Samenwerkingspartners2.png";
+import samenwerkingsPartner4 from "../../assets/images/Samenwerkingspartners3.png";
+import samenwerkingsPartner3 from "../../assets/images/Samenwerkingspartners5.png";
 
 const MirjamKroonAbout: React.FC = () => {
   const theme = useMantineTheme();
@@ -122,59 +122,108 @@ const MirjamKroonAbout: React.FC = () => {
 
       <Box bg={theme.colors.custom[3]} c="white">
         <Container>
-          <Title py="xl" order={1} ta="center">
-            “Geen sprookje, maar een soap’’
-          </Title>
-
-          <Flex align="flex-start" gap="md">
+          <Flex direction={{ base: "column", md: "row" }}>
             <Stack>
-              <ScrollArea.Autosize mah={600}>
-                <Stack>
-                  <Text pb="lg">
-                    De realiteit van het leven, heeft meer van een soap dan van
-                    een sprookje. In een sprookje zouden we het liefst geloven.
-                    Er was eens…… en …. ze leefden nog lang en gelukkig. Een
-                    sprookje heeft een begin en een eind, je denkt daarbinnen in
-                    oorzaak-gevolg.
-                  </Text>
-                  <Text pb="lg">
-                    Het leven is geen sprookje maar meer een voortdurend inhaken
-                    van de ene gebeurtenis op de andere. Iemand reageert, een
-                    ander pakt hem op en voor dat je het weet is de hele groep
-                    aan het inhaken op wat er in het team of in de organisatie
-                    gebeurt. Van nature denken we lineair maar de realiteit is
-                    meer circulair.
-                  </Text>
-                  <Image hiddenFrom="md" src={Tree} />
-                  <Text pb="lg">
-                    Samenwerken gaat vanuit systeemdenken niet alleen om mensen,
-                    maar vooral om de talloze relaties en verbindingen waar
-                    mensen deel van uitmaken. Om naar samenwerkingsvraagstukken
-                    te kijken helpt het om uit te zoomen in plaats van in te
-                    zoomen. Systeemdenken is leren kijken naar samenhang en
-                    patronen. We kijken met de systeembril niet ín mensen, maar
-                    tussen mensen. Gedrag wordt veel meer bepaald door relaties
-                    en context dan door persoonlijkheid: terwijl we vaak denken
-                    dat het andersom is. Wij hebben de neiging om karakter en
-                    persoonlijkheid over te waarderen, en het belang van
-                    relaties en context als verklaring voor gedrag te
-                    onderschatten.
-                  </Text>
-                  <Text pb="lg">
-                    Systeemdenken daagt je uit om op een andere manier naar
-                    samenwerkingsvraagstukken te kijken. ‘Anders kijken’
-                    veronderstelt ‘anders denken’. Dit kan in de praktijk best
-                    lastig zijn.
-                  </Text>
-                </Stack>
-              </ScrollArea.Autosize>
+              <Title order={1}>Anders leren kijken</Title>
+              <Text pb="lg">
+                De realiteit van het leven, heeft meer van een soap dan van een
+                sprookje. In een sprookje zouden we het liefst geloven. Er was
+                eens…… en …. ze leefden nog lang en gelukkig. Een sprookje heeft
+                een begin en een eind, je denkt daarbinnen in oorzaak-gevolg.
+              </Text>
+              <Text pb="lg">
+                Het leven is geen sprookje maar meer een voortdurend inhaken van
+                de ene gebeurtenis op de andere. Iemand reageert, een ander pakt
+                hem op en voor dat je het weet is de hele groep aan het inhaken
+                op wat er in het team of in de organisatie gebeurt. Van nature
+                denken we lineair maar de realiteit is meer circulair.
+              </Text>
+              <Image hiddenFrom="md" src={Tree} />
+              <Text pb="lg">
+                Samenwerken gaat vanuit systeemdenken niet alleen om mensen,
+                maar vooral om de talloze relaties en verbindingen waar mensen
+                deel van uitmaken. Om naar samenwerkingsvraagstukken te kijken
+                helpt het om uit te zoomen in plaats van in te zoomen.
+                Systeemdenken is leren kijken naar samenhang en patronen. We
+                kijken met de systeembril niet ín mensen, maar tussen mensen.
+                Gedrag wordt veel meer bepaald door relaties en context dan door
+                persoonlijkheid: terwijl we vaak denken dat het andersom is. Wij
+                hebben de neiging om karakter en persoonlijkheid over te
+                waarderen, en het belang van relaties en context als verklaring
+                voor gedrag te onderschatten.
+              </Text>
+              <Text pb="lg">
+                Systeemdenken daagt je uit om op een andere manier naar
+                samenwerkingsvraagstukken te kijken. ‘Anders kijken’
+                veronderstelt ‘anders denken’. Dit kan in de praktijk best
+                lastig zijn.
+              </Text>
               <Button mb="md">Bekijk video over de Constructieve Roddel</Button>
             </Stack>
 
-            <Image visibleFrom="md" w="50%" src={Tree} />
+            <Image src={Tree} />
+            {/* <Stack p="md">
+              <Image src={Tree} />
+              <Text size="xs">
+                Kunstwerk door Giuseppe Penone (2012), Museum Voorlinden
+              </Text>
+            </Stack> */}
+          </Flex>
+        </Container>
+
+        <Container>
+          {/* <Title py="xl" order={1} ta="center">
+            Anders leren kijken
+          </Title> */}
+
+          <Flex gap="md" bg="yellow">
+            {/* <Stack>
+              <Text pb="lg">
+                De realiteit van het leven, heeft meer van een soap dan van een
+                sprookje. In een sprookje zouden we het liefst geloven. Er was
+                eens…… en …. ze leefden nog lang en gelukkig. Een sprookje heeft
+                een begin en een eind, je denkt daarbinnen in oorzaak-gevolg.
+              </Text>
+              <Text pb="lg">
+                Het leven is geen sprookje maar meer een voortdurend inhaken van
+                de ene gebeurtenis op de andere. Iemand reageert, een ander pakt
+                hem op en voor dat je het weet is de hele groep aan het inhaken
+                op wat er in het team of in de organisatie gebeurt. Van nature
+                denken we lineair maar de realiteit is meer circulair.
+              </Text>
+              <Image hiddenFrom="md" src={Tree} />
+              <Text pb="lg">
+                Samenwerken gaat vanuit systeemdenken niet alleen om mensen,
+                maar vooral om de talloze relaties en verbindingen waar mensen
+                deel van uitmaken. Om naar samenwerkingsvraagstukken te kijken
+                helpt het om uit te zoomen in plaats van in te zoomen.
+                Systeemdenken is leren kijken naar samenhang en patronen. We
+                kijken met de systeembril niet ín mensen, maar tussen mensen.
+                Gedrag wordt veel meer bepaald door relaties en context dan door
+                persoonlijkheid: terwijl we vaak denken dat het andersom is. Wij
+                hebben de neiging om karakter en persoonlijkheid over te
+                waarderen, en het belang van relaties en context als verklaring
+                voor gedrag te onderschatten.
+              </Text>
+              <Text pb="lg">
+                Systeemdenken daagt je uit om op een andere manier naar
+                samenwerkingsvraagstukken te kijken. ‘Anders kijken’
+                veronderstelt ‘anders denken’. Dit kan in de praktijk best
+                lastig zijn.
+              </Text>
+              <Button mb="md">Bekijk video over de Constructieve Roddel</Button>
+            </Stack>
+
+            <Stack bg="red">
+              <Image visibleFrom="md" src={Tree} />
+              <Text size="xs">
+                Kunstwerk door Giuseppe Penone (2012), Museum Voorlinden
+              </Text>
+            </Stack> */}
           </Flex>
         </Container>
       </Box>
+
       <Box c={theme.colors.custom[3]} bg={theme.colors.custom[0]}>
         <Container p="md">
           <Title order={1}>Over Mirjam</Title>
@@ -188,11 +237,11 @@ const MirjamKroonAbout: React.FC = () => {
             ontwerpen die het verschil kunnen maken.
           </Text>
           <Text pb="lg">
-            Ik breng een rijke gereedschapskist mee vanuit mijn jarenlange
-            ervaring: o.a. Sociologie, Systemisch werken (Hellinger en Marijke
-            Spanjersbergen), Deep democracy (level 1-4), internationaal
-            gecertificeerd NLP trainer, De Maskermaker, Oplossingsgericht
-            coachen en nog veel meer.
+            Ik breng een rijke gereedschapskist mee vanuit mijn scholing en
+            jarenlange ervaring: o.a. Sociologie, Systemisch werken (Hellinger
+            en Marijke Spanjersbergen), Deep democracy (level 1-4),
+            internationaal gecertificeerd NLP trainer, De Maskermaker,
+            Oplossingsgericht coachen en nog veel meer.
           </Text>
           <Button>Bekijk LinkedIn-profiel</Button>
         </Container>

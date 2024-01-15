@@ -82,10 +82,6 @@ const MirjamKroonTraining: React.FC = () => {
                   <Text>Feedback-trainingen </Text>
                 </li>
               </ul>
-
-              <Button onClick={() => console.log("Hoi ik ben geklikt")}>
-                Vraag vrijblijvend naar de mogelijkheden
-              </Button>
             </Stack>
 
             <Image visibleFrom="md" src={plaatje} w="40%" />
@@ -96,14 +92,14 @@ const MirjamKroonTraining: React.FC = () => {
       <Box bg="white" c={theme.colors.custom[1]}>
         <Container>
           <Title py="xl" order={1}>
-            Reviews
+            Review
           </Title>
           <ClientReview
             review="Niets dan lof! Wat een kundige en fijne vrouw! Rustige en niet
               oordelende persoon, komt prettig over. Mirjam heeft mij eerst
               vakkundig uit mijn comfortzone gehaald en mij, voor mijn gevoel
               iig, daarna onder zorgvuldige begeleiding gebracht waar ik nu sta."
-            name="Deelnemer teamcoaching"
+            name="Deelnemer van een training"
           />
         </Container>
       </Box>

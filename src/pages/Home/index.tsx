@@ -109,7 +109,9 @@ const MirjamKroonHomepage: React.FC = () => {
               <Image src={Mirjam6} />
             </Flex>
             <Link to="/about">
-              <Button variant="outline">Meer over Mirjam</Button>
+              <Button c={theme.colors.custom[3]} variant="outline">
+                Meer over Mirjam
+              </Button>
             </Link>
           </Stack>
         </Container>
@@ -138,7 +140,7 @@ const MirjamKroonHomepage: React.FC = () => {
       <Box c={theme.colors.custom[1]} bg={theme.colors.custom[0]}>
         <Container p="md">
           <Title order={1} pb="xl">
-            Klantervaringen
+            Reviews
           </Title>
 
           <SimpleGrid cols={{ base: 1, sm: 2 }}>

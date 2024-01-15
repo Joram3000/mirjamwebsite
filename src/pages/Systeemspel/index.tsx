@@ -27,28 +27,29 @@ const MirjamKroonSysteemspel: React.FC = () => {
         <Image src={fotowater} />
 
         <Container>
-          <Text>
-            Bij het spelen van het systeemspel ga je aan de hand van een
-            verhaal, in de vorm van een film, leren om met een systeembril te
-            kijken naar samenwerkingsvraagstukken. En krijg je manieren
-            aangereikt om de vastgelopen situatie weer vlot te trekken.
-          </Text>
+          <Group py="md">
+            <Text>
+              Bij het spelen van het systeemspel ga je aan de hand van een
+              verhaal, in de vorm van een film, leren om met een systeembril te
+              kijken naar samenwerkingsvraagstukken. En krijg je manieren
+              aangereikt om de vastgelopen situatie weer vlot te trekken.
+            </Text>
 
-          <Group grow align="space-around">
-            <Stack py="md">
-              <Text>
-                Om je eigen deskundigheid te bevorderen vanuit bijvoorbeeld een
-                rol als HR-manager of trainer, kun je mij inhuren om het spel
-                samen te spelen.
-              </Text>
-              <Text>
-                Het spel waarbinnen je je eigen kennis ontwikkelt over
-                systemisch kijken duurt een dag. Met eigen casussen de geleerde
-                kennis toepassen geeft een meerwaarde.
-              </Text>
-            </Stack>
+            <Text>
+              Om je eigen deskundigheid te bevorderen vanuit bijvoorbeeld een
+              rol als HR-manager of trainer, kun je mij inhuren om het spel
+              samen te spelen.
+            </Text>
+          </Group>
 
-            <Text py="md">
+          <Group py="md">
+            <Text>
+              Het spel waarbinnen je je eigen kennis ontwikkelt over systemisch
+              kijken duurt een dag. Met eigen casussen de geleerde kennis
+              toepassen geeft een meerwaarde.
+            </Text>
+
+            <Text>
               Omdat ik vanuit meerdere systemische achtergronden opgeleid ben
               (Hellingerwerk, Marijke Spansjersbergen), breng ik een rijk
               gevulde gereedschapskist mee. De wereld wordt er niet eenvoudiger
@@ -61,59 +62,53 @@ const MirjamKroonSysteemspel: React.FC = () => {
       </Box>
 
       <Box bg={theme.colors.custom[3]} c="white">
-        <ScrollArea.Autosize mah={600}>
-          <Container>
-            <Flex direction={{ base: "column", md: "row" }}>
-              <Stack h="100%">
-                <Stack>
-                  <Title order={1}>Anders leren kijken</Title>
-                  <Text pb="lg">
-                    We zijn zo gewend om lineair te kijken. "Wie"of "wat" is het
-                    probleem, en hoe lossen we het op. De realiteit is
-                    complexer. De systeembenadering helpt ons om die
-                    complexiteit recht te doen en om op onderzoek uit te gaan
-                    aan de hand van een aantal kapstokken. We kennen allemaal de
-                    "hoe meer de een..... des te meer de ander", elkaar
-                    versterkende patronen. Hoe meer de grote lijnen geschetst
-                    worden, hoe meer details er toe doen. Hoe harder er een
-                    bepaalde mening verkondigd wordt, hoe meer de neiging tot
-                    dempen ingezet wordt. Zo'n vaart zal het toch ook wel niet
-                    lopen... en zo kunnen patronen zich blijven herhalen.
-                  </Text>
-                  <Image hiddenFrom="lg" src={IMG_35432} />
-                  <Text pb="lg">
-                    Volgens de systeembenadering is het antwoord op de vraag:
-                    ‘Wat gaat helpen in het systeem zelf’ te vinden. Elk gedrag
-                    is logisch, hoe stoppen we met het blijven herhalen van
-                    patronen en kunnen we leren kijken naar de behoefte en
-                    bedoeling die erachter schuilgaat? Weg van oorzaak gevolg
-                    denken, op zoek naar het ontschuldigen van die patronen
-                    omdat ze zo logisch zijn.
-                  </Text>
-                  <Text pb="lg">
-                    "It's not personal, it's the system” Taal ontwikkelen,
-                    woorden vinden voor wat zich afspeelt tussen mensen, dat is
-                    het gereedschap voor een systeemdenker. Het systeemspel is
-                    een leuke manier om basiskennis op te doen om anders te
-                    leren kijken. Heb je interesse om hier meer over te leren en
-                    ontdekken? Ik vertel je er graag meer over.
-                  </Text>
-                </Stack>
-
-                <Text ta="center" fw={700} c="red">
-                  "BUTTON":Vraag vrijblijvend naar de mogelijkheden
+        <Container>
+          <Flex direction={{ base: "column", md: "row" }}>
+            <Stack h="100%">
+              <Stack>
+                <Title order={1}>Anders leren kijken</Title>
+                <Text pb="lg">
+                  We zijn zo gewend om lineair te kijken. "Wie"of "wat" is het
+                  probleem, en hoe lossen we het op. De realiteit is complexer.
+                  De systeembenadering helpt ons om die complexiteit recht te
+                  doen en om op onderzoek uit te gaan aan de hand van een aantal
+                  kapstokken. We kennen allemaal de "hoe meer de een..... des te
+                  meer de ander", elkaar versterkende patronen. Hoe meer de
+                  grote lijnen geschetst worden, hoe meer details er toe doen.
+                  Hoe harder er een bepaalde mening verkondigd wordt, hoe meer
+                  de neiging tot dempen ingezet wordt. Zo'n vaart zal het toch
+                  ook wel niet lopen... en zo kunnen patronen zich blijven
+                  herhalen.
+                </Text>
+                <Image hiddenFrom="lg" src={IMG_35432} />
+                <Text pb="lg">
+                  Volgens de systeembenadering is het antwoord op de vraag: ‘Wat
+                  gaat helpen in het systeem zelf’ te vinden. Elk gedrag is
+                  logisch, hoe stoppen we met het blijven herhalen van patronen
+                  en kunnen we leren kijken naar de behoefte en bedoeling die
+                  erachter schuilgaat? Weg van oorzaak gevolg denken, op zoek
+                  naar het ontschuldigen van die patronen omdat ze zo logisch
+                  zijn.
+                </Text>
+                <Text pb="lg">
+                  "It's not personal, it's the system” Taal ontwikkelen, woorden
+                  vinden voor wat zich afspeelt tussen (individuele) mensen, dat
+                  is het gereedschap voor een systeemdenker. Het systeemspel is
+                  een leuke manier om basiskennis op te doen om anders te leren
+                  kijken. Heb je interesse om hier meer over te leren en
+                  ontdekken? Ik vertel je er graag meer over.
                 </Text>
               </Stack>
-              <Image
-                p="md"
-                pos="relative"
-                visibleFrom="lg"
-                src={IMG_35432}
-                w="50%"
-              />
-            </Flex>
-          </Container>
-        </ScrollArea.Autosize>
+            </Stack>
+            <Image
+              p="md"
+              pos="relative"
+              visibleFrom="lg"
+              src={IMG_35432}
+              w="50%"
+            />
+          </Flex>
+        </Container>
 
         <Box c={theme.colors.custom[1]} bg={theme.colors.custom[0]} py="md">
           <Container>

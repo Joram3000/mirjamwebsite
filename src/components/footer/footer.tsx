@@ -28,16 +28,12 @@ const Footer: React.FC = () => {
 
   const links = [
     {
-      label: "Privacyverklaring",
-      link: "/privacy",
-    },
-    {
-      label: "Disclaimer",
-      link: "/disclaimer",
-    },
-    {
       label: "Algemene voorwaarden",
       link: "/algemeen",
+    },
+    {
+      label: "Ethische code",
+      link: "/ethischecode",
     },
   ];
 

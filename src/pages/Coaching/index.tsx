@@ -108,8 +108,12 @@ const MirjamKroonCoaching: React.FC = () => {
               gedrag en hoe we elkaar soms vast kunnen zetten.
             </Text>
           </Collapse>
-          <Button variant="outline" onClick={toggle}>
-            {!opened ? "Lees meer" : "Lees minder"}
+          <Button
+            onClick={toggle}
+            bg={theme.colors.custom[1]}
+            c={theme.colors.custom[0]}
+          >
+            {!opened ? "Lees meer..." : "Lees minder..."}
           </Button>
         </Container>
       </Box>
@@ -153,7 +157,7 @@ const MirjamKroonCoaching: React.FC = () => {
         </Container>
       </Box>
 
-      <Box>
+      <Box bg={theme.colors.custom[0]}>
         <Container p="md" c={theme.colors.custom[3]}>
           <Title>
             Hoe zou een <strong>persoonlijk coachtraject</strong> eruit kunnen
@@ -180,13 +184,11 @@ const MirjamKroonCoaching: React.FC = () => {
               </Text>
             </li>
           </ul>
-
-          <Button>Vraag vrijblijvend naar de mogelijkheden</Button>
         </Container>
+        <Title pb="xl" ta="center" c={theme.colors.custom[3]}>
+          Tools die kunnen worden ingezet:
+        </Title>
       </Box>
-      <Title pb="xl" ta="center" c={theme.colors.custom[3]}>
-        Tools die kunnen worden ingezet:
-      </Title>
 
       <Box bg={theme.colors.custom[3]} c="white">
         <Container p="">
@@ -237,25 +239,16 @@ const MirjamKroonCoaching: React.FC = () => {
         </Container>
       </Box>
 
-      <Box>
+      <Box bg={theme.colors.custom[0]}>
         <Container p="xl" c={theme.colors.custom[3]}>
           <Title order={1} pb="xl">
-            Klantervaringen
+            Review
           </Title>
-          <SimpleGrid cols={{ base: 1, sm: 2 }}>
-            <ClientReview
-              review="Mooie kennismaking met het team en met het leren kijken vanuit
-                systemisch perspectief. Met een inzichtgevende opstelling als
-                mooi eindresultaat. Mirjam kan een mooie introductie geven met
-                simpele oefeningen zodat iedereen, met kennis of niet, kan
-                deelnemen."
-              name="Anoniem"
-            />
-            <ClientReview
-              review="Mirjam is een bevlogen coach. Ik heb haar leren kennen in de training onboarding voor nieuwe leidinggevenden en heb haar daarna terug gevraagd om voor mijn team een Insight training te verzorgen. Waarom ik Mirjam heb gevraagd voor de training binnen mijn team? Ze heeft oog voor zowel de groepsdynamiek als voor de verschillende individuen. Dat maakt dat je als cursist je gezien voelt, en dat er mede door haar begeleiding in de groep een warme -en open sfeer ontstaat. Wat Mirjam typeert is dat ze je uit je comfort zone probeert te halen, waardoor je naar jezelf kijkt waarom je de dingen doet zoals je ze doet maar ook hoe je zaken kunt doorbreken."
-              name="Manager Risk en Compliance bij een grote verzekeraar"
-            />
-          </SimpleGrid>
+
+          <ClientReview
+            review="Mirjam is een bevlogen coach. Ik heb haar leren kennen in de training onboarding voor nieuwe leidinggevenden en heb haar daarna terug gevraagd om voor mijn team een Insight training te verzorgen. Waarom ik Mirjam heb gevraagd voor de training binnen mijn team? Ze heeft oog voor zowel de groepsdynamiek als voor de verschillende individuen. Dat maakt dat je als cursist je gezien voelt, en dat er mede door haar begeleiding in de groep een warme -en open sfeer ontstaat. Wat Mirjam typeert is dat ze je uit je comfort zone probeert te halen, waardoor je naar jezelf kijkt waarom je de dingen doet zoals je ze doet maar ook hoe je zaken kunt doorbreken."
+            name="Manager Risk en Compliance bij een grote verzekeraar"
+          />
         </Container>
       </Box>
     </>

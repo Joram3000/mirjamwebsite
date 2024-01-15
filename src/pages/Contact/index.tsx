@@ -16,16 +16,16 @@ const MirjamKroonContact: React.FC = () => {
   const theme = useMantineTheme();
 
   return (
-    <Box c={theme.colors.custom[3]} bg={theme.colors.custom[0]} p="md">
+    <Box c={theme.colors.custom[3]} bg={theme.colors.custom[0]} py="md">
       <Container>
         <Title order={1} ta="center">
           Contact
         </Title>
 
-        <Flex align="stretch" p="md" gap="md">
+        <Flex align="stretch" gap="md">
           <Image visibleFrom="md" w="50%" src={Mirjam6} />
 
-          <Stack justify="flex-start" px="md">
+          <Stack justify="flex-start">
             <Text>
               Benieuwd naar wat ik voor jouw organisatie kan betekenen? Neem
               gerust vrijblijvend contact op om te kijken wat mogelijk is.
@@ -48,13 +48,22 @@ const MirjamKroonContact: React.FC = () => {
 
         <Divider my="xl" />
 
-        <Flex direction={{ base: "column", md: "row" }} align="center" gap="md">
+        <Flex
+          direction={{ base: "column", md: "row" }}
+          align="stretch"
+          gap="md"
+          justify="space-between"
+        >
           <Text p="md">
-            Moeite met het vinden van het adres?
+            Route Vanaf A27 afslag 25: neem de N214 richting Noordeloos, na 1,4
+            km linksaf bij de afslag Hoornaar. Op de T-splitsing rechtsaf, na
+            400 m vind je links de Lutjeswaardse Middenweg. Het kantoor is het
+            eerste pand aan de rechterzijde. Parkeren voor de deur.
+            {/* Moeite met het vinden van het adres?
             <br />
             Zoek hier de route op
             <br />
-            via Google Maps!
+            via Google Maps! */}
           </Text>
           <Image w={{ base: "100%", md: "50%" }} src={Kaartje} />
         </Flex>
