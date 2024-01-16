@@ -5,7 +5,6 @@ import {
   Text,
   Stack,
   Image,
-  Button,
   SimpleGrid,
   useMantineTheme,
   Flex,
