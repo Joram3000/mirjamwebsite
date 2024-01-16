@@ -7,6 +7,7 @@ import {
   Collapse,
   Container,
   useMantineTheme,
+  Box,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import logo from "../../assets/images/logo.png";
@@ -72,7 +73,7 @@ const NavbarNew: React.FC = () => {
   ));
 
   return (
-    <Container p={0} bg={theme.colors.custom[0]}>
+    <Box p={0} bg={theme.colors.custom[0]}>
       <Group justify="space-between" align="center" py="md">
         <Link to="/home">
           <Image
@@ -89,6 +90,7 @@ const NavbarNew: React.FC = () => {
           <Burger
             opened={opened}
             onClick={toggle}
+            color="black"
             hiddenFrom="lg"
             size="sm"
             m="lg"
@@ -105,14 +107,14 @@ const NavbarNew: React.FC = () => {
           </Stack>
         </Collapse>
 
-        <Group visibleFrom="md">
+        <Group visibleFrom="md" pr="md">
           {menuItems}
           <NavLink to="/contact" onClick={() => setActive("Contact")}>
             <Button>Contact</Button>
           </NavLink>
         </Group>
       </Group>
-    </Container>
+    </Box>
   );
 };
 

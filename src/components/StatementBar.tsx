@@ -15,8 +15,8 @@ const StatementBar: React.FC<StatementBarProps> = ({ text, subText }) => {
       c="white"
       ta="center"
     >
-      <Stack align="center">
-        <Title size="xxx-large">{text}</Title>
+      <Stack>
+        <Title>{text}</Title>
         <Text size="xl">{subText}</Text>
       </Stack>
     </Box>

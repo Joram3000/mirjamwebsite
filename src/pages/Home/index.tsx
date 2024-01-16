@@ -30,18 +30,21 @@ const MirjamKroonHomepage: React.FC = () => {
       title: "(Team)coaching",
       text: "‘The system in the room’ onderzoeken. Niet praten over ‘hoe het zou moeten zijn’, maar samen exploreren en het moedige gesprek leren voeren. Samen ontdekken hoe je effectiever wordt.",
       buttonText: "Bekijk coaching",
+      link: "/coaching",
     },
     {
       icon: training,
       title: "Training",
       text: "Diverse trainingen die jou of het team helpen impact te vergroten door middel van betere communicatie.",
       buttonText: "Bekijk trainingen",
+      link: "/training",
     },
     {
       icon: systeemspel,
       title: "Systeemspel",
       text: "Hoe stoppen we met het herhalen van patronen en kunnen we leren kijken naar de behoefte en bedoeling die erachter schuilgaat? Het systeemspel is een leuke manier om anders te leren kijken.",
       buttonText: "Bekijk systeemspel ",
+      link: "/systeemspel",
     },
   ];
 
@@ -79,8 +82,8 @@ const MirjamKroonHomepage: React.FC = () => {
               Werken met de spanning tussen verbinding en authenticiteit
             </Title>
 
-            <Flex direction={{ base: "column", md: "row" }} align="stretch">
-              <Flex direction="column" align="center" justify="space-around">
+            <Flex direction={{ base: "column", sm: "row" }} align="stretch">
+              <Flex direction="column" align="center" justify="space-between">
                 <Text pb="md">
                   Is in jouw team van professionals ieder vooral gefocust op
                   zijn eigen werk, zonder dat ze elkaar sterker maken? Vormt de
@@ -105,9 +108,9 @@ const MirjamKroonHomepage: React.FC = () => {
                   gevoerd moeten worden.
                 </Text>
               </Flex>
-
-              <Image src={Mirjam6} />
+              <Image src={Mirjam6} w={{ base: "100%", sm: "50%" }} />
             </Flex>
+
             <Link to="/about">
               <Button c={theme.colors.custom[3]} variant="outline">
                 Meer over Mirjam

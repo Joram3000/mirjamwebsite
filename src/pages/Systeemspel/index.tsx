@@ -8,6 +8,7 @@ import {
   Image,
   useMantineTheme,
   Flex,
+  em,
   ScrollArea,
 } from "@mantine/core";
 import fotowater from "../../assets/images/fotowater.png";
@@ -24,7 +25,7 @@ const MirjamKroonSysteemspel: React.FC = () => {
           Systeemspel
         </Title>
 
-        <Image src={fotowater} />
+        <Image w="100%" h={{ base: em(200), md: em(500) }} src={fotowater} />
 
         <Container>
           <Group py="md">
@@ -63,10 +64,16 @@ const MirjamKroonSysteemspel: React.FC = () => {
 
       <Box bg={theme.colors.custom[3]} c="white">
         <Container>
-          <Flex direction={{ base: "column", md: "row" }}>
-            <Stack h="100%">
-              <Stack>
-                <Title order={1}>Anders leren kijken</Title>
+          <Flex
+            direction={{ base: "column", md: "row" }}
+            gap="md"
+            justify="space-evenly"
+            align="stretch"
+            h={{ base: "100%", md: em(650) }}
+          >
+            <Stack flex={1}>
+              <ScrollArea offsetScrollbars type="always" py="md">
+                <Title pb="md">Anders leren kijken</Title>
                 <Text pb="lg">
                   We zijn zo gewend om lineair te kijken. "Wie"of "wat" is het
                   probleem, en hoe lossen we het op. De realiteit is complexer.
@@ -81,6 +88,9 @@ const MirjamKroonSysteemspel: React.FC = () => {
                   herhalen.
                 </Text>
                 <Image hiddenFrom="lg" src={IMG_35432} />
+                <Text hiddenFrom="lg" ta="right" m={0}>
+                  hoi
+                </Text>
                 <Text pb="lg">
                   Volgens de systeembenadering is het antwoord op de vraag: ‘Wat
                   gaat helpen in het systeem zelf’ te vinden. Elk gedrag is
@@ -98,15 +108,15 @@ const MirjamKroonSysteemspel: React.FC = () => {
                   kijken. Heb je interesse om hier meer over te leren en
                   ontdekken? Ik vertel je er graag meer over.
                 </Text>
-              </Stack>
+              </ScrollArea>
             </Stack>
-            <Image
-              p="md"
-              pos="relative"
-              visibleFrom="lg"
-              src={IMG_35432}
-              w="50%"
-            />
+
+            <Box visibleFrom="lg" flex={1}>
+              <Image src={IMG_35432} />
+              <Text ta="right" m={0} size="sm" pt={em(6)}>
+                hoi
+              </Text>
+            </Box>
           </Flex>
         </Container>
 

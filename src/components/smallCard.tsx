@@ -5,6 +5,7 @@ type card = {
   title: string;
   text: string;
   buttonText: string;
+  link: string;
 };
 
 interface smallCardProps {
@@ -19,7 +20,9 @@ const SmallCard: React.FC<smallCardProps> = ({ card }) => {
 
       <Stack h="100%" justify="space-between">
         <Text ta="center">{card.text}</Text>
-        <Button>{card.buttonText}</Button>
+        <Button component="a" href={card.link}>
+          {card.buttonText}
+        </Button>
       </Stack>
     </Stack>
   );

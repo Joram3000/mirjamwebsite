@@ -8,7 +8,8 @@ import {
   Button,
   useMantineTheme,
   Flex,
-  ScrollArea,
+  em,
+  ScrollAreaAutosize,
 } from "@mantine/core";
 import Statement from "../../components/StatementBar";
 import PeopleCard from "../../components/peopleCard";
@@ -122,104 +123,64 @@ const MirjamKroonAbout: React.FC = () => {
 
       <Box bg={theme.colors.custom[3]} c="white">
         <Container>
-          <Flex direction={{ base: "column", md: "row" }}>
-            <Stack>
-              <Title order={1}>Anders leren kijken</Title>
-              <Text pb="lg">
-                De realiteit van het leven, heeft meer van een soap dan van een
-                sprookje. In een sprookje zouden we het liefst geloven. Er was
-                eens…… en …. ze leefden nog lang en gelukkig. Een sprookje heeft
-                een begin en een eind, je denkt daarbinnen in oorzaak-gevolg.
-              </Text>
-              <Text pb="lg">
-                Het leven is geen sprookje maar meer een voortdurend inhaken van
-                de ene gebeurtenis op de andere. Iemand reageert, een ander pakt
-                hem op en voor dat je het weet is de hele groep aan het inhaken
-                op wat er in het team of in de organisatie gebeurt. Van nature
-                denken we lineair maar de realiteit is meer circulair.
-              </Text>
-              <Image hiddenFrom="md" src={Tree} />
-              <Text pb="lg">
-                Samenwerken gaat vanuit systeemdenken niet alleen om mensen,
-                maar vooral om de talloze relaties en verbindingen waar mensen
-                deel van uitmaken. Om naar samenwerkingsvraagstukken te kijken
-                helpt het om uit te zoomen in plaats van in te zoomen.
-                Systeemdenken is leren kijken naar samenhang en patronen. We
-                kijken met de systeembril niet ín mensen, maar tussen mensen.
-                Gedrag wordt veel meer bepaald door relaties en context dan door
-                persoonlijkheid: terwijl we vaak denken dat het andersom is. Wij
-                hebben de neiging om karakter en persoonlijkheid over te
-                waarderen, en het belang van relaties en context als verklaring
-                voor gedrag te onderschatten.
-              </Text>
-              <Text pb="lg">
-                Systeemdenken daagt je uit om op een andere manier naar
-                samenwerkingsvraagstukken te kijken. ‘Anders kijken’
-                veronderstelt ‘anders denken’. Dit kan in de praktijk best
-                lastig zijn.
-              </Text>
-              <Button mb="md">Bekijk video over de Constructieve Roddel</Button>
+          <Flex
+            direction={{ base: "column", md: "row" }}
+            gap="md"
+            justify="space-evenly"
+            align="stretch"
+            h={{ base: "100%", md: em(650) }}
+          >
+            <Stack flex={1}>
+              <ScrollAreaAutosize offsetScrollbars type="always">
+                <Title pt="md">Geen sprookje maar een soap</Title>
+                <Text py="lg">
+                  De realiteit van het leven, heeft meer van een soap dan van
+                  een sprookje. In een sprookje zouden we het liefst geloven. Er
+                  was eens…… en …. ze leefden nog lang en gelukkig. Een sprookje
+                  heeft een begin en een eind, je denkt daarbinnen in
+                  oorzaak-gevolg.
+                </Text>
+                <Text pb="lg">
+                  Het leven is geen sprookje maar meer een voortdurend inhaken
+                  van de ene gebeurtenis op de andere. Iemand reageert, een
+                  ander pakt hem op en voor dat je het weet is de hele groep aan
+                  het inhaken op wat er in het team of in de organisatie
+                  gebeurt. Van nature denken we lineair maar de realiteit is
+                  meer circulair.
+                </Text>
+                <Image hiddenFrom="md" src={Tree} />
+                <Text pb="md" hiddenFrom="lg" ta="right" size="sm">
+                  Kunstwerk door Giuseppe Penone (2012), Museum Voorlinden
+                </Text>
+                <Text pb="lg">
+                  Samenwerken gaat vanuit systeemdenken niet alleen om mensen,
+                  maar vooral om de talloze relaties en verbindingen waar mensen
+                  deel van uitmaken. Om naar samenwerkingsvraagstukken te kijken
+                  helpt het om uit te zoomen in plaats van in te zoomen.
+                  Systeemdenken is leren kijken naar samenhang en patronen. We
+                  kijken met de systeembril niet ín mensen, maar tussen mensen.
+                  Gedrag wordt veel meer bepaald door relaties en context dan
+                  door persoonlijkheid: terwijl we vaak denken dat het andersom
+                  is. Wij hebben de neiging om karakter en persoonlijkheid over
+                  te waarderen, en het belang van relaties en context als
+                  verklaring voor gedrag te onderschatten.
+                </Text>
+                <Text>
+                  Systeemdenken daagt je uit om op een andere manier naar
+                  samenwerkingsvraagstukken te kijken. ‘Anders kijken’
+                  veronderstelt ‘anders denken’. Dit kan in de praktijk best
+                  lastig zijn.
+                </Text>
+              </ScrollAreaAutosize>
+              <Button mb="md">Bekijk video</Button>
             </Stack>
 
-            <Image src={Tree} />
-            {/* <Stack p="md">
+            <Box visibleFrom="lg" flex={1}>
               <Image src={Tree} />
-              <Text size="xs">
+              <Text pt={em(6)} ta="right" size="sm">
                 Kunstwerk door Giuseppe Penone (2012), Museum Voorlinden
               </Text>
-            </Stack> */}
-          </Flex>
-        </Container>
-
-        <Container>
-          {/* <Title py="xl" order={1} ta="center">
-            Anders leren kijken
-          </Title> */}
-
-          <Flex gap="md" bg="yellow">
-            {/* <Stack>
-              <Text pb="lg">
-                De realiteit van het leven, heeft meer van een soap dan van een
-                sprookje. In een sprookje zouden we het liefst geloven. Er was
-                eens…… en …. ze leefden nog lang en gelukkig. Een sprookje heeft
-                een begin en een eind, je denkt daarbinnen in oorzaak-gevolg.
-              </Text>
-              <Text pb="lg">
-                Het leven is geen sprookje maar meer een voortdurend inhaken van
-                de ene gebeurtenis op de andere. Iemand reageert, een ander pakt
-                hem op en voor dat je het weet is de hele groep aan het inhaken
-                op wat er in het team of in de organisatie gebeurt. Van nature
-                denken we lineair maar de realiteit is meer circulair.
-              </Text>
-              <Image hiddenFrom="md" src={Tree} />
-              <Text pb="lg">
-                Samenwerken gaat vanuit systeemdenken niet alleen om mensen,
-                maar vooral om de talloze relaties en verbindingen waar mensen
-                deel van uitmaken. Om naar samenwerkingsvraagstukken te kijken
-                helpt het om uit te zoomen in plaats van in te zoomen.
-                Systeemdenken is leren kijken naar samenhang en patronen. We
-                kijken met de systeembril niet ín mensen, maar tussen mensen.
-                Gedrag wordt veel meer bepaald door relaties en context dan door
-                persoonlijkheid: terwijl we vaak denken dat het andersom is. Wij
-                hebben de neiging om karakter en persoonlijkheid over te
-                waarderen, en het belang van relaties en context als verklaring
-                voor gedrag te onderschatten.
-              </Text>
-              <Text pb="lg">
-                Systeemdenken daagt je uit om op een andere manier naar
-                samenwerkingsvraagstukken te kijken. ‘Anders kijken’
-                veronderstelt ‘anders denken’. Dit kan in de praktijk best
-                lastig zijn.
-              </Text>
-              <Button mb="md">Bekijk video over de Constructieve Roddel</Button>
-            </Stack>
-
-            <Stack bg="red">
-              <Image visibleFrom="md" src={Tree} />
-              <Text size="xs">
-                Kunstwerk door Giuseppe Penone (2012), Museum Voorlinden
-              </Text>
-            </Stack> */}
+            </Box>
           </Flex>
         </Container>
       </Box>
@@ -253,7 +214,7 @@ const MirjamKroonAbout: React.FC = () => {
           </Button>
         </Container>
 
-        <Container p="md">
+        <Container pb="md">
           <Flex align="stretch">
             <Stack justify="space-between">
               <Title order={1}>En naast werk?</Title>

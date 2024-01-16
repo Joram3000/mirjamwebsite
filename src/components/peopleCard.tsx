@@ -17,14 +17,14 @@ const PeopleCard: React.FC<PeopleCardProps> = ({
   size = 200,
 }) => {
   return (
-    <Flex direction={{ base: "column", md: "row" }} p="md" align="center">
+    <Flex direction={{ base: "column", md: "row" }} align="center" pb="md">
       <Image
         w={{ base: "100%", md: size }}
         p="md"
         src={samenwerkingsPartner.img}
       />
-      <Stack p="md" h="100%">
-        <Title ta={{ base: "center", md: "left" }} order={1}>
+      <Stack px="md" h="100%">
+        <Title ta="left" order={1}>
           {samenwerkingsPartner.name}
         </Title>
         <Text ta="left">{samenwerkingsPartner.text}</Text>
