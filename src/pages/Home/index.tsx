@@ -9,7 +9,6 @@ import {
   SimpleGrid,
   useMantineTheme,
   Flex,
-  Anchor,
 } from "@mantine/core";
 
 import SmallCard from "../../components/smallCard";

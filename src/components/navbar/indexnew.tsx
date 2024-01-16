@@ -5,7 +5,6 @@ import {
   Button,
   Stack,
   Collapse,
-  Container,
   useMantineTheme,
   Box,
 } from "@mantine/core";

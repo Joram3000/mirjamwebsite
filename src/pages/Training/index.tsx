@@ -4,7 +4,6 @@ import {
   Title,
   useMantineTheme,
   Text,
-  Button,
   Image,
   Flex,
   Stack,
@@ -21,12 +20,7 @@ const MirjamKroonTraining: React.FC = () => {
         <Title my="md" ta="center" order={1}>
           Trainingen
         </Title>
-        <Image
-          src={plaatje}
-          w="100%"
-          h={{ base: em(350), md: em(500) }}
-    
-        />
+        <Image src={plaatje} w="100%" h={{ base: em(350), md: em(500) }} />
 
         <Container p="md">
           <Title pb="md" order={2}>
