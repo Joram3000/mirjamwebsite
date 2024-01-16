@@ -90,7 +90,7 @@ const MirjamKroonCoaching: React.FC = () => {
             maar wel invloed hebben, boven de tafel leert bespreken.
           </Text>
 
-          <Collapse in={opened}>
+          <Collapse in={opened} transitionDuration={800}>
             <Text pb="md">
               Teamcoaching wordt vaak ingezet als er gedoe is, maar het kan ook
               zinvol zijn om eens te kijken hoe jullie als team de dingen doen
@@ -108,13 +108,9 @@ const MirjamKroonCoaching: React.FC = () => {
               gedrag en hoe we elkaar soms vast kunnen zetten.
             </Text>
           </Collapse>
-          <Button
-            onClick={toggle}
-            bg={theme.colors.custom[1]}
-            c={theme.colors.custom[0]}
-          >
+          <Text onClick={toggle}>
             {!opened ? "Lees meer..." : "Lees minder..."}
-          </Button>
+          </Text>
         </Container>
       </Box>
 
