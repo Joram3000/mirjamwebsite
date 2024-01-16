@@ -9,6 +9,7 @@ import {
   useMantineTheme,
   Flex,
   Collapse,
+  UnstyledButton,
 } from "@mantine/core";
 import Statement from "../../components/StatementBar";
 import IMG_4864 from "../../assets/images/IMG_48642.jpg";
@@ -65,10 +66,12 @@ const MirjamKroonCoaching: React.FC = () => {
           subText="Joep Choy"
         />
       </Box>
-      <Box bg={theme.colors.custom[0]} c={theme.colors.custom[1]}>
+      <Box bg={theme.colors.custom[0]} c={theme.colors.custom[1]} pt="md">
         <Container p="md">
-          <Title order={1}>Teamcoaching</Title>
-          <Title order={2}>"The system in the room"</Title>
+          <Title pb="xs">Teamcoaching</Title>
+          <Title pb="md" order={2}>
+            "The system in the room"
+          </Title>
           <Text pb="md">
             Het lijkt wel alsof we na de coronatijd met nieuwe teamvragen en
             leiderschap-issues te maken hebben gekregen. Leidinggeven op
@@ -107,13 +110,14 @@ const MirjamKroonCoaching: React.FC = () => {
               gedrag en hoe we elkaar soms vast kunnen zetten.
             </Text>
           </Collapse>
-          <Text onClick={toggle}>
-            {!opened ? "Lees meer..." : "Lees minder..."}
-          </Text>
+
+          <UnstyledButton onClick={toggle}>
+            <Text>{!opened ? "Lees meer..." : "Lees minder..."}</Text>
+          </UnstyledButton>
         </Container>
       </Box>
 
-      <Box bg={theme.colors.custom[3]} c="white">
+      <Box bg={theme.colors.custom[3]} c="white" pt="md">
         <Container p="md">
           <Title order={2}>
             Voor <strong>persoonlijke coaching</strong> begeleid ik je graag op
@@ -152,7 +156,7 @@ const MirjamKroonCoaching: React.FC = () => {
         </Container>
       </Box>
 
-      <Box bg={theme.colors.custom[0]}>
+      <Box bg={theme.colors.custom[0]} pt="md">
         <Container p="md" c={theme.colors.custom[3]}>
           <Title>
             Hoe zou een <strong>persoonlijk coachtraject</strong> eruit kunnen
@@ -180,7 +184,7 @@ const MirjamKroonCoaching: React.FC = () => {
             </li>
           </ul>
         </Container>
-        <Title pb="xl" ta="center" c={theme.colors.custom[3]}>
+        <Title ta="center" c={theme.colors.custom[3]} pt="md">
           Tools die kunnen worden ingezet:
         </Title>
       </Box>
@@ -188,7 +192,7 @@ const MirjamKroonCoaching: React.FC = () => {
       <Box bg={theme.colors.custom[3]} c="white">
         <Container p="">
           <SimpleGrid cols={{ base: 1, sm: 2 }}>
-            <Stack p="xl">
+            <Stack p="md">
               <Title order={2}>Insights Discovery®</Title>
               <Text>
                 Een van de instrumenten die kunnen helpen bij het elkaar beter
@@ -212,7 +216,7 @@ const MirjamKroonCoaching: React.FC = () => {
                 zwaktes van het team.
               </Text>
             </Stack>
-            <Stack p="xl" bg={theme.colors.custom[2]}>
+            <Stack p="md" bg={theme.colors.custom[2]}>
               <Title order={2}>Myers-Briggs Type-indicator</Title>
               <Text>
                 Ook de Myers-Briggs Type-indicator (step 2) is net zoals de
@@ -236,9 +240,7 @@ const MirjamKroonCoaching: React.FC = () => {
 
       <Box bg={theme.colors.custom[0]}>
         <Container p="md" c={theme.colors.custom[3]}>
-          <Title order={1} pb="xl">
-            Review
-          </Title>
+          <Title pb="md">Review</Title>
 
           <ClientReview
             review="Mirjam is een bevlogen coach. Ik heb haar leren kennen in de training onboarding voor nieuwe leidinggevenden en heb haar daarna terug gevraagd om voor mijn team een Insight training te verzorgen. Waarom ik Mirjam heb gevraagd voor de training binnen mijn team? Ze heeft oog voor zowel de groepsdynamiek als voor de verschillende individuen. Dat maakt dat je als cursist je gezien voelt, en dat er mede door haar begeleiding in de groep een warme -en open sfeer ontstaat. Wat Mirjam typeert is dat ze je uit je comfort zone probeert te halen, waardoor je naar jezelf kijkt waarom je de dingen doet zoals je ze doet maar ook hoe je zaken kunt doorbreken."

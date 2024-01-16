@@ -65,13 +65,16 @@ const MirjamKroonAbout: React.FC = () => {
           <Flex direction={{ base: "column", md: "row" }} align="center">
             <Flex
               direction="column"
-              ta={{ base: "center", md: "start" }}
+              // ta={{ base: "center", md: "start" }}
               justify="center"
+              p="md"
             >
               <Title order={1} pb="md">
-                Trainer en coach van groei- en verandertrajecten
+                Trainer en coach van groei-
+                <br />
+                en verandertrajecten
               </Title>
-              <Text>
+              <Text pb="md">
                 Ik ben Mirjam Kroon-Hoekendijk. Binnen organisaties ben ik
                 actief als coach en trainer op het gebied van training,
                 ontwikkeling en samenwerkingsvraagstukken.
@@ -84,10 +87,10 @@ const MirjamKroonAbout: React.FC = () => {
         <Statement text="“Ik word ik door jij”" subText="Martin Büber" />
 
         <Container p="md" c={theme.colors.custom[3]}>
-          <Title order={1} pb="xl">
+          <Title order={1} pb="md" pt="md">
             Waar kun je me voor vragen?
           </Title>
-          <Text pb="xl">
+          <Text pb="lg">
             Waar mensen samenwerken, valt veel te winnen wanneer er goed
             gecommuniceerd wordt. Of dat nu in de financiële branche is,
             overheid of de zware maakindustrie. Afstemmen, programma’s op maat
@@ -132,7 +135,11 @@ const MirjamKroonAbout: React.FC = () => {
           >
             <Stack flex={1}>
               <ScrollAreaAutosize offsetScrollbars type="always">
-                <Title pt="md">Geen sprookje maar een soap</Title>
+                <Title pt="md">
+                  Geen sprookje,
+                  <br />
+                  maar een soap
+                </Title>
                 <Text py="lg">
                   De realiteit van het leven, heeft meer van een soap dan van
                   een sprookje. In een sprookje zouden we het liefst geloven. Er
@@ -152,7 +159,7 @@ const MirjamKroonAbout: React.FC = () => {
                 <Text pb="md" hiddenFrom="lg" ta="right" size="sm">
                   Kunstwerk door Giuseppe Penone (2012), Museum Voorlinden
                 </Text>
-                <Text pb="lg">
+                <Text>
                   Samenwerken gaat vanuit systeemdenken niet alleen om mensen,
                   maar vooral om de talloze relaties en verbindingen waar mensen
                   deel van uitmaken. Om naar samenwerkingsvraagstukken te kijken
@@ -185,9 +192,11 @@ const MirjamKroonAbout: React.FC = () => {
         </Container>
       </Box>
 
-      <Box c={theme.colors.custom[3]} bg={theme.colors.custom[0]}>
+      <Box c={theme.colors.custom[3]} bg={theme.colors.custom[0]} pt="md">
         <Container p="md">
-          <Title order={1}>Over Mirjam</Title>
+          <Title pb="md" order={1}>
+            Over Mirjam
+          </Title>
           <Text pb="lg">
             Wat je van mij kunt verwachten: vasthoudendheid als het gaat om een
             programma maken wat verschil gaat maken. Ik houd van en geloof in
@@ -216,7 +225,7 @@ const MirjamKroonAbout: React.FC = () => {
 
         <Container pb="md">
           <Flex align="stretch">
-            <Stack justify="space-between">
+            <Stack>
               <Title order={1}>En naast werk?</Title>
               <Text pb="lg">
                 Oudste dochter uit een ondernemend gezin, waar buiten de

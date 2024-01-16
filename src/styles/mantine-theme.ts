@@ -26,10 +26,15 @@ const theme = createTheme({
     },
   },
   components: {
+    Button: {
+      styles: () => ({
+        root: {},
+      }),
+    },
     Anchor: {
       styles: () => ({
         root: {
-          color: "orange", //"white",
+          color: "white", //"white",
         },
       }),
     },

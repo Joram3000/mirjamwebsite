@@ -91,9 +91,7 @@ const MirjamKroonTraining: React.FC = () => {
 
       <Box bg="white" c={theme.colors.custom[1]}>
         <Container p="md">
-          <Title pb="xl" order={1}>
-            Review
-          </Title>
+          <Title pb="md">Review</Title>
           <ClientReview
             review="Niets dan lof! Wat een kundige en fijne vrouw! Rustige en niet
               oordelende persoon, komt prettig over. Mirjam heeft mij eerst

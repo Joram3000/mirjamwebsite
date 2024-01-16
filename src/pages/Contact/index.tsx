@@ -19,7 +19,7 @@ const MirjamKroonContact: React.FC = () => {
   return (
     <Box c={theme.colors.custom[3]} bg={theme.colors.custom[0]} py="md">
       <Container>
-        <Title order={1} ta="center">
+        <Title order={1} ta="center" pb="md">
           Contact
         </Title>
 
@@ -67,20 +67,16 @@ const MirjamKroonContact: React.FC = () => {
               Moeite met het vinden van het adres?
               <br />
               <Anchor
+                underline="always"
+                c={theme.colors.custom[3]}
                 target="_blank"
-                href="https://maps.app.goo.gl/sdYCBvtfTNQbiB3R7"
+                href="https://maps.app.goo.gl/8Sdjrvs8qZm2RUzS7"
               >
                 Zoek hier de route op via Google Maps!
               </Anchor>
             </Text>
           </Stack>
-          <Image
-            onClick={() =>
-              console.log("https://maps.app.goo.gl/sdYCBvtfTNQbiB3R7")
-            }
-            w={{ base: "100%", md: "50%" }}
-            src={Kaartje}
-          />
+          <Image w={{ base: "100%", md: "50%" }} src={Kaartje} />
         </Flex>
       </Container>
     </Box>

@@ -9,6 +9,8 @@ import {
   SimpleGrid,
   useMantineTheme,
   Flex,
+  UnstyledButton,
+  Anchor,
 } from "@mantine/core";
 
 import SmallCard from "../../components/smallCard";
@@ -76,8 +78,8 @@ const MirjamKroonHomepage: React.FC = () => {
         />
 
         <Container p="md">
-          <Stack align="flex-start" c={theme.colors.custom[3]}>
-            <Title order={1}>
+          <Stack align="flex-start" c={theme.colors.custom[3]} pt="md">
+            <Title order={1} pb="md">
               Werken met de spanning tussen verbinding en authenticiteit
             </Title>
 
@@ -110,16 +112,14 @@ const MirjamKroonHomepage: React.FC = () => {
               <Image src={Mirjam6} w={{ base: "100%", sm: "50%" }} />
             </Flex>
 
-            <Link to="/about">
-              <Button c={theme.colors.custom[3]} variant="outline">
-                Meer over Mirjam
-              </Button>
-            </Link>
+            <Button component="a" href="/about">
+              Meer over Mirjam
+            </Button>
           </Stack>
         </Container>
       </Box>
 
-      <Box bg="white" c={theme.colors.custom[2]}>
+      <Box bg="white" c={theme.colors.custom[2]} pt="md">
         <Container p="md">
           <Stack align="center">
             <Title order={1}>Waarvoor kun je bij mij terecht?</Title>
@@ -141,9 +141,7 @@ const MirjamKroonHomepage: React.FC = () => {
 
       <Box c={theme.colors.custom[1]} bg={theme.colors.custom[0]}>
         <Container p="md">
-          <Title order={1} pb="xl">
-            Reviews
-          </Title>
+          <Title pb="md">Reviews</Title>
 
           <SimpleGrid cols={{ base: 1, sm: 2 }}>
             <ClientReview
