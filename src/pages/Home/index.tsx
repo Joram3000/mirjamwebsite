@@ -111,7 +111,7 @@ const MirjamKroonHomepage: React.FC = () => {
             </Flex>
 
             <Link to="/about">
-              <Button>Meer over Mirjam Link</Button>
+              <Button>Meer over Mirjam</Button>
             </Link>
           </Stack>
         </Container>

@@ -13,6 +13,7 @@ import {
 
 import EthischeCode from "../../assets/docs/2022-ethische-code-phoenix-opleidingen-voor-deelnemers.pdf";
 import LeveringsVoorwaarden from "../../assets/docs/Leveringsvoorwaarden.pdf";
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   const theme = useMantineTheme();
@@ -44,9 +45,9 @@ const Footer: React.FC = () => {
         <Group justify="space-between" pb="lg">
           <Title order={1}>Contact</Title>
 
-          <Anchor href="/contact">
+          <Link to="/contact">
             <Button>Neem contact op</Button>
-          </Anchor>
+          </Link>
         </Group>
 
         {contactGegevens.map((gegeven) => (

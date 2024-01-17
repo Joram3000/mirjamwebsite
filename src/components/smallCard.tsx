@@ -1,4 +1,5 @@
 import { Button, Stack, Text, Title, Image } from "@mantine/core";
+import { Link } from "react-router-dom";
 
 type card = {
   icon: string;
@@ -20,8 +21,14 @@ const SmallCard: React.FC<smallCardProps> = ({ card }) => {
 
       <Stack h="100%" justify="space-between">
         <Text ta="center">{card.text}</Text>
-        <Button component="a" href={card.link}>
-          {card.buttonText}
+
+        <Button>
+          <Link
+            style={{ color: "white", textDecoration: "none" }}
+            to={card.link}
+          >
+            {card.buttonText}
+          </Link>
         </Button>
       </Stack>
     </Stack>
