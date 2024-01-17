@@ -10,30 +10,31 @@ import {
   useMantineTheme,
   Stack,
 } from "@mantine/core";
-import "./footer.module.css";
 import { Link } from "react-router-dom";
-
-export const contactGegevens = [
-  "Mirjam Kroon-Hoekendijk",
-  "Dorpsweg 71",
-  "4223 ND",
-  "Hoornaar",
-  "Zuid-Holland",
-  "mirjam@kroontrainingadvies.com",
-  "0653507815",
-];
+import EthischeCode from "../../assets/docs/2022-ethische-code-phoenix-opleidingen-voor-deelnemers.pdf";
+import LeveringsVoorwaarden from "../../assets/docs/Leveringsvoorwaarden.pdf";
 
 const Footer: React.FC = () => {
   const theme = useMantineTheme();
 
+  const contactGegevens = [
+    "Mirjam Kroon-Hoekendijk",
+    "Dorpsweg 71",
+    "4223 ND",
+    "Hoornaar",
+    "Zuid-Holland",
+    "mirjam@kroontrainingadvies.com",
+    "0653507815",
+  ];
+
   const links = [
     {
       label: "Algemene voorwaarden",
-      link: "/algemeen",
+      link: LeveringsVoorwaarden,
     },
     {
       label: "Ethische code",
-      link: "/ethischecode",
+      link: EthischeCode,
     },
   ];
 
