@@ -10,6 +10,7 @@ import {
   em,
 } from "@mantine/core";
 import plaatje from "../../assets/images/IMG_45522.webp";
+import training from "../../assets/images/training.png";
 import ClientReview from "../../components/ClientReview";
 
 const MirjamKroonTraining: React.FC = () => {
@@ -84,7 +85,7 @@ const MirjamKroonTraining: React.FC = () => {
               </ul>
             </Stack>
 
-            <Image visibleFrom="md" src={plaatje} w="40%" />
+            <Image visibleFrom="md" src={training} w="40%" />
           </Flex>
         </Container>
       </Box>
