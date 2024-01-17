@@ -119,7 +119,7 @@ const MirjamKroonHomepage: React.FC = () => {
                 width: "100%",
               }}
               to="/about"
-              target="_top"
+              // target="_top"
             >
               <Button visibleFrom="md">Meer over Mirjam</Button>
               <Button hiddenFrom="md" fullWidth>

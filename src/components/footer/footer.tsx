@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
         <Group justify="space-between" pb="lg">
           <Title order={1}>Contact</Title>
 
-          <Link to="/contact" target="_top">
+          <Link to="/contact">
             <Button>Neem contact op</Button>
           </Link>
         </Group>
