@@ -27,6 +27,7 @@ const SmallCard: React.FC<smallCardProps> = ({ card }) => {
             color: "white",
             textDecoration: "none",
           }}
+          target="_top"
           to={card.link}
         >
           <Button fullWidth>{card.buttonText}</Button>
