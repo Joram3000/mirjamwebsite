@@ -13,14 +13,15 @@ import {
 } from "@mantine/core";
 import Statement from "../../components/StatementBar";
 import PeopleCard from "../../components/peopleCard";
-import Mirjam6 from "../../assets/images/mirjam6.jpg";
-import Tree from "../../assets/images/Tree.jpg";
-import BesidesWork from "../../assets/images/besidesWork.jpg";
-import samenwerkingsPartner1 from "../../assets/images/Samenwerkingspartners.png";
-import samenwerkingsPartner2 from "../../assets/images/Samenwerkingspartners1.png";
-import samenwerkingsPartner from "../../assets/images/Samenwerkingspartners2.png";
-import samenwerkingsPartner4 from "../../assets/images/Samenwerkingspartners3.png";
-import samenwerkingsPartner3 from "../../assets/images/Samenwerkingspartners5.png";
+import Mirjam6 from "../../assets/images/mirjam6.webp";
+import Tree from "../../assets/images/Tree.webp";
+
+import besidesWork from "../../assets/images/besidesWork.webp";
+import samenwerkingsPartner1 from "../../assets/images/Samenwerkingspartners.webp";
+import samenwerkingsPartner2 from "../../assets/images/Samenwerkingspartners1.webp";
+import samenwerkingsPartner from "../../assets/images/Samenwerkingspartners2.webp";
+import samenwerkingsPartner4 from "../../assets/images/Samenwerkingspartners3.webp";
+import samenwerkingsPartner3 from "../../assets/images/Samenwerkingspartners5.webp";
 
 const MirjamKroonAbout: React.FC = () => {
   const theme = useMantineTheme();
@@ -242,7 +243,7 @@ const MirjamKroonAbout: React.FC = () => {
                 Je leert mensen vaak dat wat je zelf moet leren.
               </Text>
 
-              <Image hiddenFrom="md" src={BesidesWork} />
+              <Image hiddenFrom="md" src={besidesWork} />
               <Text pb="lg">
                 Getrouwd met mijn jeugdliefde (Dick), moeder van 3 volwassen
                 kinderen. Enthousiast over wonen op het platteland (Hoornaar
@@ -252,7 +253,7 @@ const MirjamKroonAbout: React.FC = () => {
                 Rome naar Assisi).
               </Text>
             </Stack>
-            <Image visibleFrom="md" src={BesidesWork} w="40%" />
+            <Image visibleFrom="md" src={besidesWork} w="40%" />
           </Flex>
         </Container>
       </Box>
