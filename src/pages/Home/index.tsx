@@ -110,8 +110,18 @@ const MirjamKroonHomepage: React.FC = () => {
               <Image src={Mirjam6} w={{ base: "100%", sm: "50%" }} />
             </Flex>
 
-            <Link to="/about">
-              <Button>Meer over Mirjam</Button>
+            <Link
+              style={{
+                color: "white",
+                textDecoration: "none",
+                width: "100%",
+              }}
+              to="/about"
+            >
+              <Button visibleFrom="md">Meer over Mirjam</Button>
+              <Button hiddenFrom="md" fullWidth>
+                Meer over Mirjam
+              </Button>
             </Link>
           </Stack>
         </Container>

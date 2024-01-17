@@ -22,14 +22,15 @@ const SmallCard: React.FC<smallCardProps> = ({ card }) => {
       <Stack h="100%" justify="space-between">
         <Text ta="center">{card.text}</Text>
 
-        <Button>
-          <Link
-            style={{ color: "white", textDecoration: "none" }}
-            to={card.link}
-          >
-            {card.buttonText}
-          </Link>
-        </Button>
+        <Link
+          style={{
+            color: "white",
+            textDecoration: "none",
+          }}
+          to={card.link}
+        >
+          <Button fullWidth>{card.buttonText}</Button>
+        </Link>
       </Stack>
     </Stack>
   );
