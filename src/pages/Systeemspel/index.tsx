@@ -69,7 +69,6 @@ const MirjamKroonSysteemspel: React.FC = () => {
             gap="md"
             justify="space-evenly"
             align="stretch"
-            // h={{ base: "100%", md: em(650) }}
           >
             <Stack flex={1} py="md">
               <Text pb="md">
@@ -85,8 +84,8 @@ const MirjamKroonSysteemspel: React.FC = () => {
                 wel niet lopen... en zo kunnen patronen zich blijven herhalen.
               </Text>
               <Image hiddenFrom="lg" src={IMG_35432} />
-              <Text hiddenFrom="lg" ta="right" m={0}>
-                hoi
+              <Text pb="md" hiddenFrom="lg" ta="right" size="sm">
+                Voorlinden Giuseppe Penone
               </Text>
               <Text pb="md">
                 Volgens de systeembenadering is het antwoord op de vraag: ‘Wat
@@ -109,7 +108,7 @@ const MirjamKroonSysteemspel: React.FC = () => {
             <Stack visibleFrom="lg" flex={1} pt="md" justify="center">
               <Image src={IMG_35432} />
               <Text ta="right" m={0} size="sm" pt={em(6)}>
-                hoi
+                Voorlinden Giuseppe Penone
               </Text>
             </Stack>
           </Flex>
