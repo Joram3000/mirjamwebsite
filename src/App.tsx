@@ -10,7 +10,6 @@ import Coaching from "./pages/Coaching";
 import Contact from "./pages/Contact";
 import Training from "./pages/Training";
 import Systeemspel from "./pages/Systeemspel";
-import UnderConstructionPage from "./pages/UnderConstruction";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +17,7 @@ const router = createBrowserRouter([
     element: <Layout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "/", element: <UnderConstructionPage /> },
+      { path: "/", element: <Homepage /> },
       { path: "/*", element: <Homepage /> },
       { path: "/about", element: <About /> },
       { path: "/coaching", element: <Coaching /> },

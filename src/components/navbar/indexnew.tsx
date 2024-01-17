@@ -13,7 +13,7 @@ import logo from "../../assets/images/logo.png";
 import { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 
-export const menuData = [
+const menuData = [
   {
     label: "Home",
     link: "/home",
