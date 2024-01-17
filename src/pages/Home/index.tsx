@@ -19,6 +19,7 @@ import systeemspel from "../../assets/svg/systeemspel.png";
 import teamcoaching from "../../assets/svg/teamcoaching.png";
 import training from "../../assets/svg/training.png";
 import ClientReview from "../../components/ClientReview";
+import { Link } from "react-router-dom";
 
 const MirjamKroonHomepage: React.FC = () => {
   const theme = useMantineTheme();
@@ -109,9 +110,9 @@ const MirjamKroonHomepage: React.FC = () => {
               <Image src={Mirjam6} w={{ base: "100%", sm: "50%" }} />
             </Flex>
 
-            <Button component="a" href="/about">
-              Meer over Mirjam
-            </Button>
+            <Link to="/about">
+              <Button>Meer over Mirjam Link</Button>
+            </Link>
           </Stack>
         </Container>
       </Box>
