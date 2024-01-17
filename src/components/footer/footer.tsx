@@ -39,14 +39,14 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <Box bg={theme.colors.custom[2]} c="white" p="md">
+    <Box bg={theme.colors.custom[2]} c="white" pt="md">
       <Container>
         <Group justify="space-between" pb="lg">
           <Title order={1}>Contact</Title>
 
-          <Button component="a" href="/contact">
-            Neem contact op
-          </Button>
+          <Anchor href="/contact">
+            <Button>Neem contact op</Button>
+          </Anchor>
         </Group>
 
         {contactGegevens.map((gegeven) => (
