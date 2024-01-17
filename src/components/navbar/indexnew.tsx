@@ -9,7 +9,7 @@ import {
   Box,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo.webp";
 import { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 

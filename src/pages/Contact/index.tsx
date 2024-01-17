@@ -10,8 +10,8 @@ import {
   Flex,
   Anchor,
 } from "@mantine/core";
-import Mirjam6 from "../../assets/images/mirjam6.jpg";
-import Kaartje from "../../assets/images/googlemapsdorpsweg71.jpg";
+import Mirjam6 from "../../assets/images/mirjam6.webp";
+import Kaartje from "../../assets/images/googlemapsdorpsweg71.webp";
 
 const MirjamKroonContact: React.FC = () => {
   const theme = useMantineTheme();

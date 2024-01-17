@@ -13,11 +13,13 @@ import {
 
 import SmallCard from "../../components/smallCard";
 import Statement from "../../components/StatementBar";
-import Mirjam6 from "../../assets/images/mirjam6.jpg";
-import cirkels from "../../assets/images/cirkels.png";
+import Mirjam6 from "../../assets/images/mirjam6.webp";
+import cirkels from "../../assets/images/cirkels.webp";
+
 import systeemspel from "../../assets/svg/systeemspel.png";
 import teamcoaching from "../../assets/svg/teamcoaching.png";
 import training from "../../assets/svg/training.png";
+
 import ClientReview from "../../components/ClientReview";
 
 const MirjamKroonHomepage: React.FC = () => {

@@ -12,7 +12,7 @@ import {
   UnstyledButton,
 } from "@mantine/core";
 import Statement from "../../components/StatementBar";
-import IMG_4864 from "../../assets/images/IMG_48642.jpg";
+import IMG_4864 from "../../assets/images/IMG_48642.webp";
 import ClientReview from "../../components/ClientReview";
 import { useDisclosure } from "@mantine/hooks";
 
