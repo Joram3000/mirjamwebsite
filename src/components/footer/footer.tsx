@@ -68,7 +68,10 @@ const Footer: React.FC = () => {
               </Anchor>
             ))}
           </Stack>
-          <Text>2023 Kibbeling Media. All rights reserved.</Text>
+
+          <Anchor href="https://www.kibbelingmedia.nl/" target="_blank">
+            2023 Kibbeling Media. All rights reserved.
+          </Anchor>
         </Group>
       </Container>
     </Box>
