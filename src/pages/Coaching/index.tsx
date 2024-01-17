@@ -34,6 +34,8 @@ const MirjamKroonCoaching: React.FC = () => {
         </Stack>
       </Box>
 
+      <Image hiddenFrom="sm" src={IMG_4864} w={{ base: "100%", md: "50%" }} />
+
       <Box bg="white" c={theme.colors.custom[1]}>
         <Container>
           <Flex
@@ -41,9 +43,13 @@ const MirjamKroonCoaching: React.FC = () => {
             direction={{ base: "column", md: "row" }}
             gap="md"
           >
-            <Image src={IMG_4864} w={{ base: "100%", md: "50%" }} />
+            <Image
+              visibleFrom="sm"
+              src={IMG_4864}
+              w={{ base: "100%", md: "50%" }}
+            />
 
-            <Stack m="md" my="md" align="center" justify="space-evenly">
+            <Stack py="md" my="md" align="center" justify="space-evenly">
               <Title visibleFrom="md" order={2}>
                 Obstakels op je weg, herhalende patronen in de interactie met
                 anderen? Gedrag veranderen is niet eenvoudig.

@@ -10,7 +10,7 @@ import {
   Flex,
   em,
 } from "@mantine/core";
-import fotowater from "../../assets/images/fotowater.png";
+import systeemspel from "../../assets/images/systeemspel.png";
 import IMG_35432 from "../../assets/images/IMG_35432.jpg";
 import ClientReview from "../../components/ClientReview";
 
@@ -19,12 +19,12 @@ const MirjamKroonSysteemspel: React.FC = () => {
 
   return (
     <>
-      <Box bg={theme.colors.custom[0]} c={theme.colors.custom[1]} pt="md">
-        <Title order={1} ta="center" pb="md">
+      <Box bg={theme.colors.custom[0]} c={theme.colors.custom[1]} py="md">
+        <Title order={1} ta="center" my="md">
           Systeemspel
         </Title>
 
-        <Image w="100%" h={{ base: em(200), md: em(500) }} src={fotowater} />
+        <Image w="100%" h={{ base: em(200), md: em(500) }} src={systeemspel} />
 
         <Container>
           <Group py="md">
@@ -69,7 +69,6 @@ const MirjamKroonSysteemspel: React.FC = () => {
             gap="md"
             justify="space-evenly"
             align="stretch"
-            // h={{ base: "100%", md: em(650) }}
           >
             <Stack flex={1} py="md">
               <Text pb="md">
@@ -85,8 +84,8 @@ const MirjamKroonSysteemspel: React.FC = () => {
                 wel niet lopen... en zo kunnen patronen zich blijven herhalen.
               </Text>
               <Image hiddenFrom="lg" src={IMG_35432} />
-              <Text hiddenFrom="lg" ta="right" m={0}>
-                hoi
+              <Text pb="md" hiddenFrom="lg" ta="right" size="sm">
+                Voorlinden Giuseppe Penone
               </Text>
               <Text pb="md">
                 Volgens de systeembenadering is het antwoord op de vraag: ‘Wat
@@ -109,18 +108,18 @@ const MirjamKroonSysteemspel: React.FC = () => {
             <Stack visibleFrom="lg" flex={1} pt="md" justify="center">
               <Image src={IMG_35432} />
               <Text ta="right" m={0} size="sm" pt={em(6)}>
-                hoi
+                Voorlinden Giuseppe Penone
               </Text>
             </Stack>
           </Flex>
         </Container>
+      </Box>
+      <Box c={theme.colors.custom[1]} bg={theme.colors.custom[0]}>
+        <Container p="md">
+          <Title pb="md">Review</Title>
 
-        <Box c={theme.colors.custom[1]} bg={theme.colors.custom[0]}>
-          <Container p="md">
-            <Title pb="md">Review</Title>
-
-            <ClientReview
-              review="Mirjam is een fijne trainer. Ze heeft veel kennis en weet het op
+          <ClientReview
+            review="Mirjam is een fijne trainer. Ze heeft veel kennis en weet het op
                 een ontspannen manier over te brengen. Mirjam wil waarde
                 toevoegen. Pas als ze denkt dat ze dat kan, besluit ze in te
                 stappen. Ze denkt mee, adviseert. Ze zet zichzelf daarbij niet
@@ -132,11 +131,10 @@ const MirjamKroonSysteemspel: React.FC = () => {
                 anders kijken, ze laat je ervaren wat er in de interactie
                 gebeurt en wat jouw aandeel daarin is. Ontschuldigend, zoals het
                 systemisch betaamt. Waardevol."
-              name="Paul Hilhorst"
-              company="De Boer & Ritsema van Eck"
-            />
-          </Container>
-        </Box>
+            name="Paul Hilhorst"
+            company="De Boer & Ritsema van Eck"
+          />
+        </Container>
       </Box>
     </>
   );

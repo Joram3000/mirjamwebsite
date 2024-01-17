@@ -62,13 +62,12 @@ const MirjamKroonAbout: React.FC = () => {
     <>
       <Box bg={theme.colors.custom[0]}>
         <Container c={theme.colors.custom[3]}>
-          <Flex direction={{ base: "column", md: "row" }} align="center">
-            <Flex
-              direction="column"
-              // ta={{ base: "center", md: "start" }}
-              justify="center"
-              p="md"
-            >
+          <Flex
+            direction={{ base: "column", md: "row" }}
+            align="center"
+            gap="md"
+          >
+            <Flex direction="column" justify="center">
               <Title order={1} pb="md">
                 Trainer en coach van groei-
                 <br />
@@ -179,7 +178,14 @@ const MirjamKroonAbout: React.FC = () => {
                   lastig zijn.
                 </Text>
               </ScrollAreaAutosize>
-              <Button mb="md">Bekijk video</Button>
+              <Button
+                component="a"
+                href="https://www.youtube.com/watch?v=OLQ2S_t29sE&ab_channel=TheAgeeth"
+                target="blank"
+                mb="md"
+              >
+                Bekijk video op Youtube
+              </Button>
             </Stack>
 
             <Box visibleFrom="lg" flex={1}>
@@ -253,7 +259,7 @@ const MirjamKroonAbout: React.FC = () => {
 
       <Box bg={theme.colors.custom[3]} c="white">
         <Container ta="center">
-          <Title pt="xl">Samenwerkingspartners</Title>
+          <Title py="xl">Samenwerkingspartners</Title>
 
           {samenwerkingsPartners.map((samenwerkingsPartner) => (
             <PeopleCard
