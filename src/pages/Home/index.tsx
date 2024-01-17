@@ -9,8 +9,6 @@ import {
   SimpleGrid,
   useMantineTheme,
   Flex,
-  UnstyledButton,
-  Anchor,
 } from "@mantine/core";
 
 import SmallCard from "../../components/smallCard";
@@ -21,7 +19,6 @@ import systeemspel from "../../assets/svg/systeemspel.png";
 import teamcoaching from "../../assets/svg/teamcoaching.png";
 import training from "../../assets/svg/training.png";
 import ClientReview from "../../components/ClientReview";
-import { Link } from "react-router-dom";
 
 const MirjamKroonHomepage: React.FC = () => {
   const theme = useMantineTheme();
