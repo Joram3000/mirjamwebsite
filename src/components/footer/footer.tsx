@@ -10,7 +10,7 @@ import {
   useMantineTheme,
   Stack,
 } from "@mantine/core";
-import { Link } from "react-router-dom";
+
 import EthischeCode from "../../assets/docs/2022-ethische-code-phoenix-opleidingen-voor-deelnemers.pdf";
 import LeveringsVoorwaarden from "../../assets/docs/Leveringsvoorwaarden.pdf";
 
@@ -44,9 +44,9 @@ const Footer: React.FC = () => {
         <Group justify="space-between" pb="lg">
           <Title order={1}>Contact</Title>
 
-          <Link to="/contact">
-            <Button>Neem contact op</Button>
-          </Link>
+          <Button component="a" href="/contact">
+            Neem contact op
+          </Button>
         </Group>
 
         {contactGegevens.map((gegeven) => (
