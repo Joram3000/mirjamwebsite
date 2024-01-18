@@ -9,8 +9,8 @@ import {
   Stack,
   em,
 } from "@mantine/core";
-import plaatje from "../../assets/images/IMG_45522.webp";
-import training from "../../assets/images/training.png";
+import plaatje from "../../../public/assets/images/IMG_45522.webp";
+import training from "../../../public/assets/images/training.png";
 import ClientReview from "../../components/ClientReview";
 
 const MirjamKroonTraining: React.FC = () => {

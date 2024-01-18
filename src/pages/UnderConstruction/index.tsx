@@ -1,5 +1,5 @@
 import "./style.css";
-import mirjamfoto from "../../assets/images/mirjam6.jpg";
+import mirjamfoto from "../../../public/assets/images/mirjam6.jpg";
 import {
   Anchor,
   Box,
