@@ -71,7 +71,7 @@ const NavbarNew: React.FC = () => {
   ));
 
   return (
-    <Box bg="purple">
+    <Box bg={theme.colors.custom[0]}>
       <Group justify="space-between" align="center" h={90}>
         <Link to="/home">
           <Image src={logo} onClick={() => onClickNavLink("Home")} h={70} />
