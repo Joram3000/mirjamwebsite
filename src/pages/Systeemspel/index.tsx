@@ -24,7 +24,7 @@ const MirjamKroonSysteemspel: React.FC = () => {
           Systeemspel
         </Title>
 
-        <Image w="100%" h={{ base: em(200), md: em(500) }} src={systeemspel} />
+        <Image w="100%" h={{ base: em(200), md: em(400) }} src={systeemspel} />
 
         <Container>
           <Group py="md">
