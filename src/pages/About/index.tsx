@@ -182,7 +182,7 @@ const MirjamKroonAbout: React.FC = () => {
               <Button
                 component="a"
                 href="https://www.youtube.com/watch?v=OLQ2S_t29sE&ab_channel=TheAgeeth"
-                // target="blank"
+                target="blank"
                 mb="md"
               >
                 Bekijk video op Youtube
