@@ -231,9 +231,9 @@ const MirjamKroonAbout: React.FC = () => {
         </Container>
 
         <Container pb="md">
-          <Flex align="stretch">
-            <Stack>
-              <Title order={1}>En naast werk?</Title>
+          <Flex align="stretch" gap="md">
+            <Stack pr="md">
+              <Title>En naast werk?</Title>
               <Text pb="lg">
                 Oudste dochter uit een ondernemend gezin, waar buiten de
                 lijntjes kleuren meer gewaardeerd werd dan erbinnen. De minder
@@ -253,6 +253,7 @@ const MirjamKroonAbout: React.FC = () => {
                 Rome naar Assisi).
               </Text>
             </Stack>
+
             <Image visibleFrom="md" src={besidesWork} w="40%" />
           </Flex>
         </Container>

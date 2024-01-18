@@ -85,7 +85,7 @@ const MirjamKroonSysteemspel: React.FC = () => {
               </Text>
               <Image hiddenFrom="lg" src={IMG_35432} />
               <Text pb="md" hiddenFrom="lg" ta="right" size="sm">
-                Voorlinden Giuseppe Penone
+                Voorlinden Antony Gormley, Clearing VIII, 2022
               </Text>
               <Text pb="md">
                 Volgens de systeembenadering is het antwoord op de vraag: ‘Wat
@@ -108,7 +108,7 @@ const MirjamKroonSysteemspel: React.FC = () => {
             <Stack visibleFrom="lg" flex={1} pt="md" justify="center">
               <Image src={IMG_35432} />
               <Text ta="right" m={0} size="sm" pt={em(6)}>
-                Voorlinden Giuseppe Penone
+                Voorlinden Antony Gormley, Clearing VIII, 2022
               </Text>
             </Stack>
           </Flex>
