@@ -140,13 +140,12 @@ const MirjamKroonHomepage: React.FC = () => {
               overheid of de zware maakindustrie. Afstemmen, programma’s op maat
               maken in taal die aansluit, is kenmerkend voor mijn werkwijze.
             </Text>
-
-            <SimpleGrid cols={{ base: 1, sm: 3 }}>
-              {cardContent.map((card) => (
-                <SmallCard key={card.title} card={card} />
-              ))}
-            </SimpleGrid>
           </Stack>
+          <SimpleGrid cols={{ base: 1, sm: 3 }}>
+            {cardContent.map((card) => (
+              <SmallCard key={card.title} card={card} />
+            ))}
+          </SimpleGrid>
         </Container>
       </Box>
 
