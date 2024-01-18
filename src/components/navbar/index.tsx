@@ -15,40 +15,39 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 
 const menuData = [
   {
-    label: "Home",
-    link: "/home",
+    name: "Home",
+    path: "/home",
   },
   {
-    label: "Over Mirjam",
-    link: "/about",
+    name: "Over Mirjam",
+    path: "/about",
   },
   {
-    label: "Coaching",
-    link: "/coaching",
+    name: "Coaching",
+    path: "/coaching",
   },
   {
-    label: "Training",
-    link: "/training",
+    name: "Training",
+    path: "/training",
   },
   {
-    label: "Systeemspel",
-    link: "/systeemspel",
+    name: "Systeemspel",
+    path: "/systeemspel",
   },
 ];
 
 const NavbarNew: React.FC = () => {
   const theme = useMantineTheme();
-
   const [opened, { toggle, close }] = useDisclosure(false);
   const [active, setActive] = useState("Home");
   const location = useLocation();
 
   useEffect(() => {
     const currentMenuItem = menuData.find(
-      (item) => item.link === location.pathname
+      (item) => item.path === location.pathname
     );
     if (currentMenuItem) {
-      setActive(currentMenuItem.label);
+      setActive(currentMenuItem.name);
     }
   }, [location.pathname]);
 
@@ -59,52 +58,24 @@ const NavbarNew: React.FC = () => {
 
   const menuItems = menuData.map((item) => (
     <NavLink
-      to={item.link}
-      key={item.label}
-      onClick={() => onClickNavLink(item.label)}
+      to={item.path}
+      key={item.name}
+      onClick={() => onClickNavLink(item.name)}
       style={{
-        textDecoration: item.label === active ? "underline" : "none",
+        textDecoration: item.name === active ? "underline" : "none",
         color: theme.colors.custom[2],
       }}
     >
-      {item.label}
+      {item.name}
     </NavLink>
   ));
 
   return (
-    <Box p={0} bg={theme.colors.custom[0]}>
-      <Group justify="space-between" align="center" py="md">
+    <Box bg={theme.colors.custom[0]}>
+      <Group justify="space-between" align="center" h={90}>
         <Link to="/home">
-          <Image
-            visibleFrom="md"
-            src={logo}
-            onClick={() => onClickNavLink("Home")}
-          />
+          <Image src={logo} onClick={() => onClickNavLink("Home")} h={70} />
         </Link>
-
-        <Group align="center" justify="space-between" w="100%" hiddenFrom="md">
-          <Link to="/home">
-            <Image src={logo} onClick={() => onClickNavLink("Home")} w={150} />
-          </Link>
-          <Burger
-            opened={opened}
-            onClick={toggle}
-            color="black"
-            hiddenFrom="lg"
-            size="sm"
-            m="lg"
-          />
-        </Group>
-
-        <Collapse in={opened} w="100%">
-          <Stack align="center" justify="center">
-            {menuItems}
-
-            <NavLink to="/contact" onClick={() => onClickNavLink("Contact")}>
-              <Button>Contact</Button>
-            </NavLink>
-          </Stack>
-        </Collapse>
 
         <Group visibleFrom="md" pr="md">
           {menuItems}
@@ -112,7 +83,31 @@ const NavbarNew: React.FC = () => {
             <Button>Contact</Button>
           </NavLink>
         </Group>
+
+        <Burger
+          pr="xl"
+          opened={opened}
+          onClick={toggle}
+          color="black"
+          hiddenFrom="md"
+          size="sm"
+        />
       </Group>
+
+      <Collapse
+        in={opened}
+        onClick={toggle}
+        transitionDuration={200}
+        animateOpacity
+      >
+        <Stack pb="md" align="stretch" ta="center">
+          {menuItems}
+
+          <NavLink to="/contact" onClick={() => onClickNavLink("Contact")}>
+            <Button>Contact</Button>
+          </NavLink>
+        </Stack>
+      </Collapse>
     </Box>
   );
 };
