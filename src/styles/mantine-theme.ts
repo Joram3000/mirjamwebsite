@@ -2,8 +2,10 @@ import { createTheme } from "@mantine/core";
 
 const theme = createTheme({
   fontFamily: "Avenir, sans-serif",
+
   primaryColor: "lime",
   defaultRadius: 0,
+
   colors: {
     custom: [
       "#F2F3ED", // broken white
