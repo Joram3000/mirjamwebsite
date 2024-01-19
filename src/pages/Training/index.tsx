@@ -85,8 +85,8 @@ const MirjamKroonTraining: React.FC = () => {
                 </li>
               </ul>
             </Stack>
-            <Box flex={1}>
-              <Image visibleFrom="md" src={training} bg="red" />
+            <Box flex={1} visibleFrom="md">
+              <Image src={training} />
             </Box>
           </Flex>
         </Container>
