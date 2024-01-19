@@ -83,8 +83,17 @@ const MirjamKroonHomepage: React.FC = () => {
               Werken met de spanning tussen verbinding en authenticiteit
             </Title>
 
-            <Flex direction={{ base: "column", sm: "row" }} align="stretch">
-              <Flex direction="column" align="center" justify="space-between">
+            <Flex
+              direction={{ base: "column", sm: "row" }}
+              align="stretch"
+              gap="lg"
+            >
+              <Flex
+                direction="column"
+                align="center"
+                justify="space-between"
+                flex={1}
+              >
                 <Text pb="md">
                   Is in jouw team van professionals ieder vooral gefocust op
                   zijn eigen werk, zonder dat ze elkaar sterker maken? Vormt de
@@ -109,7 +118,7 @@ const MirjamKroonHomepage: React.FC = () => {
                   gevoerd moeten worden.
                 </Text>
               </Flex>
-              <Image src={Mirjam6} w={{ base: "100%", sm: "50%" }} />
+              <Image flex={1} src={Mirjam6} w={{ base: "100%", sm: "50%" }} />
             </Flex>
 
             <Link

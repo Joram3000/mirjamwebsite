@@ -52,14 +52,15 @@ const MirjamKroonTraining: React.FC = () => {
             Trainingen zijn altijd maatwerk, afhankelijk van de vraag van de
             opdrachtgever.
           </Text>
-          <Flex gap="md" direction={{ base: "column", md: "row" }}>
+          <Flex gap="lg" direction={{ base: "column", md: "row" }}>
             <Image hiddenFrom="md" src={plaatje} />
-            <Stack>
+
+            <Stack flex={2}>
               <Text>De meest recente trainingen:</Text>
               <ul>
                 <li>
                   <Text>
-                    Leidinggeven met Lef (het moedige gesprek voeren).{" "}
+                    Leidinggeven met Lef (het moedige gesprek voeren).
                   </Text>
                 </li>
                 <li>
@@ -84,8 +85,9 @@ const MirjamKroonTraining: React.FC = () => {
                 </li>
               </ul>
             </Stack>
-
-            <Image visibleFrom="md" src={training} w="40%" />
+            <Box flex={1}>
+              <Image visibleFrom="md" src={training} bg="red" />
+            </Box>
           </Flex>
         </Container>
       </Box>
