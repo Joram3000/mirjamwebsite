@@ -2,6 +2,7 @@ import { AppShell, useMantineTheme } from "@mantine/core";
 import Navbar from "../navbar/index";
 import { Outlet } from "react-router-dom";
 import Footer from "../footer/footer";
+import ScrollToTop from "../../helpers/ScrollToTop";
 
 const Layout: React.FC = () => {
   const theme = useMantineTheme();
@@ -12,6 +13,7 @@ const Layout: React.FC = () => {
         <Navbar />
       </AppShell.Header>
       <AppShell.Main>
+        <ScrollToTop />
         <Outlet />
         <Footer />
       </AppShell.Main>
