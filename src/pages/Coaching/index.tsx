@@ -12,7 +12,7 @@ import {
   UnstyledButton,
 } from "@mantine/core";
 import Statement from "../../components/StatementBar";
-import IMG_4864 from "../../../public/assets/images/IMG_48642.webp";
+import IMG_4864 from "/assets/images/IMG_48642.webp";
 import ClientReview from "../../components/ClientReview";
 import { useDisclosure } from "@mantine/hooks";
 
@@ -223,7 +223,9 @@ const MirjamKroonCoaching: React.FC = () => {
               </Text>
             </Stack>
             <Stack p="md" bg={theme.colors.custom[2]}>
-              <Title order={2}>Myers-Briggs Type-indicator</Title>
+              <Title id="myers-briggs" order={2}>
+                Myers-Briggs Type-indicator
+              </Title>
               <Text>
                 Ook de Myers-Briggs Type-indicator (step 2) is net zoals de
                 Insights Discovery® gebaseerd op het gedachtegoed van Gustav

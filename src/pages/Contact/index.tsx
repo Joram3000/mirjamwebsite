@@ -10,8 +10,8 @@ import {
   Flex,
   Anchor,
 } from "@mantine/core";
-import Mirjam6 from "../../../public/assets/images/mirjam6.webp";
-import Kaartje from "../../../public/assets/images/googlemapsdorpsweg71.webp";
+import Mirjam6 from "/assets/images/mirjam6.webp";
+import Kaartje from "/assets/images/googlemapsdorpsweg71.webp";
 
 const MirjamKroonContact: React.FC = () => {
   const theme = useMantineTheme();
@@ -28,8 +28,8 @@ const MirjamKroonContact: React.FC = () => {
 
           <Stack justify="flex-start">
             <Text>
-              Benieuwd naar wat ik voor jouw organisatie kan betekenen? Neem
-              gerust vrijblijvend contact op om te kijken wat mogelijk is.
+              Benieuwd naar wat ik voor jou of jouw organisatie kan betekenen?
+              Neem gerust contact op om te kijken wat mogelijk is.
             </Text>
             <Text>
               Mirjam Kroon-Hoekendijk

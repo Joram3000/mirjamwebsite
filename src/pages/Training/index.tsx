@@ -9,8 +9,8 @@ import {
   Stack,
   em,
 } from "@mantine/core";
-import plaatje from "../../../public/assets/images/IMG_45522.webp";
-import training from "../../../public/assets/images/training.png";
+import plaatje from "/assets/images/IMG_45522.webp";
+import training from "/assets/images/training.png";
 import ClientReview from "../../components/ClientReview";
 
 const MirjamKroonTraining: React.FC = () => {
@@ -64,24 +64,24 @@ const MirjamKroonTraining: React.FC = () => {
                   </Text>
                 </li>
                 <li>
-                  <Text>De Leider als teamcoach of individuele coach. </Text>
+                  <Text>De Leider als teamcoach of individuele coach.</Text>
                 </li>
                 <li>
                   <Text>
-                    Ik ben als een van de vaste trainers betrokken bij het
-                    programma De Informele Leider van de Baak. Een programma
+                    Als een van de vaste trainers ben ik betrokken bij het
+                    programma 'De Informele Leider' van de Baak. Een programma
                     waarbij je leert hoe je mensen mee kunt krijgen zonder
-                    informele macht.
+                    formele macht.
                   </Text>
                 </li>
                 <li>
                   <Text>
-                    Insights-teamtrainingen, gebruiksaanwijzingen om elkaar te
-                    begrijpen
+                    Insights-teamtrainingen. Insights Discovery® biedt een
+                    instrument om jezelf en anderen beter te begrijpen.
                   </Text>
                 </li>
                 <li>
-                  <Text>Feedback-trainingen </Text>
+                  <Text>Feedback-trainingen.</Text>
                 </li>
               </ul>
             </Stack>

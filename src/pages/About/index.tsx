@@ -13,15 +13,15 @@ import {
 } from "@mantine/core";
 import Statement from "../../components/StatementBar";
 import PeopleCard from "../../components/peopleCard";
-import Mirjam6 from "../../../public/assets/images/mirjam6.webp";
-import Tree from "../../../public/assets/images/Tree.webp";
+import Mirjam6 from "/assets/images/mirjam6.webp";
+import Tree from "/assets/images/Tree.webp";
 
-import besidesWork from "../../../public/assets/images/besidesWork.webp";
-import samenwerkingsPartner1 from "../../../public/assets/images/Samenwerkingspartners.webp";
-import samenwerkingsPartner2 from "../../../public/assets/images/Samenwerkingspartners1.webp";
-import samenwerkingsPartner from "../../../public/assets/images/Samenwerkingspartners2.webp";
-import samenwerkingsPartner4 from "../../../public/assets/images/Samenwerkingspartners3.webp";
-import samenwerkingsPartner3 from "../../../public/assets/images/Samenwerkingspartners5.webp";
+import besidesWork from "/assets/images/besidesWork.webp";
+import samenwerkingsPartner1 from "/assets/images/Samenwerkingspartners.webp";
+import samenwerkingsPartner2 from "/assets/images/Samenwerkingspartners1.webp";
+import samenwerkingsPartner from "/assets/images/Samenwerkingspartners2.webp";
+import samenwerkingsPartner4 from "/assets/images/Samenwerkingspartners3.webp";
+import samenwerkingsPartner3 from "/assets/images/Samenwerkingspartners5.webp";
 
 const MirjamKroonAbout: React.FC = () => {
   const theme = useMantineTheme();
@@ -54,7 +54,7 @@ const MirjamKroonAbout: React.FC = () => {
     {
       img: samenwerkingsPartner4,
       name: "Leiderschip",
-      text: "Voor Leiderschip verzorg ik trainingen “de Leider als teamcoach” en de “leider als individuele coach”en begeleid ik teams. Leiderschip ontwerpt inhoudelijk sterke programma’s waarin deelnemers methodes leren die werken.",
+      text: "Voor Leiderschip verzorg ik trainingen 'Leider als teamcoach' en 'Leider als individuele coach' en begeleid ik teams. Leiderschip ontwerpt inhoudelijk sterke programma’s waarin deelnemers methodes leren die werken.",
       link: "",
     },
   ];
@@ -214,9 +214,9 @@ const MirjamKroonAbout: React.FC = () => {
             ontwerpen die het verschil kunnen maken.
           </Text>
           <Text pb="lg">
-            Ik breng een rijke gereedschapskist mee vanuit mijn scholing en
-            jarenlange ervaring: o.a. Sociologie, Systemisch werken (Hellinger
-            en Marijke Spanjersbergen), Deep democracy (level 1-4),
+            Ik breng een rijk gevulde gereedschapskist mee vanuit mijn scholing
+            en jarenlange ervaring: o.a. Sociologie, Systemisch werken
+            (Hellinger en Marijke Spanjersbergen), Deep democracy (level 1-4),
             internationaal gecertificeerd NLP trainer, De Maskermaker,
             Oplossingsgericht coachen en nog veel meer.
           </Text>
