@@ -9,10 +9,9 @@ import {
   Stack,
   em,
 } from "@mantine/core";
-import plaatje from "../../../public/assets/images/IMG_45522.webp";
-import training from "../../../public/assets/images/training.png";
+import plaatje from "/assets/images/IMG_45522.webp";
+import training from "/assets/images/training.png";
 import ClientReview from "../../components/ClientReview";
-import { Link } from "react-router-dom";
 
 const MirjamKroonTraining: React.FC = () => {
   const theme = useMantineTheme();
@@ -65,7 +64,7 @@ const MirjamKroonTraining: React.FC = () => {
                   </Text>
                 </li>
                 <li>
-                  <Text>De Leider als teamcoach of individuele coach. </Text>
+                  <Text>De Leider als teamcoach of individuele coach.</Text>
                 </li>
                 <li>
                   <Text>
@@ -77,19 +76,12 @@ const MirjamKroonTraining: React.FC = () => {
                 </li>
                 <li>
                   <Text>
-                    Insights-teamtrainingen.{" "}
-                    <Link
-                      style={{ color: theme.colors.custom[1] }}
-                      to="/coaching"
-                    >
-                      Insights Discovery®
-                    </Link>{" "}
-                    biedt een instrument om jezelf en anderen beter te
-                    begrijpen.
+                    Insights-teamtrainingen. Insights Discovery® biedt een
+                    instrument om jezelf en anderen beter te begrijpen.
                   </Text>
                 </li>
                 <li>
-                  <Text>Feedback-trainingen </Text>
+                  <Text>Feedback-trainingen.</Text>
                 </li>
               </ul>
             </Stack>

@@ -10,8 +10,8 @@ import {
   Flex,
   em,
 } from "@mantine/core";
-import systeemspel from "../../../public/assets/images/systeemspel.webp";
-import IMG_35432 from "../../../public/assets/images/IMG_35432.webp";
+import systeemspel from "/assets/images/systeemspel.webp";
+import IMG_35432 from "/assets/images/IMG_35432.webp";
 import ClientReview from "../../components/ClientReview";
 
 const MirjamKroonSysteemspel: React.FC = () => {

@@ -13,12 +13,12 @@ import {
 
 import SmallCard from "../../components/smallCard";
 import Statement from "../../components/StatementBar";
-import Mirjam6 from "../../../public/assets/images/mirjam6.webp";
-import cirkels from "../../../public/assets/images/cirkels.webp";
+import Mirjam6 from "/assets/images/mirjam6.webp";
+import cirkels from "/assets/images/cirkels.webp";
 
-import systeemspel from "../../../public/assets/svg/systeemspel.png";
-import teamcoaching from "../../../public/assets/svg/teamcoaching.png";
-import training from "../../../public/assets/svg/training.png";
+import systeemspel from "/assets/svg/systeemspel.png";
+import teamcoaching from "/assets/svg/teamcoaching.png";
+import training from "/assets/svg/training.png";
 
 import ClientReview from "../../components/ClientReview";
 import { Link } from "react-router-dom";
@@ -128,7 +128,6 @@ const MirjamKroonHomepage: React.FC = () => {
                 width: "100%",
               }}
               to="/about"
-              // target="_top"
             >
               <Button visibleFrom="md">Meer over Mirjam</Button>
               <Button hiddenFrom="md" fullWidth>
