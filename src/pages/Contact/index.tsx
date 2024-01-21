@@ -28,8 +28,8 @@ const MirjamKroonContact: React.FC = () => {
 
           <Stack justify="flex-start">
             <Text>
-              Benieuwd naar wat ik voor jouw organisatie kan betekenen? Neem
-              gerust vrijblijvend contact op om te kijken wat mogelijk is.
+              Benieuwd naar wat ik voor jou of jouw organisatie kan betekenen?
+              Neem gerust contact op om te kijken wat mogelijk is.
             </Text>
             <Text>
               Mirjam Kroon-Hoekendijk

@@ -223,7 +223,9 @@ const MirjamKroonCoaching: React.FC = () => {
               </Text>
             </Stack>
             <Stack p="md" bg={theme.colors.custom[2]}>
-              <Title order={2}>Myers-Briggs Type-indicator</Title>
+              <Title id="myers-briggs" order={2}>
+                Myers-Briggs Type-indicator
+              </Title>
               <Text>
                 Ook de Myers-Briggs Type-indicator (step 2) is net zoals de
                 Insights Discovery® gebaseerd op het gedachtegoed van Gustav

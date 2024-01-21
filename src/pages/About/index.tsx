@@ -54,7 +54,7 @@ const MirjamKroonAbout: React.FC = () => {
     {
       img: samenwerkingsPartner4,
       name: "Leiderschip",
-      text: "Voor Leiderschip verzorg ik trainingen “de Leider als teamcoach” en de “leider als individuele coach”en begeleid ik teams. Leiderschip ontwerpt inhoudelijk sterke programma’s waarin deelnemers methodes leren die werken.",
+      text: "Voor Leiderschip verzorg ik trainingen 'Leider als teamcoach' en 'Leider als individuele coach' en begeleid ik teams. Leiderschip ontwerpt inhoudelijk sterke programma’s waarin deelnemers methodes leren die werken.",
       link: "",
     },
   ];
@@ -214,7 +214,7 @@ const MirjamKroonAbout: React.FC = () => {
             ontwerpen die het verschil kunnen maken.
           </Text>
           <Text pb="lg">
-            Ik breng een rijke gereedschapskist mee vanuit mijn scholing en
+            Ik breng een rijk gevulde gereedschapskist mee vanuit mijn scholing en
             jarenlange ervaring: o.a. Sociologie, Systemisch werken (Hellinger
             en Marijke Spanjersbergen), Deep democracy (level 1-4),
             internationaal gecertificeerd NLP trainer, De Maskermaker,

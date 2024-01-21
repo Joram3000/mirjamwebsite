@@ -12,6 +12,7 @@ import {
 import plaatje from "../../../public/assets/images/IMG_45522.webp";
 import training from "../../../public/assets/images/training.png";
 import ClientReview from "../../components/ClientReview";
+import { Link } from "react-router-dom";
 
 const MirjamKroonTraining: React.FC = () => {
   const theme = useMantineTheme();
@@ -68,16 +69,23 @@ const MirjamKroonTraining: React.FC = () => {
                 </li>
                 <li>
                   <Text>
-                    Ik ben als een van de vaste trainers betrokken bij het
-                    programma De Informele Leider van de Baak. Een programma
+                    Als een van de vaste trainers ben ik betrokken bij het
+                    programma 'De Informele Leider' van de Baak. Een programma
                     waarbij je leert hoe je mensen mee kunt krijgen zonder
-                    informele macht.
+                    formele macht.
                   </Text>
                 </li>
                 <li>
                   <Text>
-                    Insights-teamtrainingen, gebruiksaanwijzingen om elkaar te
-                    begrijpen
+                    Insights-teamtrainingen.{" "}
+                    <Link
+                      style={{ color: theme.colors.custom[1] }}
+                      to="/coaching"
+                    >
+                      Insights Discovery®
+                    </Link>{" "}
+                    biedt een instrument om jezelf en anderen beter te
+                    begrijpen.
                   </Text>
                 </li>
                 <li>
