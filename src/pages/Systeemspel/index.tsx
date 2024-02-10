@@ -10,7 +10,7 @@ import {
   Flex,
   em,
 } from "@mantine/core";
-import systeemspel from "/assets/images/systeemspel.webp";
+import systeemspel from "/assets/images/systeemspel2.webp";
 import IMG_35432 from "/assets/images/IMG_35432.webp";
 import ClientReview from "../../components/ClientReview";
 
@@ -23,9 +23,11 @@ const MirjamKroonSysteemspel: React.FC = () => {
         <Title order={1} ta="center" my="md">
           Systeemspel
         </Title>
-
-        <Image w="100%" h={{ base: em(200), md: em(400) }} src={systeemspel} />
-
+        <Box pos="relative">
+        <Title fw={500} size="h1" pos="absolute" bottom="0" right="0" p={{ base: "md", md: "xl" }} c="white">It's not personal,<br/>it's the system</Title>
+        <Image w="100%" h={{ base: em(200), sm: em(300), md: em(400) }} fit="cover" src={systeemspel} />
+       
+        </Box>
         <Container>
           <Group py="md">
             <Text>
