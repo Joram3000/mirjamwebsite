@@ -53,7 +53,7 @@ const MirjamKroonTraining: React.FC = () => {
             opdrachtgever.
           </Text>
           <Flex gap="lg" direction={{ base: "column", md: "row" }}>
-            <Image hiddenFrom="md" src={plaatje} />
+            {/* <Image  hiddenFrom="md" src={training} w={em(200)} /> */}
 
             <Stack flex={2}>
               <Text>De meest recente trainingen:</Text>
