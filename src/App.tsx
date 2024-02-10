@@ -10,6 +10,7 @@ import Coaching from "./pages/Coaching";
 import Contact from "./pages/Contact";
 import Training from "./pages/Training";
 import Systeemspel from "./pages/Systeemspel";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 const router = createBrowserRouter([
   {
@@ -30,9 +31,11 @@ const router = createBrowserRouter([
 
 function App() {
   return (
+    <ParallaxProvider>
     <MantineProvider theme={theme}>
       <RouterProvider router={router} />
     </MantineProvider>
+    </ParallaxProvider>
   );
 }
 

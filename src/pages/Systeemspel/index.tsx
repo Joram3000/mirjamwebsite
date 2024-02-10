@@ -13,6 +13,7 @@ import {
 import systeemspel from "/assets/images/systeemspel2.webp";
 import IMG_35432 from "/assets/images/IMG_35432.webp";
 import ClientReview from "../../components/ClientReview";
+import { Parallax } from "react-scroll-parallax";
 
 const MirjamKroonSysteemspel: React.FC = () => {
   const theme = useMantineTheme();
@@ -23,10 +24,31 @@ const MirjamKroonSysteemspel: React.FC = () => {
         <Title order={1} ta="center" my="md">
           Systeemspel
         </Title>
-        <Box pos="relative">
-        <Title fw={500} size="h1" pos="absolute" bottom="0" right="0" p={{ base: "md", md: "xl" }} c="white">It's not personal,<br/>it's the system</Title>
-        <Image w="100%" h={{ base: em(200), sm: em(300), md: em(400) }} fit="cover" src={systeemspel} />
-       
+
+        <Box style={{ overflow: "hidden" }}>
+        <Parallax speed={-10} easing="easeInOutQuad">
+            <Title
+              fw={500}
+              size="h1"
+              pos="absolute"
+              bottom={{ base: "md", sm: -200,md: -300 }}
+              right={0}
+              p={{ base: "md", md: "xl" }}
+              c="white"
+            >
+              It's not personal,
+              <br />
+              it's the system
+            </Title>
+          </Parallax>
+          <Image
+            w="100%"
+            h={{ base: "200px", sm: "300px", md: "400px" }}
+            fit="cover"
+            src={systeemspel}
+          />
+
+         
         </Box>
         <Container>
           <Group py="md">
