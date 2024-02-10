@@ -11,7 +11,7 @@ import {
   Stack,
 } from "@mantine/core";
 
-import EthischeCode from "/assets/docs/2022-ethische-code-phoenix-opleidingen-voor-deelnemers.pdf";
+import EthischeCode from "/assets/docs/MirjamKroonTrainingEthischecode.pdf";
 import LeveringsVoorwaarden from "/assets/docs/Leveringsvoorwaarden.pdf";
 import { Link } from "react-router-dom";
 
