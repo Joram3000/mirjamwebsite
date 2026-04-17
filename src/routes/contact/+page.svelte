@@ -1,3 +1,24 @@
+<svelte:head>
+  <title>Contact | Mirjam Kroon Training & Advies</title>
+  <meta
+    name="description"
+    content="Neem contact op met Mirjam Kroon-Hoekendijk. Dorpsweg 71, Hoornaar. Bel 0653507815 of mail mirjam@kroontrainingadvies.com."
+  />
+  <link rel="canonical" href="https://www.kroontrainingadvies.com/contact" />
+  <meta
+    property="og:title"
+    content="Contact | Mirjam Kroon Training & Advies"
+  />
+  <meta
+    property="og:description"
+    content="Neem contact op met Mirjam Kroon-Hoekendijk. Dorpsweg 71, Hoornaar. Bel 0653507815 of mail mirjam@kroontrainingadvies.com."
+  />
+  <meta
+    property="og:url"
+    content="https://www.kroontrainingadvies.com/contact"
+  />
+</svelte:head>
+
 <section class="section-bg teal-text">
   <div class="container">
     <h1 class="page-title">Contact</h1>

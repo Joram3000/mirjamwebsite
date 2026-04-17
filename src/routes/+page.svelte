@@ -1,7 +1,37 @@
+<svelte:head>
+  <title>Mirjam Kroon Training & Advies | Coaching en training voor teams en individuen</title>
+  <meta name="description" content="Training, coaching en systemische oefeningen voor teams en personen. Mirjam Kroon helpt bij samenwerkingsvraagstukken, communicatie en persoonlijke groei." />
+  <link rel="canonical" href="https://www.kroontrainingadvies.com" />
+  <meta property="og:title" content="Mirjam Kroon Training & Advies" />
+  <meta property="og:description" content="Training, coaching en systemische oefeningen voor teams en personen. Mirjam Kroon helpt bij samenwerkingsvraagstukken, communicatie en persoonlijke groei." />
+  <meta property="og:url" content="https://www.kroontrainingadvies.com" />
+  {@html jsonLd}
+</svelte:head>
+
 <script lang="ts">
   import SmallCard from '$lib/components/SmallCard.svelte';
   import StatementBar from '$lib/components/StatementBar.svelte';
   import ClientReview from '$lib/components/ClientReview.svelte';
+
+  const jsonLd = `<script type="application/ld+json">${JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Mirjam Kroon Training & Advies",
+    "description": "Training, coaching en systemische oefeningen voor teams en personen.",
+    "url": "https://www.kroontrainingadvies.com",
+    "telephone": "+31653507815",
+    "email": "mirjam@kroontrainingadvies.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Dorpsweg 71",
+      "postalCode": "4223 ND",
+      "addressLocality": "Hoornaar",
+      "addressRegion": "Zuid-Holland",
+      "addressCountry": "NL"
+    },
+    "founder": { "@type": "Person", "name": "Mirjam Kroon-Hoekendijk" },
+    "serviceType": ["Teamcoaching", "Persoonlijke coaching", "Training", "Systeemspel"]
+  })}<` + `/script>`;
 
   const cardContent = [
     {

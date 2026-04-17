@@ -1,3 +1,12 @@
+<svelte:head>
+  <title>Trainingen | Mirjam Kroon Training & Advies</title>
+  <meta name="description" content="Maatwerk trainingen gericht op communicatie, leidinggeven en samenwerking. Leidinggeven met Lef, De Informele Leider, Insights Discovery® en meer." />
+  <link rel="canonical" href="https://www.kroontrainingadvies.com/training" />
+  <meta property="og:title" content="Trainingen | Mirjam Kroon Training & Advies" />
+  <meta property="og:description" content="Maatwerk trainingen gericht op communicatie, leidinggeven en samenwerking. Leidinggeven met Lef, De Informele Leider, Insights Discovery® en meer." />
+  <meta property="og:url" content="https://www.kroontrainingadvies.com/training" />
+</svelte:head>
+
 <script lang="ts">
   import ClientReview from '$lib/components/ClientReview.svelte';
 </script>

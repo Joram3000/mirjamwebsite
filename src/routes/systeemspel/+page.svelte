@@ -1,3 +1,12 @@
+<svelte:head>
+  <title>Systeemspel | Mirjam Kroon Training & Advies</title>
+  <meta name="description" content="Het Systeemspel: leer systemisch kijken naar samenwerkingsvraagstukken. Ontdek patronen en leer anders kijken naar de dynamiek in je team of organisatie." />
+  <link rel="canonical" href="https://www.kroontrainingadvies.com/systeemspel" />
+  <meta property="og:title" content="Systeemspel | Mirjam Kroon Training & Advies" />
+  <meta property="og:description" content="Het Systeemspel: leer systemisch kijken naar samenwerkingsvraagstukken. Ontdek patronen en leer anders kijken naar de dynamiek in je team of organisatie." />
+  <meta property="og:url" content="https://www.kroontrainingadvies.com/systeemspel" />
+</svelte:head>
+
 <script lang="ts">
   import ClientReview from '$lib/components/ClientReview.svelte';
 </script>

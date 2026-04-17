@@ -1,3 +1,12 @@
+<svelte:head>
+  <title>Coaching | Mirjam Kroon Training & Advies</title>
+  <meta name="description" content="Persoonlijke coaching en teamcoaching door Mirjam Kroon. Samen werken aan herhalende patronen, effectiever communiceren en betere samenwerking." />
+  <link rel="canonical" href="https://www.kroontrainingadvies.com/coaching" />
+  <meta property="og:title" content="Coaching | Mirjam Kroon Training & Advies" />
+  <meta property="og:description" content="Persoonlijke coaching en teamcoaching door Mirjam Kroon. Samen werken aan herhalende patronen, effectiever communiceren en betere samenwerking." />
+  <meta property="og:url" content="https://www.kroontrainingadvies.com/coaching" />
+</svelte:head>
+
 <script lang="ts">
   import StatementBar from '$lib/components/StatementBar.svelte';
   import ClientReview from '$lib/components/ClientReview.svelte';

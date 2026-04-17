@@ -1,3 +1,12 @@
+<svelte:head>
+  <title>Over Mirjam | Mirjam Kroon Training & Advies</title>
+  <meta name="description" content="Leer Mirjam Kroon-Hoekendijk kennen — trainer en coach voor groei- en verandertrajecten. Achtergrond, werkwijze en samenwerkingspartners." />
+  <link rel="canonical" href="https://www.kroontrainingadvies.com/about" />
+  <meta property="og:title" content="Over Mirjam | Mirjam Kroon Training & Advies" />
+  <meta property="og:description" content="Leer Mirjam Kroon-Hoekendijk kennen — trainer en coach voor groei- en verandertrajecten. Achtergrond, werkwijze en samenwerkingspartners." />
+  <meta property="og:url" content="https://www.kroontrainingadvies.com/about" />
+</svelte:head>
+
 <script lang="ts">
   import StatementBar from '$lib/components/StatementBar.svelte';
   import PeopleCard from '$lib/components/PeopleCard.svelte';
