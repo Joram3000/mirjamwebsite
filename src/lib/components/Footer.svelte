@@ -1,15 +1,3 @@
-<script lang="ts">
-  const contactGegevens = [
-    'Mirjam Kroon-Hoekendijk',
-    'Dorpsweg 71',
-    '4223 ND',
-    'Hoornaar',
-    'Zuid-Holland',
-    'mirjam@kroontrainingadvies.com',
-    '0653507815',
-  ];
-</script>
-
 <footer>
   <div class="container">
     <div class="footer-top">
@@ -17,9 +5,13 @@
       <a href="/contact" class="btn">Neem contact op</a>
     </div>
 
-    {#each contactGegevens as gegeven}
-      <p>{gegeven}</p>
-    {/each}
+    <p>Mirjam Kroon-Hoekendijk</p>
+    <p>Dorpsweg 71</p>
+    <p>4223 ND</p>
+    <p>Hoornaar</p>
+    <p>Zuid-Holland</p>
+    <p><a href="mailto:mirjam@kroontrainingadvies.com">mirjam@kroontrainingadvies.com</a></p>
+    <p><a href="tel:+31653507815">0653507815</a></p>
 
     <hr class="divider" />
 

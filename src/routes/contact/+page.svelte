@@ -39,8 +39,8 @@
           Dorpsweg 71<br />
           4223 ND<br />
           Hoornaar Zuid-Holland<br />
-          mirjam@kroontrainingadvies.com<br />
-          0653507815
+          <a href="mailto:mirjam@kroontrainingadvies.com">mirjam@kroontrainingadvies.com</a><br />
+          <a href="tel:+31653507815">0653507815</a>
         </p>
       </div>
     </div>
