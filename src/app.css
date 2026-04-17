@@ -1,0 +1,90 @@
+:root {
+  --color-bg: #F2F3ED;
+  --color-blue: #024D7B;
+  --color-teal: #008080;
+  --color-green: #8BC53E;
+  --color-light-green: #edf7f6;
+  --color-white: #ffffff;
+  --font-family: Avenir, sans-serif;
+  --navbar-height: 90px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  color: var(--color-blue);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  background-color: var(--color-teal);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.section-bg {
+  background-color: var(--color-bg);
+}
+
+.section-teal {
+  background-color: var(--color-teal);
+  color: white;
+}
+
+.section-blue {
+  background-color: var(--color-blue);
+  color: white;
+}
+
+.section-white {
+  background-color: var(--color-white);
+}
